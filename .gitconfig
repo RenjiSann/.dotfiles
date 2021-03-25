@@ -1,3 +1,5 @@
 [user]
 	email = dorianperon.i@gmail.com
 	name = Renji
+[core]
+	editor = vim

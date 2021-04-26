@@ -15,6 +15,7 @@ Plug 'w0rp/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'townk/vim-autoclose'
 Plug 'sheerun/vim-polyglot'
+Plug 'leafgarland/typescript-vim'
 
 " Themes
 Plug 'joshdick/onedark.vim'
@@ -173,7 +174,6 @@ set colorcolumn=80			"Set a color column at 80th
 set termguicolors
 
 syntax enable
-
 
 
 " End

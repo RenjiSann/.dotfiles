@@ -70,14 +70,14 @@ if ${use_color} ; then
 	fi
 
 	
-source .git-prompt.sh
+source ~/.git-prompt.sh
 #GIT_PS1_SHOWDIRTYSTATE=1
 #GIT_PS1_SHOWUNTRACKEDFILES=1
 #GIT_PS1_SHOWUPSTREAM="auto"
 
 
 	if [[ ${EUID} == 0 ]] ; then
-		PS1='[\u@\a \W$(__git_ps1 " (%s)")]\$ '
+		PS1='[\u@\a \W$]\$ '
 		#PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
 		PS1='\[\033[36m\]\u \[\033[32m\]\W\[\033[33m\]$(__git_ps1 " [%s]") \[\033[31m\]\$ \[\033[00m\]'
@@ -151,4 +151,4 @@ ex ()
 setxkbmap -option caps:escape -model pc105
 
 numlockx on
-source .bash_aliases
+source ~/.bash_aliases

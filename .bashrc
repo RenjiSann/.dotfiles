@@ -147,8 +147,12 @@ ex ()
   fi
 }
 
+# Auto complete Makefile variables
+complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' ?akefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" make
 
+# Remap the caps lock btn to escape
 setxkbmap -option caps:escape -model pc105
 
+# Enable the numpad bt default
 numlockx on
 source ~/.bash_aliases

@@ -158,7 +158,7 @@ endfunction
 set laststatus=2
 set statusline=%!DetectMode(mode())
 
-e
+
 "End Status line
 
 set nu						"Display lines number
@@ -171,8 +171,10 @@ set softtabstop=4			"Set the number of tabs to clear when hitting backspace
 set shiftwidth=4			"Set the indent shift width
 set colorcolumn=80			"Set a color column at 80th
 
+set eadirection="ver"
 set termguicolors
 
+map <F7> gg=G<C-o><C-o>
 syntax enable
 
 

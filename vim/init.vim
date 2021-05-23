@@ -174,7 +174,7 @@ set colorcolumn=80			"Set a color column at 80th
 set eadirection="ver"
 set termguicolors
 
-map <F7> gg=G<C-o><C-o>
+map <F7> gg=G<C-o>
 syntax enable
 
 

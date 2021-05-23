@@ -1,5 +1,9 @@
 [user]
-	email = dorianperon.i@gmail.com
+	email = dodo.savenay@gmail.com
 	name = Renji
 [core]
 	editor = vim
+[init]
+	defaultBranch = main # So it does conform with Github
+[advice]
+	addIgnoredFile = false

@@ -8,7 +8,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 "Status lines
 "Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
 "Plug 'rbong/vim-crystalline'
 
 Plug 'w0rp/ale'
@@ -19,23 +18,10 @@ Plug 'leafgarland/typescript-vim'
 
 " Themes
 Plug 'joshdick/onedark.vim'
+Plug 'humanoid-colors/vim-humanoid-colorscheme'
 
 call plug#end()
 "End Plugins
-
-set showtabline=2
-set guioptions-=e
-
-
-
-
-set laststatus=2					"Change Statusline
-set background=dark
-colorscheme humanoid					"Change colorTheme
-
-"Begin statuslin
-set noshowmode
-set noruler
 
 " Get current filetype
 function! CheckFT(filetype)
@@ -150,11 +136,20 @@ function! DetectMode(mode)
   else
     let statusline .= "%#BufferS#" . right . "\ "
   endif
-  let statusline .= "%#BufferS#" . left . "%#ursorStatus#\ %-8.(%l,%c%)%#ModeNFGC#\ %P\ %#ModeNFGCS#" . right . "\ "
+  let statusline .= "%#BufferS#" . left . "%#CursorStatus#\ %-8.(%l,%c%)%#ModeNFGC#\ %P\ %#ModeNFGCS#" . right . "\ "
   return statusline
   return ' '
 endfunction
 
+
+
+
+set showtabline=2
+set guioptions-=e
+
+set laststatus=2					"Change Statusline
+set background=dark
+colorscheme humanoid					"Change colorTheme
 set laststatus=2
 set statusline=%!DetectMode(mode())
 
@@ -174,7 +169,7 @@ set colorcolumn=80			"Set a color column at 80th
 set eadirection="ver"
 set termguicolors
 
-map <F7> gg=G<C-o>
+map <F7> gg=G<C-o>			"Map F7 to reindent all file
 syntax enable
 
 

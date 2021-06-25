@@ -169,10 +169,7 @@ set colorcolumn=80			"Set a color column at 80th
 set eadirection="ver"
 set termguicolors
 
-"Map F7 to reindent all file
-map <F7> gg=G<C-o><C-o>
-"Ma F5 to copy to clipboard
-map <F5> "+y
+map <F7> gg=G<C-o>			"Map F7 to reindent all file
 syntax enable
 
 

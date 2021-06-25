@@ -1,6 +1,11 @@
 # /usr/bin/bash
 
+# INSTALL PACKAGES
 
+sudo pacman -S --needed - < required_packages.txt
+
+
+# SYMLINKS
 
 # vim and neovim
 #ln -sfv ~/.dotfiles/vim .vimrc 
@@ -18,4 +23,5 @@ ln -sfv ~/.dotfiles/.gitconfig ~
 ln -sfv ~/.dotfiles/.git-prompt.sh ~
 
 # kitty
+rm -rf ~/.config/kitty
 ln -sfv ~/.dotfiles/kitty ~/.config

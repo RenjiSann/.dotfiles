@@ -1,0 +1,5 @@
+numlockx
+kitty
+dmenu
+neovim
+git

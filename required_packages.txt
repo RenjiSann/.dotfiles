@@ -3,3 +3,6 @@ kitty
 dmenu
 neovim
 git
+volumeicon
+pulseaudio
+pavucontrol

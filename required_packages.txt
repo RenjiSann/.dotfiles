@@ -6,3 +6,5 @@ git
 volumeicon
 pulseaudio
 pavucontrol
+i3exit
+xautolock

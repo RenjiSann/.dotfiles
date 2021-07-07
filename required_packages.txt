@@ -9,3 +9,4 @@ pavucontrol
 i3exit
 xautolock
 dunst
+picom

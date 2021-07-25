@@ -156,3 +156,5 @@ setxkbmap -option caps:escape -model pc105
 # Enable the numpad bt default
 numlockx on
 source ~/.bash_aliases
+
+export PATH="/home/renji/.local/bin:$PATH"

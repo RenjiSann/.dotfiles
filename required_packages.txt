@@ -6,7 +6,7 @@ git
 volumeicon
 pulseaudio
 pavucontrol
-i3exit
 xautolock
 dunst
 picom
+feh

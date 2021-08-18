@@ -3,7 +3,7 @@ kitty
 dmenu
 neovim
 git
-volumeicon
+volumecontrol
 pulseaudio
 pavucontrol
 xautolock

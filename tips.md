@@ -13,3 +13,11 @@ Add `set bell-style none`
 
 install `acpilight` package to provide better implementation of xbacklight
 then chmod 666 on /sys/class/backlight/amdgpu_bl0/brightness.
+
+
+## additional yay packages
+
+i3exit for blurlock
+ncmatrix for bling
+vtop for monitoring
+xidlelock (better than xautolock)

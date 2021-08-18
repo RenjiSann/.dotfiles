@@ -51,8 +51,8 @@ bindsym $mod+Ctrl+m exec pavucontrol
 ################################################################################################
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send -t 500 <<< echo Brightness $(xbacklight -get)"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send -t 500 <<< echo Brightness $(xbacklight -get)"
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
@@ -102,7 +102,7 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-#bindsym $mod+h split h;exec notify-send 'tile horizontally'
+bindsym $mod+g split h;exec notify-send 'tile horizontally'
 bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
@@ -278,20 +278,24 @@ mode "resize" {
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; picom -b -i 1.0
+#exec --no-startup-id nitrogen --restore; sleep 1; picom -b -i 1.0
+exec --no-startup-id picom -b -i 1.0
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
-exec --no-startup-id clipit
+#exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_maia
+#exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
+#exec --no-startup-id xautolock -time 10 -locker 'dm-tool lock'
+#exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 'dm-tool lock' ''
 exec_always --no-startup-id ff-theme-util
-exec_always --no-startup-id fix_xcursor
+#exec_always --no-startup-id fix_xcursor
 
+# Load the background
 exec --no-startup-id eval '~/.fehbg'
 
 # Color palette used for the terminal ( ~/.Xresources file )
@@ -424,4 +428,4 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-exec_always --no-startup-id setxkbmap fr -option caps:escape -model pc105
+#exec_always --no-startup-id setxkbmap fr -option caps:escape -model pc105

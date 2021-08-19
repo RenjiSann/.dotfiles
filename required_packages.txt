@@ -10,3 +10,4 @@ xautolock
 dunst
 picom
 feh
+ttf-juliamono

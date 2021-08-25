@@ -31,7 +31,10 @@ colors() {
 	done
 }
 
-[ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+# Change TAB button behavior
+# [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+[[ $- = *i* ]] && bind TAB:menu-complete
+
 
 # Change the window title of X terminals
 case ${TERM} in

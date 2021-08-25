@@ -10,7 +10,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 "Plug 'rbong/vim-crystalline'
 
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'townk/vim-autoclose'
 Plug 'sheerun/vim-polyglot'
@@ -51,7 +51,8 @@ set colorcolumn=80			"Set a color column at 80th
 set eadirection="ver"
 set termguicolors
 
-map <F7> gg=G<C-o><C-o>			"Map F7 to reindent all file
+"Map F7 to reindent all file
+map <F7> gg=G<C-o><C-o>
 syntax enable
 
 

@@ -159,6 +159,6 @@ complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' ?akefile | sed 's/[^a-zA-Z0-
 # Enable the numpad bt default
 numlockx on
 source ~/.bash_aliases
-source ~/.bash_profile
+# source ~/.bash_profile
 
 export PATH="/home/renji/.local/bin:$PATH"

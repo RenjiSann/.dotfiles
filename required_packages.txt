@@ -3,11 +3,10 @@ kitty
 dmenu
 neovim
 git
-volumecontrol
+volumeicon
 pulseaudio
 pavucontrol
 xautolock
 dunst
 picom
 feh
-ttf-juliamono

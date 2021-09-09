@@ -16,7 +16,8 @@ ln -sfv ~/.dotfiles/.bashrc ~/
 ln -sfv ~/.dotfiles/.bash_aliases ~
 
 # i3
-ln -sfv ~/.dotfiles/.i3 ~
+rm ~/.config/i3/config
+ln -sfv ~/.dotfiles/.i3/config ~/.config/i3
 
 # git
 ln -sfv ~/.dotfiles/.gitconfig ~

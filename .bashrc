@@ -32,8 +32,8 @@ colors() {
 }
 
 # Change TAB button behavior
-# [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
-[[ $- = *i* ]] && bind TAB:menu-complete
+[ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+#[[ $- = *i* ]] && bind TAB:menu-complete
 
 
 # Change the window title of X terminals
@@ -154,10 +154,11 @@ ex ()
 complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' ?akefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" make
 
 # Remap the caps lock btn to escape
-setxkbmap -option caps:escape -model pc105
+# setxkbmap -option caps:escape -model pc105
 
 # Enable the numpad bt default
 numlockx on
 source ~/.bash_aliases
+source ~/.bash_profile
 
 export PATH="/home/renji/.local/bin:$PATH"

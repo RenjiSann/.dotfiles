@@ -4,6 +4,10 @@
 
 sudo pacman -S --needed - < required_packages.txt
 
+# Make dmenu_run_history executable and move it to proper location
+chmod +x dmenu_run_history
+sudo cp dmenu_run_history /usr/bin/
+
 
 # SYMLINKS
 
@@ -16,8 +20,8 @@ ln -sfv ~/.dotfiles/.bashrc ~/
 ln -sfv ~/.dotfiles/.bash_aliases ~
 
 # i3
-rm ~/.config/i3/config
-ln -sfv ~/.dotfiles/.i3/config ~/.config/i3
+rm -rf ~/.config/i3
+ln -sfv ~/.dotfiles/i3 ~/.config/
 
 # git
 ln -sfv ~/.dotfiles/.gitconfig ~

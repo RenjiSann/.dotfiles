@@ -14,7 +14,7 @@ sudo cp resources/dmenu_run_history /usr/bin/
 # vim
 #ln -sfv ~/.dotfiles/vim .vimrc 
 ln -sfv ~/.dotfiles/.vim ~
-ln -sfv ~/.doftiles/.vimrc ~
+ln -sfv ~/.dotfiles/.vimrc ~
 
 
 # .bashrc etc...

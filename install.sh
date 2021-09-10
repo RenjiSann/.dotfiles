@@ -11,9 +11,11 @@ sudo cp dmenu_run_history /usr/bin/
 
 # SYMLINKS
 
-# vim and neovim
+# vim
 #ln -sfv ~/.dotfiles/vim .vimrc 
-ln -sfv ~/.dotfiles/nvim ~/.config/
+ln -sfv ~/.dofiles/vim ~/.vim
+ln -sfv ~/.dofiles/vimrc ~/.vimrc
+
 
 # .bashrc etc...
 ln -sfv ~/.dotfiles/.bashrc ~/

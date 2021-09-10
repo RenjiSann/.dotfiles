@@ -4,7 +4,7 @@
 
 
 "	PLUGINS
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.dotfiles/vim/plugged')
 
 "Status lines
 Plug 'vim-airline/vim-airline'
@@ -21,6 +21,7 @@ Plug 'sheerun/vim-polyglot'
 
 "	Themes
 Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
 "Plug 'humanoid-colors/vim-humanoid-colorscheme'
 
 call plug#end()
@@ -35,11 +36,11 @@ set guioptions-=e
 set laststatus=2					"Change Statusline
 set background=dark
 colorscheme onedark					"Change colorTheme
-set laststatus=2
+let &t_ut=''						"Set default background element
+
+" Set Statusline
 set statusline=%!DetectMode(mode())
 
-
-"End Status line
 
 set nu						"Display lines number
 set bs=2 					"Set Backspace mode to 2

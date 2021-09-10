@@ -12,7 +12,7 @@ sudo cp resources/dmenu_run_history /usr/bin/
 # SYMLINKS
 
 # vim
-#ln -sfv ~/.dotfiles/vim .vimrc 
+rm -rf ~/.vim
 ln -sfv ~/.dotfiles/.vim ~
 ln -sfv ~/.dotfiles/.vimrc ~
 

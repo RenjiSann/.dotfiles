@@ -27,7 +27,7 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -53,18 +53,18 @@ bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send -t 500 <<< ech
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send -t 500 <<< echo Brightness $(xbacklight -get)"
 
 # Start Applications
-bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec firefox
-bindsym $mod+F3 exec pcmanfm
-# bindsym $mod+F3 exec ranger
-bindsym $mod+Shift+F3 exec pcmanfm_pkexec
-bindsym $mod+F5 exec terminal -e 'mocp'
+bindsym $mod+F3 exec discord
+
+# Enable / disable opacity
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b -i 1.0
+
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
-# focus_follows_mouse no
+# Disable focus following mouse
+focus_follows_mouse no
 
 # change focus
 bindsym $mod+h focus left
@@ -176,7 +176,8 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 # assign [class="Pale moon"] $ws2
 # assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
-assign [title="firefox"] $ws3
+assign [class="firefox"] $ws3
+assign [class="discord"] $ws4
 
 # Open specific applications in floating mode
 for_window [class="Clipgrab"] floating enable
@@ -319,7 +320,7 @@ bar {
         separator  #454947
 
 #                      border  backgr. text
-        focused_workspace  #F9FAF9 #16a085 #292F34
+        focused_workspace  #F9FAF9 #0B88BA #292F34
         active_workspace   #595B5B #353836 #FDF6E3
         inactive_workspace #595B5B #222D31 #EEE8D5
         binding_mode       #16a085 #2C2C2C #F9FAF9

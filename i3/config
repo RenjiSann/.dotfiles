@@ -241,8 +241,7 @@ exec --no-startup-id picom -b -i 1.0
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 #exec --no-startup-id xautolock -time 10 -locker 'dm-tool lock'
-exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 'i3lock' ''
-exec_always --no-startup-id ff-theme-util
+exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 'i3lockmore --image-fill /usr/share/backgrounds/lock_wallpaper.png' ''
 
 # Load the background
 exec --no-startup-id eval '~/.fehbg'

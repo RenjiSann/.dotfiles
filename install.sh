@@ -11,6 +11,8 @@ sudo cp resources/dmenu_run_history /usr/bin/
 
 # SYMLINKS
 
+echo "==> Symlinking..."
+
 # vim
 rm -rf ~/.vim
 ln -sfv ~/.dotfiles/.vim ~
@@ -32,3 +34,8 @@ ln -sfv ~/.dotfiles/.git-prompt.sh ~
 # kitty
 rm -rf ~/.config/kitty
 ln -sfv ~/.dotfiles/kitty ~/.config
+
+# Wallpaper
+echo "==> Add the lock wallpaper"
+
+sudo cp ~/.dotfiles/resources/lock_wallpaper.png /usr/share/backgrounds/

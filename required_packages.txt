@@ -10,5 +10,3 @@ xautolock
 dunst
 picom
 feh
-i3lockmore-git
-xidlehook

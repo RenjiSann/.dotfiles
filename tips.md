@@ -27,7 +27,7 @@ Enable power management
 
 ## additional yay packages
 
-i3exit for blurlock
+i3lockmore
 ncmatrix for bling
 vtop for monitoring
-xidlelock (better than xautolock)
+xidlehook (better than xautolock)

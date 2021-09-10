@@ -234,8 +234,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-# Lock screen
-#bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -243,8 +241,7 @@ exec --no-startup-id picom -b -i 1.0
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 #exec --no-startup-id xautolock -time 10 -locker 'dm-tool lock'
-#exec --no-startup-id xautolock -time 10 -locker blurlock
-exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 'i3exit lock' ''
+exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 'i3lock' ''
 exec_always --no-startup-id ff-theme-util
 
 # Load the background

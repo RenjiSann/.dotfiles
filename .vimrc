@@ -42,7 +42,7 @@ let &t_ut=''						"Set default background element
 set statusline=%!DetectMode(mode())
 
 
-set rnu						"Display relative line numbers 
+set rnu nu						"Display relative line numbers 
 set bs=2 					"Set Backspace mode to 2
 set noexpandtab				"TAB inserts a tabulation instead of spaces
 set hls ic					"searching highlight matching text and ignore case

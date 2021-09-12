@@ -8,9 +8,8 @@ call plug#begin('~/.dotfiles/vim/plugged')
 
 "Status lines
 Plug 'vim-airline/vim-airline'
-"Plug 'rbong/vim-crystalline'
 
-"	Linters
+"Linters and LSPs
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'dense-analysis/ale'
 
@@ -19,7 +18,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'townk/vim-autoclose'
 Plug 'sheerun/vim-polyglot'
 
-"	Themes
+"Themes
 Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
 "Plug 'humanoid-colors/vim-humanoid-colorscheme'
@@ -28,35 +27,36 @@ call plug#end()
 "End Plugins
 
 
-
-
-set showtabline=2
-set guioptions-=e
-
-set laststatus=2					"Change Statusline
+" Theme
 set background=dark
-colorscheme onedark					"Change colorTheme
-let &t_ut=''						"Set default background element
+colorscheme onedark		" Change colorTheme
+let &t_ut=''			" Set default background element
+set termguicolors		" For color and colorscheme purposes
+set colorcolumn=80		" Set a color column at 80th
+syntax enable			" Enable syntaxic coloration
 
-" Set Statusline
-set statusline=%!DetectMode(mode())
+
+" Display
+set statusline=%!DetectMode(mode())	" Set the statusline to vim-airline
+set showtabline=2					" Always show the opened tabs 
+set rnu nu							" Display relative line numbers 
+set laststatus=2					" Always display the statusline
+set bs=2							" Set Backspace mode to 2
 
 
-set rnu nu						"Display relative line numbers 
-set bs=2 					"Set Backspace mode to 2
-set noexpandtab				"TAB inserts a tabulation instead of spaces
-set hls ic					"searching highlight matching text and ignore case
-set autoindent				"Auto indent new lines depending on the one above
-set tabstop=4				"Make TAB length equal to 4 spaces
-set softtabstop=4			"Set the number of tabs to clear when hitting backspace
-set shiftwidth=4			"Set the indent shift width
-set colorcolumn=80			"Set a color column at 80th
+" Indentation
+set noexpandtab			" TAB inserts a tabulation instead of spaces
+set autoindent			" Auto indent new lines depending on the one above
+set tabstop=4			" Make TAB length equal to 4 spaces
+set softtabstop=4		" Set the number of tabs to clear when hitting backspace
+set shiftwidth=4		" Set the indent shift width
+set listchars=tab:\|\ 
+set list
 
-set termguicolors			"For color and colorscheme purposes
 
+set ic	" Ignore case when searching
 " Map F7 to reindent all file
 map <F7> gg=G<C-o><C-o>
-syntax enable
 
 
 " CoC Plugin config

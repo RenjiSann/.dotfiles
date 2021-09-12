@@ -18,7 +18,6 @@ rm -rf ~/.vim
 ln -sfv ~/.dotfiles/.vim ~
 ln -sfv ~/.dotfiles/.vimrc ~
 
-
 # .bashrc etc...
 ln -sfv ~/.dotfiles/.bashrc ~/
 ln -sfv ~/.dotfiles/.bash_aliases ~
@@ -34,6 +33,9 @@ ln -sfv ~/.dotfiles/.git-prompt.sh ~
 # kitty
 rm -rf ~/.config/kitty
 ln -sfv ~/.dotfiles/kitty ~/.config
+
+# fehbg handling
+ln -sfv ~/.dotfiles/.fehbg ~
 
 # Wallpaper
 echo "==> Add the lock wallpaper"

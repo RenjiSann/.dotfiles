@@ -54,10 +54,13 @@ set listchars=tab:\|\
 set list
 
 
-set ic	" Ignore case when searching
+
+" Misc
+set ic				" Ignore case when searching
+set belloff=all		" Disable bell sounds "
 " Map F7 to reindent all file
 map <F7> gg=G<C-o><C-o>
-
+set timeoutlen=100	" Set the detection of insert mode to normal mode to 100ms
 
 " CoC Plugin config
 

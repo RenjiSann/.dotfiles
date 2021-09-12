@@ -22,6 +22,10 @@ ln -sfv ~/.dotfiles/.vimrc ~
 ln -sfv ~/.dotfiles/.bashrc ~/
 ln -sfv ~/.dotfiles/.bash_aliases ~
 
+# .zshrc
+ln -sfv ~/.dotfiles/.zshrc ~/
+
+
 # i3
 rm -rf ~/.config/i3
 ln -sfv ~/.dotfiles/i3 ~/.config/

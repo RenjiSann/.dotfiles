@@ -58,9 +58,17 @@ set list
 " Misc
 set ic				" Ignore case when searching
 set belloff=all		" Disable bell sounds "
+set timeoutlen=100		" Set the detection of insert mode to normal mode to 100ms
+set clipboard=unnamed	" Link the system clipboard to vim
+
 " Map F7 to reindent all file
 map <F7> gg=G<C-o><C-o>
-set timeoutlen=100	" Set the detection of insert mode to normal mode to 100ms
+" Map F5 to copy and F6 to paste while in visual mode
+vnoremap <F5> "+y		
+vnoremap <F6> "+p
+
+
+
 
 " CoC Plugin config
 

@@ -4,7 +4,7 @@
 
 
 "	PLUGINS
-call plug#begin('~/.dotfiles/vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 "Status lines
 Plug 'vim-airline/vim-airline'
@@ -65,7 +65,7 @@ set clipboard=unnamed	" Link the system clipboard to vim
 map <F7> gg=G<C-o><C-o>
 " Map F5 to copy and F6 to paste while in visual mode
 vnoremap <F5> "+y		
-vnoremap <F6> "+p
+noremap <F6> "+p
 
 
 

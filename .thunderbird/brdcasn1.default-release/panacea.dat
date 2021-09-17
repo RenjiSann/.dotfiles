@@ -1,0 +1,170 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (8A=boxFlags)(8B=hierDelim)(8C=onlineName)(8D=aclFlags)(8E=serverTotal)
+  (8F=serverUnseen)(90=serverRecent)(91=indexingPriority)(92=folderName)
+  (93=applyIncomingFilters.empty)(94=applyIncomingFilters)(95=MRUTime)
+  (96=dobayes.mailnews@mozilla.org#junk.empty)
+  (97=dobayes.mailnews@mozilla.org#junk)(98=nextUID)
+  (99=lastSyncTimeInSec)(9A=LastPurgeTime)(9B=useServerRetention)
+  (80=ns:msg:db:row:scope:folders:all)(81=ns:msg:db:table:kind:folders)
+  (82=key)(83=flags)(84=totalMsgs)(85=totalUnreadMsgs)
+  (86=pendingUnreadMsgs)(87=pendingMsgs)(88=expungedBytes)(89=folderSize)>
+
+<(80
+    =/home/renji/.thunderbird/brdcasn1.default-release/ImapMail/outlook.office\
+365.com/INBOX.msf)(A4=88083014)(A6=1e5)(81=0)(137=a48e015)(A5=200041)
+  (9D=2f)(84=INBOX)(99=1631830871)(A8=18ab)(AA=1)(86
+    =/home/renji/.thunderbird/brdcasn1.default-release/Mail/Local Folders/Tras\
+h.msf)(87=104)(82=ffffffffffffffff)(88=Trash)(89
+    =/home/renji/.thunderbird/brdcasn1.default-release/Mail/Local Folders/Unse\
+nt Messages.msf)(8A=804)(8C=Outbox)(8D
+    =/home/renji/.thunderbird/brdcasn1.default-release/Mail/Local Folders)
+  (8E=1c)(8F=ffffffff)(90=Local Folders)(91
+    =/home/renji/.thunderbird/brdcasn1.default-release/ImapMail/outlook.office\
+365.com/Drafts.msf)(138=400)(83=5e)(92=Drafts)(93
+    =/home/renji/.thunderbird/brdcasn1.default-release/ImapMail/outlook.office\
+365.com/Templates.msf)(94=Templates)(95
+    =/home/renji/.thunderbird/brdcasn1.default-release/ImapMail/outlook.office\
+365.com/Sent.msf)(96=Sent)(97
+    =/home/renji/.thunderbird/brdcasn1.default-release/ImapMail/outlook.office\
+365.com/Archives.msf)(98=Archives)(9A
+    =/home/renji/.thunderbird/brdcasn1.default-release/ImapMail/outlook.office\
+365.com/Trash.msf)(9B=82114)(9C=200051)(9E
+    =/home/renji/.thunderbird/brdcasn1.default-release/ImapMail/outlook.office\
+365.com/Sent-1.msf)(A0=8082214)(A1=200040)(A2
+    =/home/renji/.thunderbird/brdcasn1.default-release/ImapMail/outlook.office\
+365.com/Junk.msf)(A3=Junk)(A9
+    =/home/renji/.thunderbird/brdcasn1.default-release/News/news.cri.epita.fr)
+  (AB
+    =/home/renji/.thunderbird/brdcasn1.default-release/News/news.cri.epita.fr/\
+announcement.ing1.msf)(B0=36)(12E=1631831301)(12D=Fri Sep 17 00:28:21 2021)
+  (AC
+    =/home/renji/.thunderbird/brdcasn1.default-release/News/news.cri.epita.fr/\
+assistants.news.msf)(DF=32)(130=1631831307)(12F=Fri Sep 17 00:28:27 2021)
+  (AD
+    =/home/renji/.thunderbird/brdcasn1.default-release/News/news.cri.epita.fr/\
+assistants.piscine.msf)(133=1631831327)(132=Fri Sep 17 00:28:47 2021)
+  (AE
+    =/home/renji/.thunderbird/brdcasn1.default-release/News/news.cri.epita.fr/\
+cri.news.msf)(E6=7c)(136=1631831332)(135=Fri Sep 17 00:28:52 2021)(139
+    =/home/renji/.thunderbird/brdcasn1.default-release/ImapMail/outlook.office\
+365.com/Drafts-1.msf)(13B=8082414)(140=770)(13F=1500)(13E=1631836813)
+  (141
+    =/home/renji/.thunderbird/brdcasn1.default-release/ImapMail/outlook.office\
+365.com)(142=)(143
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/Mail/Local Fo\
+lders)(14C
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/ImapMail/outl\
+ook.office365.com/Sent.msf)(492=3)(88A=68c)(883=6143e56f)(88C=1631839736)
+  (49A=5)(14E
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/ImapMail/outl\
+ook.office365.com/Drafts.msf)(15E=82404)(88B=1631839735)(48E=2)(14F
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/ImapMail/outl\
+ook.office365.com/Trash.msf)(69E=200050)(88D=1631839737)(47B=ff)(150
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/ImapMail/outl\
+ook.office365.com/INBOX.msf)(4C5=88003014)(4B7=f3)(69A=4487ec0)(488=18b1)
+  (167=6143dc7f)(699=1631839515)(156
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/News/news.cri\
+.epita.fr/announcement.ing1.msf)(697=Fri Sep 17 02:45:13 2021)(698
+    =1631839513)(157
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/News/news.cri\
+.epita.fr/assistants.news.msf)(16A=Fri Sep 17 02:11:43 2021)(16B
+    =1631837503)(158
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/News/news.cri\
+.epita.fr/assistants.piscine.msf)(16C=Fri Sep 17 02:11:44 2021)(16D
+    =1631837504)(159
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/News/news.cri\
+.epita.fr/cri.news.msf)(1B9=2e)(16E=Fri Sep 17 02:11:46 2021)(16F
+    =1631837506)(15A
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/News/news.cri\
+.epita.fr)(15B
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/Mail/Local Fo\
+lders/Trash.msf)(87E=1631839686)(15C
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/Mail/Local Fo\
+lders/Unsent Messages.msf)(87F=1631839688)(483
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/ImapMail/outl\
+ook.office365.com)(485
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/ImapMail/outl\
+ook.office365.com/Archives.msf)(69D=4000)(486
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/ImapMail/outl\
+ook.office365.com/Templates.msf)(4C6=400000)(487
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/ImapMail/outl\
+ook.office365.com/Junk.msf)(6A0=40000000)(69B
+    =/home/renji/.dotfiles/.thunderbird/brdcasn1.default-release/ImapMail/outl\
+ook.office365.com/INBOX-1.msf)(6A1=8083014)(88F=4e14a0a)(87B=6143e56e)
+  (88E=1631840173)>
+{1:^80 {(k^81:c)(s=9)} 
+  [1(^82^80)(^83^A4)(^84^A6)(^85=0)(^86=0)(^87=0)(^88=0)(^89^137)(^8A^A5)
+    (^8B=2f)(^8C^84)(^8D=0)(^8E^A6)(^8F=0)(^90=0)(^95^99)(^98^A8)(^99=0)
+    (^9B=1)]
+  [2(^82^86)(^83^87)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^92^88)
+    (^9B=1)]
+  [3(^82^89)(^83^8A)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^92^8C)
+    (^9B=1)]
+  [4(^82^8D)(^83=1c)(^84^8F)(^85^8F)(^86=0)(^87=0)(^88=0)(^89^82)(^92^90)]
+  [5(^82^91)(^83=400)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^8A=0)
+    (^8B=5e)(^8C^92)(^8D=0)(^8E=0)(^8F=0)(^90=0)(^99=0)]
+  [6(^82^93)(^83=0)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^8A=0)
+    (^8B=5e)(^8C^94)(^8D=0)(^8E=0)(^8F=0)(^90=0)]
+  [7(^82^95)(^83=0)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^8A=0)
+    (^8B=5e)(^8C^96)(^8D=0)(^8E=0)(^8F=0)(^90=0)]
+  [8(^82^97)(^83=0)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^8A=0)
+    (^8B=5e)(^8C^98)(^8D=0)(^8E=0)(^8F=0)(^90=0)]
+  [9(^82^9A)(^83^9B)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^8A^9C)
+    (^8B=2f)(^8C^88)(^8D=0)(^8E=0)(^8F=0)(^90=0)(^9B=1)]
+  [A(^82^9E)(^83^A0)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^8A^A1)
+    (^8B=2f)(^8C^96)(^8D=0)(^8E=0)(^8F=0)(^90=0)(^9B=1)]
+  [B(^82^A2)(^83=0)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^8A=0)
+    (^8B=5e)(^8C^A3)(^8D=0)(^8E=0)(^8F=0)(^90=0)]
+  [C(^82^A9)(^83=0)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)]
+  [D(^82^AB)(^83=1)(^84=36)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^95^12E)
+    (^9B=1)(^9A^12D)]
+  [E(^82^AC)(^83=1)(^84=32)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^95^130)
+    (^9B=1)(^9A^12F)]
+  [F(^82^AD)(^83=1)(^84=32)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^95^133)
+    (^9B=1)(^9A^132)]
+  [10(^82^AE)(^83=1)(^84=7c)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^95^136)
+    (^9B=1)(^9A^135)]
+  [11(^82^139)(^83^13B)(^84=0)(^85=0)(^86=0)(^87=0)(^88=770)(^89^13F)
+    (^8A^A1)(^8B=2f)(^8C^92)(^8D=0)(^8E=1)(^8F=0)(^90=0)(^99=0)(^98=1)
+    (^95^13E)(^9B=1)]
+  [12(^82^141)(^83=0)(^84^8F)(^85^8F)(^86=0)(^87=0)(^88=0)(^89^82)(^8A=0)
+    (^8B=2f)(^8C=)(^8D=0)(^8E=0)(^8F=0)(^90=0)]
+  [13(^82^143)(^83=1c)(^84^8F)(^85^8F)(^86=0)(^87=0)(^88=0)(^89^82)
+    (^92=)]
+  [19(^82^14C)(^83^A0)(^84=3)(^85=0)(^86=0)(^87=0)(^88=0)(^89=68c)(^8A^A1)
+    (^8B=2f)(^8C^96)(^8D=0)(^8E=3)(^8F=0)(^90=0)(^9B=1)(^99^883)(^95^88C)
+    (^98=5)]
+  [1A(^82^14E)(^83^15E)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A^A1)
+    (^8B=2f)(^8C^92)(^8D=0)(^8E=0)(^8F=0)(^90=0)(^9B=1)(^99=0)(^95^88B)
+    (^98=2)]
+  [1B(^82^14F)(^83^9B)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A^69E)
+    (^8B=2f)(^8C^88)(^8D=0)(^8E=0)(^8F=0)(^90=0)(^9B=1)(^99=0)(^95^88D)
+    (^98=ff)]
+  [1C(^82^150)(^83^4C5)(^84=f3)(^85=0)(^86=0)(^87=0)(^88=0)(^89^69A)
+    (^8A=0)(^8B=5e)(^8C^84)(^8D=0)(^8E=f3)(^8F=0)(^90=0)(^98^488)(^99^167)
+    (^9B=1)(^95^699)]
+  [1D(^82^156)(^83=1)(^84=36)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^9B=1)
+    (^9A^697)(^95^698)]
+  [1E(^82^157)(^83=1)(^84=32)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^9B=1)
+    (^9A^16A)(^95^16B)]
+  [1F(^82^158)(^83=1)(^84=32)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^9B=1)
+    (^9A^16C)(^95^16D)]
+  [20(^82^159)(^83=1)(^84=2e)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^9B=1)
+    (^9A^16E)(^95^16F)]
+  [21(^82^15A)(^83=0)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)]
+  [22(^82^15B)(^83^87)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^92^88)
+    (^9B=1)(^95^87E)]
+  [23(^82^15C)(^83^8A)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^92^8C)
+    (^9B=1)(^95^87F)]
+  [24(^82^483)(^83=0)(^84^8F)(^85^8F)(^86=0)(^87=0)(^88=0)(^89^82)(^8A=0)
+    (^8B=2f)(^8C=)(^8D=0)(^8E=0)(^8F=0)(^90=0)(^99=0)]
+  [25(^82^485)(^83^69D)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^8A=0)
+    (^8B=5e)(^8C^98)(^8D=0)(^8E=0)(^8F=0)(^90=0)(^99=0)]
+  [26(^82^486)(^83^4C6)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^8A=0)
+    (^8B=5e)(^8C^94)(^8D=0)(^8E=0)(^8F=0)(^90=0)(^99=0)]
+  [27(^82^487)(^83^6A0)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89^82)(^8A=0)
+    (^8B=5e)(^8C^A3)(^8D=0)(^8E=0)(^8F=0)(^90=0)(^99=0)]
+  [28(^82^69B)(^83^6A1)(^84=f3)(^85=0)(^86=0)(^87=0)(^88=0)(^89^88F)
+    (^8A^A5)(^8B=2f)(^8C^84)(^8D=0)(^8E=f3)(^8F=0)(^90=0)(^98^488)(^99^87B)
+    (^95^88E)(^9B=1)]}

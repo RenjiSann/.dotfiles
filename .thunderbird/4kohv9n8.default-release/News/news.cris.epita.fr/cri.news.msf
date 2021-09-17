@@ -1,0 +1,1357 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
+  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
+  (8A=label)(8B=statusOfset)(8C=numLines)(8D=ccList)(8E=bccList)
+  (8F=msgThreadId)(90=threadId)(91=threadFlags)(92=threadNewestMsgDate)
+  (93=children)(94=unreadChildren)(95=threadSubject)(96=msgCharSet)
+  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
+  (99=ns:msg:db:table:kind:allthreads)
+  (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
+  (9D=msgOffset)(9E=offlineMsgSize)
+  (9F=ns:msg:db:row:scope:dbfolderinfo:all)
+  (A0=ns:msg:db:table:kind:dbfolderinfo)(A1=numMsgs)(A2=numNewMsgs)
+  (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
+  (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
+  (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)(AD=forceReparse)
+  (AE=fixedBadRefThreading)(AF=readSet)(B0=folderName)(B1=knownArts)
+  (B2=ProtoThreadFlags)(B3=MRUTime)>
+<(2E4=4e)(1E9=5e4954d2)(81=0)(80=1)>
+[40:m(^9C=4e)(^90=4e)(^92^1E9)(^91=0)(^93=1)(^94=1)]
+<(2E5=4f)(1EE=5e57f640)>[41:m(^9C=4f)(^90=4f)(^92^1EE)(^91=0)(^93=1)
+    (^94=1)]
+<(2E6=50)(1F3=5e6d691c)>[42:m(^9C=50)(^90=50)(^92^1F3)(^91=0)(^93=1)
+    (^94=1)]
+<(2E7=51)(1F8=5e715c12)>[43:m(^9C=51)(^90=51)(^92^1F8)(^91=0)(^93=1)
+    (^94=1)]
+<(2E8=52)(1FD=5e72a2c5)>[44:m(^9C=52)(^90=52)(^92^1FD)(^91=0)(^93=1)
+    (^94=1)]
+<(2E9=53)(202=5f32d54e)>[45:m(^9C=53)(^90=53)(^92^202)(^91=0)(^93=1)
+    (^94=1)]
+<(FC=54)(207=5f3c3b70)>[46:m(^9C=54)(^90=54)(^92^207)(^91=0)(^93=1)
+    (^94=1)]
+<(2EA=55)(20C=5f4faee2)>[47:m(^9C=55)(^90=55)(^92^20C)(^91=0)(^93=1)
+    (^94=1)]
+<(2EB=56)(211=5f60003e)>[48:m(^9C=56)(^90=56)(^92^211)(^91=0)(^93=1)
+    (^94=1)]
+<(2EC=57)(216=5f675ebf)>[49:m(^9C=57)(^90=57)(^92^216)(^91=0)(^93=1)
+    (^94=1)]
+<(2ED=58)(21A=5f7df891)>[4A:m(^9C=58)(^90=58)(^92^21A)(^91=0)(^93=1)
+    (^94=1)]
+<(2EE=59)(220=5f89db6d)>[4B:m(^9C=59)(^90=59)(^92^220)(^91=0)(^93=1)
+    (^94=1)]
+<(2EF=5a)(225=5f905602)>[4C:m(^9C=5a)(^90=5a)(^92^225)(^91=0)(^93=1)
+    (^94=1)]
+<(2F0=5b)(22A=5f9b10f0)>[4D:m(^9C=5b)(^90=5b)(^92^22A)(^91=0)(^93=1)
+    (^94=1)]
+<(2F1=5c)(234=5f9c82f1)(2BF=2)>[4E:m(^9C=5c)(^90=5c)(^92^234)(^91=0)
+    (^93=2)(^94=2)]
+<(2F3=5e)(23A=5fdaa22e)>[4F:m(^9C=5e)(^90=5e)(^92^23A)(^91=0)(^93=1)
+    (^94=1)]
+<(267=5f)(243=5ff2c22c)>[50:m(^9C=5f)(^90=5f)(^92^243)(^91=0)(^93=2)
+    (^94=2)]
+<(2F5=61)(24F=600212df)>[51:m(^9C=61)(^90=61)(^92^24F)(^91=0)(^93=2)
+    (^94=2)]
+<(2F6=62)(24C=6000d1be)>[52:m(^9C=62)(^90=62)(^92^24C)(^91=0)(^93=1)
+    (^94=1)]
+<(2F8=64)(256=600c206a)>[53:m(^9C=64)(^90=64)(^92^256)(^91=0)(^93=1)
+    (^94=1)]
+<(2F9=65)(25B=6011e2ad)>[54:m(^9C=65)(^90=65)(^92^25B)(^91=0)(^93=1)
+    (^94=1)]
+<(2FA=66)(260=60131fe1)>[55:m(^9C=66)(^90=66)(^92^260)(^91=0)(^93=1)
+    (^94=1)]
+<(2FB=67)(264=601b306b)>[56:m(^9C=67)(^90=67)(^92^264)(^91=0)(^93=1)
+    (^94=1)]
+<(2FC=68)(269=602476ea)>[57:m(^9C=68)(^90=68)(^92^269)(^91=0)(^93=1)
+    (^94=1)]
+<(2FD=69)(272=604e8245)>[58:m(^9C=69)(^90=69)(^92^272)(^91=0)(^93=2)
+    (^94=2)]
+<(2FF=6b)(276=60523f87)>[59:m(^9C=6b)(^90=6b)(^92^276)(^91=0)(^93=1)
+    (^94=1)]
+<(300=6c)(27E=6081d5f1)>[5A:m(^9C=6c)(^90=6c)(^92^27E)(^91=0)(^93=2)
+    (^94=2)]
+<(302=6e)(289=60a95f46)(2C0=3)>[5B:m(^9C=6e)(^90=6e)(^92^289)(^91=0)
+    (^93=3)(^94=3)]
+<(1D2=71)(28D=60e8a320)>[5C:m(^9C=71)(^90=71)(^92^28D)(^91=0)(^93=1)
+    (^94=1)]
+<(305=72)(291=60fab69e)>[5D:m(^9C=72)(^90=72)(^92^291)(^91=0)(^93=1)
+    (^94=1)]
+<(309=76)(29F=611ce6d1)>[5E:m(^9C=76)(^90=76)(^92^29F)(^91=0)(^93=1)
+    (^94=1)]
+<(30A=78)(2A7=61261a21)>[5F:m(^9C=78)(^90=78)(^92^2A7)(^91=0)(^93=1)
+    (^94=1)]
+<(30B=79)(2AD=612d3e59)>[60:m(^9C=79)(^90=79)(^92^2AD)(^91=0)(^93=1)
+    (^94=1)]
+<(30C=7a)(2B4=612f0b22)>[61:m(^9C=7a)(^90=7a)(^92^2B4)(^91=0)(^93=2)
+    (^94=2)]
+<(83=7c)(2B8=612fef5e)>[62:m(^9C=7c)(^90=7c)(^92^2B8)(^91=0)(^93=1)
+    (^94=1)]
+<(306=73)(2BD=fffffffe)(2A2=61201a66)(2C2=5)>
+[1:m(^9C=73)(^90^2BD)(^92^2A2)(^91=0)(^93=5)(^94=5)]
+<(8E=57e7dde2)>[2:m(^9C=2)(^90=2)(^92^8E)(^91=0)(^93=1)(^94=1)]
+<(93=57ee1d3d)>[3:m(^9C=3)(^90=3)(^92^93)(^91=0)(^93=1)(^94=1)]
+<(2C1=4)(98=5804d264)>[4:m(^9C=4)(^90=4)(^92^98)(^91=0)(^93=1)(^94=1)]
+<(9D=58066f2b)>[5:m(^9C=5)(^90=5)(^92^9D)(^91=0)(^93=1)(^94=1)]
+<(2C3=6)(A1=580ce072)>[6:m(^9C=6)(^90=6)(^92^A1)(^91=0)(^93=1)(^94=1)]
+<(96=7)(A6=580ce5e9)>[7:m(^9C=7)(^90=7)(^92^A6)(^91=0)(^93=1)(^94=1)]
+<(C6=8)(AB=580f11d5)>[8:m(^9C=8)(^90=8)(^92^AB)(^91=0)(^93=1)(^94=1)]
+<(DD=9)(B0=5835ad54)>[9:m(^9C=9)(^90=9)(^92^B0)(^91=0)(^93=1)(^94=1)]
+<(9B=a)(B4=58ebc7cd)>[A:m(^9C=a)(^90=a)(^92^B4)(^91=0)(^93=1)(^94=1)]
+<(B7=b)(E2=5a212c7d)>[B:m(^9C=b)(^90=b)(^92^E2)(^91=0)(^93=2)(^94=2)]
+<(F3=c)(BE=59c2b3d5)>[C:m(^9C=c)(^90=c)(^92^BE)(^91=0)(^93=1)(^94=1)]
+<(91=d)(C3=59d0dfa1)>[D:m(^9C=d)(^90=d)(^92^C3)(^91=0)(^93=1)(^94=1)]
+<(C1=e)(C9=59e4ea15)>[E:m(^9C=e)(^90=e)(^92^C9)(^91=0)(^93=1)(^94=1)]
+<(A4=f)(CD=59e66019)>[F:m(^9C=f)(^90=f)(^92^CD)(^91=0)(^93=1)(^94=1)]
+<(84=10)(D2=59fd89eb)>[10:m(^9C=10)(^90=10)(^92^D2)(^91=0)(^93=1)(^94=1)]
+<(E6=11)(D6=5a0aa537)>[11:m(^9C=11)(^90=11)(^92^D6)(^91=0)(^93=1)(^94=1)]
+<(17C=12)(DA=5a115caf)>[12:m(^9C=12)(^90=12)(^92^DA)(^91=0)(^93=1)(^94=1)]
+<(23D=13)(DF=5a17130d)>[13:m(^9C=13)(^90=13)(^92^DF)(^91=0)(^93=1)(^94=1)]
+<(238=15)(F0=5a266eb6)>[14:m(^9C=15)(^90=15)(^92^F0)(^91=0)(^93=3)(^94=3)]
+<(A9=18)(F5=5a2939af)>[15:m(^9C=18)(^90=18)(^92^F5)(^91=0)(^93=1)(^94=1)]
+<(18A=19)(FD=5a313c0d)>[16:m(^9C=19)(^90=19)(^92^FD)(^91=0)(^93=2)(^94=2)]
+<(223=1b)(102=5a324c59)>[17:m(^9C=1b)(^90=1b)(^92^102)(^91=0)(^93=1)
+    (^94=1)]
+<(253=1c)(165=5bffffd6)>[18:m(^9C=1c)(^90=1c)(^92^165)(^91=0)(^93=2)
+    (^94=2)]
+<(2C4=1d)(10B=5a46d0af)>[19:m(^9C=1d)(^90=1d)(^92^10B)(^91=0)(^93=1)
+    (^94=1)]
+<(22D=1e)(110=5a4e4689)>[1A:m(^9C=1e)(^90=1e)(^92^110)(^91=0)(^93=1)
+    (^94=1)]
+<(2A5=1f)(117=5a538405)>[1B:m(^9C=1f)(^90=1f)(^92^117)(^91=0)(^93=2)
+    (^94=2)]
+<(EB=21)(11F=5a562f73)>[1C:m(^9C=21)(^90=21)(^92^11F)(^91=0)(^93=2)
+    (^94=2)]
+<(2C7=23)(124=5a5a193d)>[1D:m(^9C=23)(^90=23)(^92^124)(^91=0)(^93=1)
+    (^94=1)]
+<(2C8=24)(12C=5a6a6b25)>[1E:m(^9C=24)(^90=24)(^92^12C)(^91=0)(^93=2)
+    (^94=2)]
+<(200=26)(132=5a6f482a)>[1F:m(^9C=26)(^90=26)(^92^132)(^91=0)(^93=1)
+    (^94=1)]
+<(2C9=27)(136=5aba5758)>[20:m(^9C=27)(^90=27)(^92^136)(^91=0)(^93=1)
+    (^94=1)]
+<(2CA=28)(13B=5af4443a)>[21:m(^9C=28)(^90=28)(^92^13B)(^91=0)(^93=1)
+    (^94=1)]
+<(2CB=29)(13F=5b0d48a3)>[22:m(^9C=29)(^90=29)(^92^13F)(^91=0)(^93=1)
+    (^94=1)]
+<(2CC=2a)(144=5b1e5ef3)>[23:m(^9C=2a)(^90=2a)(^92^144)(^91=0)(^93=1)
+    (^94=1)]
+<(1D7=2b)(147=5b744ce0)>[24:m(^9C=2b)(^90=2b)(^92^147)(^91=0)(^93=1)
+    (^94=1)]
+<(2CD=2c)(14B=5b994a63)>[25:m(^9C=2c)(^90=2c)(^92^14B)(^91=0)(^93=1)
+    (^94=1)]
+<(1E7=2d)(14F=5bb6262e)>[26:m(^9C=2d)(^90=2d)(^92^14F)(^91=0)(^93=1)
+    (^94=1)]
+<(2CE=2e)(153=5bd1deb8)>[27:m(^9C=2e)(^90=2e)(^92^153)(^91=0)(^93=1)
+    (^94=1)]
+<(2CF=2f)(157=5bf82ada)>[28:m(^9C=2f)(^90=2f)(^92^157)(^91=0)(^93=1)
+    (^94=1)]
+<(2AA=30)(15C=5bf9be9f)>[29:m(^9C=30)(^90=30)(^92^15C)(^91=0)(^93=1)
+    (^94=1)]
+<(2D0=31)(160=5bffc4d3)>[2A:m(^9C=31)(^90=31)(^92^160)(^91=0)(^93=1)
+    (^94=1)]
+<(232=33)(16B=5c08125f)>[2B:m(^9C=33)(^90=33)(^92^16B)(^91=0)(^93=1)
+    (^94=1)]
+<(2D2=34)(16F=5c6e9571)>[2C:m(^9C=34)(^90=34)(^92^16F)(^91=0)(^93=1)
+    (^94=1)]
+<(20A=35)(17D=5c83cb6b)>[2D:m(^9C=35)(^90=35)(^92^17D)(^91=0)(^93=3)
+    (^94=3)]
+<(2D5=38)(183=5cbe423b)>[2E:m(^9C=38)(^90=38)(^92^183)(^91=0)(^93=1)
+    (^94=1)]
+<(2D6=39)(187=5cc57cff)>[2F:m(^9C=39)(^90=39)(^92^187)(^91=0)(^93=1)
+    (^94=1)]
+<(2D7=3a)(191=5ccb313a)>[30:m(^9C=3a)(^90=3a)(^92^191)(^91=0)(^93=2)
+    (^94=2)]
+<(1DD=3c)(196=5cd181ac)>[31:m(^9C=3c)(^90=3c)(^92^196)(^91=0)(^93=1)
+    (^94=1)]
+<(1F1=3d)(19A=5cddc490)>[32:m(^9C=3d)(^90=3d)(^92^19A)(^91=0)(^93=1)
+    (^94=1)]
+<(2D9=3e)(19F=5d4dc8b0)>[33:m(^9C=3e)(^90=3e)(^92^19F)(^91=0)(^93=1)
+    (^94=1)]
+<(26C=3f)(1A3=5d6a7fed)>[34:m(^9C=3f)(^90=3f)(^92^1A3)(^91=0)(^93=1)
+    (^94=1)]
+<(2DA=40)(1A7=5d76c5f3)>[35:m(^9C=40)(^90=40)(^92^1A7)(^91=0)(^93=1)
+    (^94=1)]
+<(1F6=41)(1AB=5d85f59e)>[36:m(^9C=41)(^90=41)(^92^1AB)(^91=0)(^93=1)
+    (^94=1)]
+<(2DB=42)(1B0=5d9f65f3)>[37:m(^9C=42)(^90=42)(^92^1B0)(^91=0)(^93=1)
+    (^94=1)]
+<(2DC=43)(1B4=5da23fad)>[38:m(^9C=43)(^90=43)(^92^1B4)(^91=0)(^93=1)
+    (^94=1)]
+<(2DD=44)(1B8=5da74390)>[39:m(^9C=44)(^90=44)(^92^1B8)(^91=0)(^93=1)
+    (^94=1)]
+<(1CC=45)(1C0=5dc2fdef)>[3A:m(^9C=45)(^90=45)(^92^1C0)(^91=0)(^93=2)
+    (^94=2)]
+<(109=47)(1C5=5ddee962)>[3B:m(^9C=47)(^90=47)(^92^1C5)(^91=0)(^93=1)
+    (^94=1)]
+<(1FB=48)(1C9=5de79a26)>[3C:m(^9C=48)(^90=48)(^92^1C9)(^91=0)(^93=1)
+    (^94=1)]
+<(2DF=49)(1CF=5e3dac3a)>[3D:m(^9C=49)(^90=49)(^92^1CF)(^91=0)(^93=1)
+    (^94=1)]
+<(2E0=4a)(1DE=5e42ebbb)>[3E:m(^9C=4a)(^90=4a)(^92^1DE)(^91=0)(^93=3)
+    (^94=3)]
+<(2E3=4d)(1E4=5e46bf6d)>[3F:m(^9C=4d)(^90=4d)(^92^1E4)(^91=0)(^93=1)
+    (^94=1)]
+
+<(85=[INFRA][MAINTENANCE] Migrations des services du CRI)(86
+    =Marc 'risson' Schmitt <risson@cri.epita.fr>)(87=61199b50)(88
+    =20210816005512.4804cc3c@hedgehog.lap.rsn.lama-corp.space)(89
+    =<20210811135915.51059bd6@goat.cri.rsn.lama-corp.space> <20210813200432.4e\
+535749@hedgehog.lap.rsn.lama-corp.space>)(8A=602)(8B=14)(307=74)(8C
+    =[smstats] The comeback)(8D=Nicolas Geniteau <nicolas@cri.epita.fr>)
+  (8F=slrnnufnf2.ek3.nicolas@nicolas-desk.lab.cri.epita.net)(82=)(90=4ab)
+  (2BC=ffffffff)(92=[newsgroups] =?UTF-8?Q?D=C3=A9lation?=)(94
+    =slrnnus79t.j0h.nicolas@nicolas-desk.lab.cri.epita.net)(95=370)
+  (97=[newsgroups] announcement)(99
+    =slrno09kj5.1cv.nicolas@nicolas-desk.lab.cri.epita.net)(9A=3f0)
+  (9C=[packages] Ajout de cdrkit / zip / unzip)(9E
+    =slrno0crpb.7lf.nicolas@nicolas-desk.lab.cri.epita.net)(9F=402)
+  (A0=[packages] http benchmark tools - mono)(A2
+    =slrno0po3i.lf8.nicolas@nicolas-desk.lab.cri.epita.net)(A3=49b)
+  (A5=[initramfs] dracut)(A7
+    =slrno0ppf9.lf8.nicolas@nicolas-desk.lab.cri.epita.net)(A8=669)
+  (AA=[wifi] connexion)(AC
+    =slrno0u4el.h1k.nicolas@nicolas-desk.lab.cri.epita.net)(AD=5ba)
+  (AE=1a)(AF==?UTF-8?Q?Pr=C3=A9sentation?= CRI)(B1
+    =slrno3bbak.73o.nicolas@nicolas-desk.lab.cri.epita.net)(B2=3e5)
+  (B3=[AFS] gradle fix)(B5
+    =slrnoenhue.s6k.nicolas@nicolas-desk.lab.cri.epita.net)(B6=42b)
+  (B8=Jetbrains IDEs)(B9=58f918c5)(BA
+    =slrnofi665.9vh.nicolas@nicolas-desk.lab.cri.epita.net)(BB=4ea)
+  (BC
+    =[PIE][MAINTENANCE] =?UTF-8?Q?Red=C3=A9marrage?= des machines du =?UTF-8?Q\
+?Kremlin=2DBic=C3=AAtre?=)(BD=Marin Hannache <mareo@cri.epita.net>)
+  (BF=slrnos5cul.7gt.mareo@hermes.lab.cri.epita.net)(C0=47e)(C2
+    =[news] mylife)(C4
+    =slrnot1nt1.f86.nicolas@nicolas-desk.lab.cri.epita.net)(C5=366)
+  (C7=[PIE][MAINTENANCE] Interruption de service)(C8
+    =Jordan Jacobelli <jordan@cri.epita.net>)(CA
+    =slrnou9qgl.k2d.jordan@jordan.localdomain)(CB=3cd)(CC
+    =[PIE][MAINTENANCE] Interruption totale des services du CRI)(CE
+    =slrnouco0p.ho.mareo@hermes.lab.cri.epita.net)(CF=5ab)(D0
+    =[PIE] Pasteur down)(D1=Antoine Bardoux <antoine@cri.epita.net>)
+  (D3=otk1ku\$9pf\$1@news-1.int.cri.epita.net)(D4=420)(D5
+    ==?UTF-8?Q?[PIE][SM]_Probl=c3=a8mes_de_clavier?=)(D7
+    =oue8ji\$qls\$1@news-1.int.cri.epita.net)(D8=4be)(D9
+    =[PIE][SM] =?UTF-8?Q?Probl=C3=A8mes?= avec i3lock)(DB
+    =slrnp12n58.18k.mareo@hephaistos.lab.cri.epita.net.int.cri.epita.net)
+  (DC=39e)(DE==?UTF-8?Q?Pr=C3=A9sentation?= du CRI)(E0
+    =slrnp1e4oh.an6.jordan@FaisUnTicket.localdomain)(E1=4a0)(E3
+    =slrnp22b49.nfu.mareo@hephaistos.lab.cri.epita.net.int.cri.epita.net)
+  (E4=<slrnofi665.9vh.nicolas@nicolas-desk.lab.cri.epita.net>)(E5=522)
+  (E7=[PIE][COUPURE] Interruption totale des services)(E8=5a21a564)
+  (E9=slrnp239bo.dac.jordan@FaisUnTicket.localdomain)(EA=7f8)(EC=5a25fff6)
+  (ED=slrnp2c00g.v6a.jordan@FaisUnTicket.localdomain)(EE
+    =<slrnp239bo.dac.jordan@FaisUnTicket.localdomain>)(EF=4fc)(F1
+    =slrnp2crm7.ee7.mareo@hephaistos.lab.cri.epita.net)(F2=43d)(F4
+    =[PIE][COUPURE] Interruption totale des services le 07/12/2017)
+  (F6=slrnp2iee3.ee7.mareo@hephaistos.lab.cri.epita.net)(F7=412)(F8
+    =[PIE][COUPURES] Planning des interruptions de service)(F9=5a2d5022)
+  (FA=slrnp2qk1r.ee7.mareo@hephaistos.lab.cri.epita.net)(FB=13b9)(FE
+    =slrnp32f09.t9m.mareo@hephaistos.lab.cri.epita.net)(FF
+    =<slrnp2qk1r.ee7.mareo@hephaistos.lab.cri.epita.net>)(100=5aa)(101
+    =[PIE][PANNE] Panne du 2017-12-13)(103
+    =slrnp34j2n.t9m.mareo@hephaistos.lab.cri.epita.net)(104=44c)(105
+    =Ressources utiles =?UTF-8?Q?=C3=A0?= la =?UTF-8?Q?pr=C3=A9paration?= du r\
+ecrutement CRI)(106=5a43c61c)(107
+    =slrnp47hh6.co7.mareo@hephaistos.lab.cri.epita.net)(108=d26)(10A
+    ==?UTF-8?Q?Exercices_de_pr=c3=a9paration_au_recrutement?=)(10C
+    =p26jjc\$6uc\$1@news-1.int.cri.epita.net)(10D=1d81)(10E=77)(10F
+    =[PIE][SERVICES] Tracker BitTorrent sur le PIE)(111
+    =slrnp4shl2.fge.mareo@hephaistos.lab.cri.epita.net)(112=493)(113
+    =[PIE][COUPURE] Interruption totale de service)(114=5a4fbd29)(115
+    =slrnp4vf97.ova.mareo@hermes.lab.cri.epita.net)(116=448)(118
+    =slrnp57115.fge.mareo@hephaistos.lab.cri.epita.net)(119
+    =<slrnp4vf97.ova.mareo@hermes.lab.cri.epita.net>)(11A=558)(11B
+    =[AFS] Perturbations)(11C=5a562af9)(11D
+    =slrnp5cand.6qm.jordan@FaisUnTicket.localdomain)(11E=424)(120
+    =slrnp5cbsn.j1k.mareo@hephaistos.lab.cri.epita.net)(121
+    =<slrnp5cand.6qm.jordan@FaisUnTicket.localdomain>)(122=4c6)(123
+    =[RECRUTEMENT] Extension de la session de recrutement)(125
+    =slrnp5k6b8.7ug.mareo@hephaistos.lab.cri.epita.net)(126=4d5)(127
+    =Cyril Duval <cyril1.duval@epita.fr>)(128=5a6a415c)(129
+    =p4dfgs\$9jj\$2@news-1.int.cri.epita.net)(12A=3fd)(12B
+    ="Juliette Garreau<juliette@cri.epita.net>" <juliette.garreau@news.epita.f\
+r>)(12D=slrnp6kqph.cit.juliette.garreau@localhost.localdomain)(12E
+    =<p4dfgs\$9jj\$2@news-1.int.cri.epita.net>)(12F=4f5)(130
+    =[PIE][COUPURE] =?UTF-8?Q?Soir=C3=A9e?= du 27/01/2018)(131
+    =Julien DOCHE <julien@cri.epita.net>)(133
+    =p4nh7a\$v4a\$1@news-1.int.cri.epita.net)(134=660)(135
+    ="news.epita.fr" <mathis@cri.epita.net>)(137
+    =p9dl06\$dk5\$1@news-1.int.cri.epita.net)(138=480)(139
+    =[PIE][COUPURE] Rapport d'incident 10/05)(13A
+    =Cyril Duval <cyril@cri.epita.net>)(13C
+    =pd1g7q\$svm\$1@news-1.int.cri.epita.net)(13D=54a)(13E
+    =[KB][CARTES] Activation du =?UTF-8?Q?contr=C3=B4le?= =?UTF-8?Q?_d=27acc=C\
+3=A8s?= par carte sur le site)(140=pejhb3\$jo6\$1@news-1.int.cri.epita.net)
+  (141=623)(142=16)(143=Juliette Garreau <juliette@cri.epita.net>)(145
+    =slrnphsnr0.mbv.juliette@localhost.localdomain)(146=40a)(148
+    =slrnpn8j41.l45.jordan@FaisUnTicket.localdomain)(149=41f)(14A
+    =Marin Hannache <mareo@cri.epita.fr>)(14C
+    =pnbhp3\$vr4\$1@news-1.int.cri.epita.net)(14D=4a2)(14E
+    =[NEWSGROUPS][CREATION] Ajout du newsgroup announcement.vie-etudiante)
+  (150=slrnprc9hn.ik3.mareo@hephaistos.lab.cri.epita.net)(151=4a9)(152
+    =[PIE][MAINTENANCE] Maintenance =?UTF-8?Q?pr=C3=A9vue?= ce soir en SM Cisc\
+o)(154=slrnpt3nl0.f2v.mareo@hephaistos.lab.cri.epita.net)(155=4b6)(156
+    =[RECRUTEMENT] =?UTF-8?Q?R=C3=A9union?= de =?UTF-8?Q?pr=C3=A9sentation?= d\
+u CRI)(158=slrnpvgamh.6ke.mareo@hephaistos.lab.cri.epita.net)(159=4c7)
+  (15A=[PIE][BLUETOOTH] Ajout de la gestion du Bluetooth)(15B
+    =Marin Hannache <marin.hannache@epita.fr>)(15D
+    =slrnpvjfkt.a4j.firstname.lastname@r05p04.cisco.sm.cri.epita.net)
+  (15E=4ac)(15F
+    =[RECRUTEMENT] Slides de la =?UTF-8?Q?r=C3=A9union?= de =?UTF-8?Q?pr=C3=A9\
+sentation?= du CRI)(161=slrnpvvh60.v9p.mareo@hephaistos.lab.cri.epita.net)
+  (162=51a)(163
+    ==?UTF-8?Q?Ressources_utiles_=c3=a0_la_pr=c3=a9paration_du_r?=$0D$0A =?UTF\
+-8?Q?ecrutement_CRI?=)(164
+    ==?UTF-8?Q?K=C3=A9vin?= Sztern <kevin.sztern@epita.fr>)(166
+    =ptov4k\$aic\$1@news-1.int.cri.epita.net)(167
+    =<slrnp47hh6.co7.mareo@hephaistos.lab.cri.epita.net>)(168=76b)(169=17)
+  (16A=[RECUTEMENT] Publication du sujet et des slides)(16C
+    =slrnq0g4ir.lpc.mareo@hephaistos.lab.cri.epita.net)(16D=5bd)(16E
+    =[PIE][PANNE] Panne des services d'authentification)(170
+    =slrnq6t5fr.8rf.mareo@hephaistos.lab.cri.epita.fr)(171=948)(172=25)
+  (173=[PIE][MAINTENANCE] Coupure des services des assistants)(174
+    =5c7a6409)(175=slrnq7kovr.ud8.mareo@hephaistos.lab.cri.epita.fr)
+  (176=61b)(177=Juliette Garreau <juliette@cri.epita.fr>)(178=5c7a7efd)
+  (179=q5dutt\$9me\$1@news-1.int.cri.epita.net)(17A
+    =<slrnq7kovr.ud8.mareo@hephaistos.lab.cri.epita.fr>)(17B=601)(17E
+    =q60i1b\$s97\$1@news-1.int.cri.epita.net)(17F
+    =<slrnq7kovr.ud8.mareo@hephaistos.lab.cri.epita.fr> <q5dutt\$9me\$1@news-1\
+.int.cri.epita.net>)(180=6fe)(2D3=36)(181
+    =[INFRA][PANNES] =?UTF-8?Q?Probl=C3=A8mes?= =?UTF-8?Q?_rencontr=C3=A9s?= p\
+endant l'atelier Java)(182=Cyril Duval <cyril@cri.epita.fr>)(184
+    =q9lfnr\$lp7\$1@news-1.int.cri.epita.net)(185=3a75)(186=100)(188
+    =slrnqcava2.8ah.mareo@hephaistos.lab.cri.epita.fr)(189=6c6)(18B
+    =[YCH][COACH] Mise =?UTF-8?Q?=C3=A0?= jour de votre Toolkit)(18C
+    =Valentin Ouvrard <ouvrar_v@macbook-pro-de-valentin.local>)(18D
+    =5ccb302a)(18E=slrnqcmc19.86d.ouvrar_v@macbook-pro-de-valentin.local)
+  (18F=47f)(190
+    ==?UTF-8?Q?=5bYCH=5d=5bCOACH=5d_Mise_=c3=a0_jour_de_votre_To?=$0D$0A =?UTF\
+-8?Q?olkit?=)(192=qafbfq\$d92\$1@news-1.int.cri.epita.net)(193
+    =<slrnqcmc19.86d.ouvrar_v@macbook-pro-de-valentin.local>)(194=4f9)
+  (195
+    =[PIE][MAINTENANCE] Coupure de =?UTF-8?Q?l=27int=C3=A9gralit=C3=A9?= des s\
+ervices du CRI le 8 mai)(197
+    =slrnqd30g3.59a.mareo@hephaistos.lab.cri.epita.fr)(198=6aa)(199
+    =[PIE][MAINTENANCE] Coupure des services du CRI le 16 mai)(19B
+    =qbkgag\$vtp\$1@news-1.int.cri.epita.net)(19C=3d9)(19D
+    ==?UTF-8?Q?=5bPIE=5d=5bMAINTENANCE=5d_Coupure_des_services_du_CRI_le?= =?U\
+TF-8?B?IDEwIEFvw7t0?=)(19E=Mathis Raguin <mathis@cri.epita.fr>)(1A0
+    =qikhbm\$eg8\$1@news-1.int.cri.epita.net)(1A1=509)(1A2
+    ==?UTF-8?Q?=5bINFRA=5d=5bMAINTENANCE=5d_Coupure_des_services_du_CRI_?= =?U\
+TF-8?Q?le_31_ao=c3=bbt?=)(1A4=qkdv5g\$ppi\$2@news-1.int.cri.epita.net)
+  (1A5=482)(1A6=[PIE][PANNE] Panne de la gate principale du CRI)(1A8
+    =slrnqndhf2.un9.mareo@hephaistos.lab.cri.epita.fr)(1A9=8da)(1AA
+    =[PIE][PANNE] Coupure de courant dans l'under)(1AC
+    =slrnqobtd7.892.mareo@hephaistos.lab.cri.epita.fr)(1AD=1ecc)(1AE=87)
+  (1AF=[PIE][STATE] Etat de l'art image PIE)(1B1
+    =qnnolj\$up6\$1@news-1.int.cri.epita.net)(1B2=439)(1B3
+    =[PIE][MAINTENANCE] Coupure des services du CRI le 13/14 octobre)
+  (1B5=qntf3k\$7gc\$1@news-1.int.cri.epita.net)(1B6=512)(1B7
+    =[NEWSGROUPS][CREATION] Ajout du newsgroup delegues.ing1)(1B9
+    =slrnqqegr1.8mld.mareo@hephaistos.lab.cri.epita.fr)(1BA=3ea)(1BB
+    =[PIE][DONATION] Don d'ancien =?UTF-8?Q?mat=C3=A9riel?=)(1BC=5dc04fca)
+  (1BD=slrnqs0jts.1gdq8.mareo@hephaistos.lab.cri.epita.fr)(1BE=7ba)
+  (1BF
+    ==?UTF-8?B?W1BJRV1bRE9OQVRJT05dIERvbiBkJ2FuY2llbiBtYXTDqXJp?=$0D$0A =?UTF-\
+8?Q?el?=)(1C1=slrnqs5vf4.1ipn2.mareo@hephaistos.lab.cri.epita.fr)(1C2
+    =<slrnqs0jts.1gdq8.mareo@hephaistos.lab.cri.epita.fr>)(1C3=68c)
+  (1C4
+    =[RECRUTEMENT][CONF] =?UTF-8?Q?R=C3=A9union?= de =?UTF-8?Q?pr=C3=A9sentati\
+on?= du CRI)(1C6=slrnqttqbr.36aq3.mareo@hephaistos.lab.cri.epita.fr)
+  (1C7=4c0)(1C8
+    =[PIE][PANNE] =?UTF-8?Q?Inaccessibilit=C3=A9?= de l'intranet des assistant\
+s)(1CA=slrnquf6ib.3f3pm.mareo@hephaistos.lab.cri.epita.fr)(1CB=fc2)
+  (1CD
+    ==?UTF-8?B?W1BJRV1bUEFOTkVdIENvdXB1cmUgZGUgY291cmFudCBnw6luw6lyYWxl?= =?UT\
+F-8?Q?_dans_le_Val-de-Marne?=)(1CE=Marc Schmitt <risson@cri.epita.fr>)
+  (1D0=r1ka7q\$ef9\$1@news-1.int.cri.epita.net)(1D1=1d5e)(1D3
+    =[PIE][MAINTENANCE] Coupure totale de l'AFS =?UTF-8?Q?=C3=A0?= partir de c\
+e soir)(1D4=5e416b87)(1D5
+    =slrnr42qqo.2714e.mareo@hephaistos.lab.cri.epita.fr)(1D6=a6d)(1D8
+    ==?UTF-8?Q?=5bPIE=5d=5bMAINTENANCE=5d_Coupure_totale_de_l=27?=$0D$0A =?UTF\
+-8?Q?AFS_=c3=a0_partir_de_ce_soir?=)(1D9=5e425c7a)(1DA
+    =r1tm9q\$5pn\$1@news-1.int.cri.epita.net)(1DB
+    =<slrnr42qqo.2714e.mareo@hephaistos.lab.cri.epita.fr>)(1DC=10c5)
+  (1DF=slrnr45qse.3fvjd.mareo@hephaistos.lab.cri.epita.fr)(1E0
+    =<slrnr42qqo.2714e.mareo@hephaistos.lab.cri.epita.fr> <r1tm9q\$5pn\$1@news\
+-1.int.cri.epita.net>)(1E1=1144)(2E1=4b)(1E2
+    =[PIE][IMAGE] Correction de freezes lors de l'utilisation de Firefox)
+  (1E3=Pierre KELBERT <rootmout@cri.epita.fr>)(1E5
+    =r26evs\$g4k\$1@news-1.int.cri.epita.net)(1E6=baa)(1E8
+    =[PIE][MAINTENANCE] Intervention sur l'onduleur du CRI)(1EA
+    =slrnr4il54.1b70l.mareo@hephaistos.lab.cri.epita.fr)(1EB=533)(1EC
+    =[INFRA][MAINTENANCE] Maintenance durant le week-end du 29/02)(1ED
+    =arthur <arthur@cri.epita.fr>)(1EF
+    =r38snu\$845\$1@news-1.int.cri.epita.net)(1F0=eac)(1F2
+    =[ECOLE][FERMETURE] Fermeture des campus et VM CRI)(1F4
+    =slrnr6qq84.muli.mareo@hephaistos.lab.cri.epita.fr)(1F5=f05)(1F7
+    =[ECOLE][NEWS] Point sur la situation et maintenance de Moodle)
+  (1F9=slrnr72muu.7r0i.mareo@hephaistos.lab.cri.epita.fr)(1FA=11ec)
+  (1FC=[VM][AFS] =?UTF-8?Q?R=C3=A9cup=C3=A9ration?= de fichiers de l'AFS)
+  (1FE=slrnr758kk.na76.mareo@hephaistos.lab.cri.epita.fr)(1FF=9a9)(201
+    =[PIE][MAINTENANCE] Perturbation des services du CRI cette semaine)
+  (203=slrnrj5l9l.3fmt.mareo@hephaistos.lab.cri.epita.fr)(204=5f4)(205
+    =[GILTAB][MAINTENANCE] Pertubation des service du GitLab cette nuit)
+  (206=Arthur Outhenin-Chalandre <arthur@cri.epita.fr>)(208
+    =rhhe27\$gm5\$1@news-1.int.cri.epita.net)(209=20aa)(20B
+    ==?UTF-8?Q?=5bMAINTENANCE=5d=5bTICKETS=5d_Perturbation_des_services_?= =?U\
+TF-8?Q?du_syst=c3=a8me_de_tickets?=)(20D
+    =rioat2\$pj1\$1@news-1.int.cri.epita.net)(20E=4b7)(20F
+    ==?UTF-8?Q?=5bBLUE=5d=5bDABADEE=5d_Nouvel_intranet=2c_blog=2c_logo_e?= =?U\
+TF-8?Q?t_archivages_des_d=c3=a9p=c3=b4ts?=)(210
+    =Sevan Murriguian <sevan@cri.epita.fr>)(212
+    =rjov7v\$1r0\$1@news-1.int.cri.epita.net)(213=1fad)(214=8f)(215
+    ==?UTF-8?Q?=5bVM=5d=5bMENU=5d_Ajout_de_la_possibilit=c3=a9_de_ne_pas?= =?U\
+TF-8?Q?_mettre_=c3=a0_jour_les_images?=)(217
+    =rk7ms0\$se9\$1@news-1.int.cri.epita.net)(218=7dc)(219
+    =[INTRANET][PANNE] Post mortem d'une panne de l'intranet CRI)(21B
+    =slrnrnru72.n6mm.mareo@hephaistos.lab.cri.epita.fr)(21C=325d)(21D=c5)
+  (21E
+    ==?UTF-8?Q?=5bVM=5d=5bNEWS=5d_Ajout_de_nouvelles_fonctionnalit=c3=a9?= =?U\
+TF-8?Q?s?=)(21F=James Landrein <james@cri.epita.fr>)(221
+    =rmcm1i\$bgg\$1@news-1.int.cri.epita.net)(222=7a1)(224
+    =[INFRA][PANNE] Post mortem de la panne du 13 octobre 2020)(226
+    =slrnrp0ljc.8n8o.mareo@hephaistos.lab.cri.epita.fr)(227=1fc9)(228=7e)
+  (229
+    =[PIE][MAINTENANCE] Maintenance de l'AFS ce soir et dispositions relatives\
+ au confinement)(22B=slrnrpm4ba.18jib.mareo@hephaistos.lab.cri.epita.fr)
+  (22C=873)(22E
+    =[VM][AFS] Mise =?UTF-8?Q?=C3=A0?= disposition de vos AFS depuis =?UTF-8?Q\
+?l=27ext=C3=A9rieur?= de =?UTF-8?Q?l=27=C3=A9cole?=)(22F=5f9c7bdc)(230
+    =slrnrpov2o.1u06v.mareo@hephaistos.lab.cri.epita.fr)(231=b3b)(233
+    ==?UTF-8?Q?=5bVM=5d=5bAFS=5d_Mise_=c3=a0_disposition_de_vos_?=$0D$0A =?UTF\
+-8?Q?AFS_depuis_l=27ext=c3=a9rieur_de_l=27=c3=a9cole?=)(235
+    =slrnrpp0rd.1u06v.mareo@hephaistos.lab.cri.epita.fr)(236
+    =<slrnrpov2o.1u06v.mareo@hephaistos.lab.cri.epita.fr>)(237=650)
+  (239=[RECRUTEMENT][ING1] =?UTF-8?Q?Pr=C3=A9sentation?= du CRI)(23B
+    =slrnrtl8hj.1jfcs.mareo@hephaistos.lab.cri.epita.fr)(23C=5e8)(23E
+    =[PIE][MAINTENANCE] Coupure de =?UTF-8?Q?l=27int=C3=A9gralit=C3=A9?= des s\
+ervices du CRI)(23F=5fefbadb)(240
+    =slrnruveme.22u12.mareo@hephaistos.lab.cri.epita.fr)(241=6f5)(242
+    ==?UTF-8?Q?=5bPIE=5d=5bMAINTENANCE=5d_Coupure_de_l=27int?=$0D$0A =?UTF-8?Q\
+?=c3=a9gralit=c3=a9_des_services_du_CRI?=)(244
+    =20210104082220.027de259@hedgehog.lap.rsn.lama-corp.space)(245
+    =<slrnruveme.22u12.mareo@hephaistos.lab.cri.epita.fr>)(246=8d5)
+  (247=[PIE][AFS] Perturbation du service)(248=6000b9a0)(249
+    =20210114223736.5f1807ff@hedgehog.lap.rsn.lama-corp.space)(24A=ecc)
+  (24B=[FWL][SOUTENANCES] Planning des soutenances)(24D
+    =slrns01kdg.15pnb.mareo@hephaistos.lab.cri.epita.fr)(24E=4dd)(250
+    =20210115231039.522f1635@hedgehog.lap.rsn.lama-corp.space)(251
+    =<20210114223736.5f1807ff@hedgehog.lap.rsn.lama-corp.space>)(252=6a5)
+  (254
+    ==?UTF-8?Q?=5bPIE=5d=5bMAINTENANCE=5d_Renum=c3=a9rotation_de_la_plag?= =?U\
+TF-8?Q?e_publique_du_CRI?=)(255=Charles Decoux <charles@cri.epita.fr>)
+  (257=ruh79q\$sbn\$2@news-1.int.cri.epita.net)(258=80c)(259
+    ==?UTF-8?Q?=5bBOCAL=5d=5bPANNE=5d_Perte_de_la_connectivit=c3=a9_?= =?UTF-8\
+?Q?=c3=a0_Internet_de_tout_IONIS?=)(25A=Nicolas Froger <nico@cri.epita.fr>)
+  (25C=rusnrd\$3cc\$1@news-1.int.cri.epita.net)(25D=c7c)(25E
+    =[BOCAL][MAINTENANCE] Perturbation des services)(25F
+    =Luca Corrieri <luca@cri.epita.fr>)(261
+    =ruv751\$389\$1@news-1.int.cri.epita.net)(262=5b1)(263
+    =[PIE][PANNE] Incident =?UTF-8?Q?=C3=A9lectrique?= dans l'under)
+  (265=slrns1mc3b.4540.mareo@hephaistos.lab.cri.epita.fr)(266=1898)
+  (268=[INFRA][COUPURE] Interruption des services du 2021-02-10)(26A
+    =20210211011434.4b99a841@goat.cri.rsn.lama-corp.space)(26B=106e)
+  (26D
+    =[INFRA][MAINTENANCE] Maintenance de =?UTF-8?B?bOKAmWludHJhbmV0?= et du Gi\
+tLab CRI)(26E=604e3219)(26F
+    =20210314165609.14aed4a9@hedgehog.lap.rsn.lama-corp.space)(270=715)
+  (271
+    ==?UTF-8?Q?=5bINFRA=5d=5bMAINTENANCE=5d_Maintenance_de_l?=$0D$0A =?UTF-8?Q\
+?=e2=80=99intranet_et_du_GitLab_CRI?=)(273
+    =20210314223813.00bbd9bb@hedgehog.lap.rsn.lama-corp.space)(274
+    =<20210314165609.14aed4a9@hedgehog.lap.rsn.lama-corp.space>)(275
+    =[INFRA][PANNE] Post mortem de la panne du 2021-03-11)(277
+    =20210317184231.1450f841@goat.cri.rsn.lama-corp.space)(278=2fec)
+  (279=c1)(27A=[INFRA][MAINTENANCE] Interruption de services)(27B=607eb823)
+  (27C=20210420131651.5d250b04@goat.cri.rsn.lama-corp.space)(27D=4c2)
+  (27F=20210422220049.70964db6@goat.cri.rsn.lama-corp.space)(280
+    =<20210420131651.5d250b04@goat.cri.rsn.lama-corp.space>)(281=4c9)
+  (282=60a6d26a)(283=20210520231938.1ac013e2@goat.cri.rsn.lama-corp.space)
+  (284=411)(285=60a7c991)(286
+    =20210521165409.65129229@goat.cri.rsn.lama-corp.space)(287
+    =<20210520231938.1ac013e2@goat.cri.rsn.lama-corp.space>)(288=447)
+  (28A=s8bn06\$unk\$2@news-1.int.cri.epita.net)(28B=575)(28C
+    ==?UTF-8?B?W1BJRV1bRE9OQVRJT05dIERvbiBk4oCZYW5jaWVuIG1hdMOpcmllbA==?=)
+  (28E=sca7ut\$peg\$1@news-1.int.cri.epita.net)(28F=759)(290
+    =[PIE][MAINTENANCE] =?UTF-8?Q?Indisponibilit=C3=A9?= des moodles)
+  (292=slrnsfldku.2o466.mareo@hephaistos.lab.cri.epita.fr)(293=421)
+  (294=6113bb93)(295=20210811135915.51059bd6@goat.cri.rsn.lama-corp.space)
+  (296=6116b430)(297
+    =20210813200432.4e535749@hedgehog.lap.rsn.lama-corp.space)(298
+    =<20210811135915.51059bd6@goat.cri.rsn.lama-corp.space>)(299=4cf)
+  (29A=611aba64)(29B=20210816212004.0c4f01c2@goat.cri.rsn.lama-corp.space)
+  (29C
+    =<20210811135915.51059bd6@goat.cri.rsn.lama-corp.space> <20210813200432.4e\
+535749@hedgehog.lap.rsn.lama-corp.space> <20210816005512.4804cc3c@hedgehog.lap\
+.rsn.lama-corp.space>)(29D=7c1)(29E
+    =[NEWS][AUTH] TLS et authentification sur les news)(2A0
+    =slrnshppmi.2ea54.mareo@hephaistos.lab.cri.epita.fr)(2A1=6ed)(2A3
+    =20210820231102.04e6aa50@hedgehog.lap.rsn.lama-corp.space)(2A4=6e0)
+  (2A6=[INTRA][API] Changement de schema pour l'API de l'intra CRI)
+  (2A8=slrnsic6hc.2g15u.mareo@hephaistos.lab.cri.epita.fr)(2A9=7cd)
+  (2AB
+    ==?UTF-8?Q?=5bCOUPURE=5d=5bINFRA=5d_Interruption_r=c3=a9seau_de_la_s?= =?U\
+TF-8?Q?alle_serveur_le_31/08/21?=)(2AC
+    =Pierre 'rootmout' KELBERT <rootmout@cri.epita.fr>)(2AE
+    =sgjeoq\$2tb\$1@inn-599fc64fdf-qpw2p.cri.epita.fr)(2AF=59a)(2B0
+    =[PIE][MAINTENANCE] Migration de l'AFS)(2B1=612e3dca)(2B2
+    =20210831163346.77cbd8ae@goat.cri.rsn.lama-corp.space)(2B3=68d)
+  (2B5=20210901070954.67a957bf@hedgehog.lap.rsn.lama-corp.space)(2B6
+    =<20210831163346.77cbd8ae@goat.cri.rsn.lama-corp.space>)(2B7
+    =[INFRA][PANNE] Incident sur l'intranet CRI)(2B9
+    =20210901232342.0132ebc9@hedgehog.lap.rsn.lama-corp.space)(2BA=676)>
+{1:^80 {(k^97:c)(s=9)} 
+  [1(^88=10)(^81^85)(^82^86)(^86^87)(^83^88)(^84^89)(^87^8A)(^8C=14)
+    (^9B=74)(^8F^2BD)(^B2=0)]
+  [2(^88=0)(^81^8C)(^82^8D)(^86^8E)(^83^8F)(^84=)(^87^90)(^8C=d)(^9B^2BC)
+    (^8F=2)(^B2=0)]
+  [3(^88=0)(^81^92)(^82^8D)(^86^93)(^83^94)(^84=)(^87^95)(^8C=7)(^9B^2BC)
+    (^8F=3)(^B2=0)]
+  [4(^88=0)(^81^97)(^82^8D)(^86^98)(^83^99)(^84=)(^87^9A)(^8C=a)(^9B^2BC)
+    (^8F=4)(^B2=0)]
+  [5(^88=0)(^81^9C)(^82^8D)(^86^9D)(^83^9E)(^84=)(^87^9F)(^8C=d)(^9B^2BC)
+    (^8F=5)(^B2=0)]
+  [6(^88=0)(^81^A0)(^82^8D)(^86^A1)(^83^A2)(^84=)(^87^A3)(^8C=f)(^9B^2BC)
+    (^8F=6)(^B2=0)]
+  [7(^88=0)(^81^A5)(^82^8D)(^86^A6)(^83^A7)(^84=)(^87^A8)(^8C=18)(^9B^2BC)
+    (^8F=7)(^B2=0)]
+  [8(^88=0)(^81^AA)(^82^8D)(^86^AB)(^83^AC)(^84=)(^87^AD)(^8C=1a)(^9B^2BC)
+    (^8F=8)(^B2=0)]
+  [9(^88=0)(^81^AF)(^82^8D)(^86^B0)(^83^B1)(^84=)(^87^B2)(^8C=a)(^9B^2BC)
+    (^8F=9)(^B2=0)]
+  [A(^88=0)(^81^B3)(^82^8D)(^86^B4)(^83^B5)(^84=)(^87^B6)(^8C=b)(^9B^2BC)
+    (^8F=a)(^B2=0)]
+  [B(^88=0)(^81^B8)(^82^8D)(^86^B9)(^83^BA)(^84=)(^87^BB)(^8C=f)(^9B^2BC)
+    (^8F=b)(^B2=0)]
+  [C(^88=0)(^81^BC)(^82^BD)(^86^BE)(^83^BF)(^84=)(^87^C0)(^8C=e)(^9B^2BC)
+    (^8F=c)(^B2=0)]
+  [D(^88=0)(^81^C2)(^82^8D)(^86^C3)(^83^C4)(^84=)(^87^C5)(^8C=8)(^9B^2BC)
+    (^8F=d)(^B2=0)]
+  [E(^88=0)(^81^C7)(^82^C8)(^86^C9)(^83^CA)(^84=)(^87^CB)(^8C=b)(^9B^2BC)
+    (^8F=e)(^B2=0)]
+  [F(^88=0)(^81^CC)(^82^BD)(^86^CD)(^83^CE)(^84=)(^87^CF)(^8C=14)(^9B^2BC)
+    (^8F=f)(^B2=0)]
+  [10(^88=0)(^81^D0)(^82^D1)(^86^D2)(^83^D3)(^84=)(^87^D4)(^8C=a)(^9B^2BC)
+    (^8F=10)(^B2=0)]
+  [11(^88=0)(^81^D5)(^82^D1)(^86^D6)(^83^D7)(^84=)(^87^D8)(^8C=d)(^9B^2BC)
+    (^8F=11)(^B2=0)]
+  [12(^88=0)(^81^D9)(^82^BD)(^86^DA)(^83^DB)(^84=)(^87^DC)(^8C=9)(^9B^2BC)
+    (^8F=12)(^B2=0)]
+  [13(^88=0)(^81^DE)(^82^C8)(^86^DF)(^83^E0)(^84=)(^87^E1)(^8C=f)(^9B^2BC)
+    (^8F=13)(^B2=0)]
+  [14(^88=10)(^81^B8)(^82^BD)(^86^E2)(^83^E3)(^84^E4)(^87^E5)(^8C=11)
+    (^9B=b)(^8F=b)(^B2=0)]
+  [15(^88=0)(^81^E7)(^82^C8)(^86^E8)(^83^E9)(^84=)(^87^EA)(^8C=21)(^9B^2BC)
+    (^8F=15)(^B2=0)]
+  [16(^88=10)(^81^E7)(^82^C8)(^86^EC)(^83^ED)(^84^EE)(^87^EF)(^8C=10)
+    (^9B=15)(^8F=15)(^B2=0)]
+  [17(^88=10)(^81^E7)(^82^BD)(^86^F0)(^83^F1)(^84^EE)(^87^F2)(^8C=c)
+    (^9B=15)(^8F=15)(^B2=0)]
+  [18(^88=0)(^81^F4)(^82^BD)(^86^F5)(^83^F6)(^84=)(^87^F7)(^8C=b)(^9B^2BC)
+    (^8F=18)(^B2=0)]
+  [19(^88=0)(^81^F8)(^82^BD)(^86^F9)(^83^FA)(^84=)(^87^FB)(^8C=54)(^9B^2BC)
+    (^8F=19)(^B2=0)]
+  [1A(^88=10)(^81^F8)(^82^BD)(^86^FD)(^83^FE)(^84^FF)(^87=5aa)(^8C=18)
+    (^9B=19)(^8F=19)(^B2=0)]
+  [1B(^88=0)(^81^101)(^82^BD)(^86^102)(^83^103)(^84=)(^87=44c)(^8C=d)
+    (^9B^2BC)(^8F=1b)(^B2=0)]
+  [1C(^88=0)(^81^105)(^82^BD)(^86^106)(^83^107)(^84=)(^87=d26)(^8C=47)
+    (^9B^2BC)(^8F=1c)(^B2=0)]
+  [1D(^88=0)(^81^10A)(^82^BD)(^86^10B)(^83^10C)(^84=)(^87^10D)(^8C=77)
+    (^9B^2BC)(^8F=1d)(^B2=0)]
+  [1E(^88=0)(^81^10F)(^82^BD)(^86^110)(^83^111)(^84=)(^87=493)(^8C=10)
+    (^9B^2BC)(^8F=1e)(^B2=0)]
+  [1F(^88=0)(^81^113)(^82^BD)(^86^114)(^83^115)(^84=)(^87=448)(^8C=c)
+    (^9B^2BC)(^8F=1f)(^B2=0)]
+  [20(^88=10)(^81^113)(^82^BD)(^86^117)(^83^118)(^84^119)(^87=558)(^8C=10)
+    (^9B=1f)(^8F=1f)(^B2=0)]
+  [21(^88=0)(^81^11B)(^82^C8)(^86^11C)(^83^11D)(^84=)(^87=424)(^8C=a)
+    (^9B^2BC)(^8F=21)(^B2=0)]
+  [22(^88=10)(^81^11B)(^82^BD)(^86^11F)(^83^120)(^84^121)(^87=4c6)(^8C=10)
+    (^9B=21)(^8F=21)(^B2=0)]
+  [23(^88=0)(^81^123)(^82^BD)(^86^124)(^83^125)(^84=)(^87=4d5)(^8C=10)
+    (^9B^2BC)(^8F=23)(^B2=0)]
+  [24(^88=0)(^81^E7)(^82^127)(^86^128)(^83^129)(^84=)(^87=3fd)(^8C=b)
+    (^9B^2BC)(^8F=24)(^B2=0)]
+  [25(^88=10)(^81^E7)(^82^12B)(^86^12C)(^83^12D)(^84^12E)(^87=4f5)(^8C=f)
+    (^9B=24)(^8F=24)(^B2=0)]
+  [26(^88=0)(^81^130)(^82^131)(^86^132)(^83^133)(^84=)(^87=660)(^8C=18)
+    (^9B^2BC)(^8F=26)(^B2=0)]
+  [27(^88=0)(^81^E7)(^82^135)(^86^136)(^83^137)(^84=)(^87=480)(^8C=b)
+    (^9B^2BC)(^8F=27)(^B2=0)]
+  [28(^88=0)(^81^139)(^82^13A)(^86^13B)(^83^13C)(^84=)(^87=54a)(^8C=11)
+    (^9B^2BC)(^8F=28)(^B2=0)]
+  [29(^88=0)(^81^13E)(^82^13A)(^86^13F)(^83^140)(^84=)(^87=623)(^8C=16)
+    (^9B^2BC)(^8F=29)(^B2=0)]
+  [2A(^88=0)(^81^113)(^82^143)(^86^144)(^83^145)(^84=)(^87=40a)(^8C=b)
+    (^9B^2BC)(^8F=2a)(^B2=0)]
+  [2B(^88=0)(^81^113)(^82^C8)(^86^147)(^83^148)(^84=)(^87=41f)(^8C=b)
+    (^9B^2BC)(^8F=2b)(^B2=0)]
+  [2C(^88=0)(^81^BC)(^82^14A)(^86^14B)(^83^14C)(^84=)(^87=4a2)(^8C=e)
+    (^9B^2BC)(^8F=2c)(^B2=0)]
+  [2D(^88=0)(^81^14E)(^82^BD)(^86^14F)(^83^150)(^84=)(^87=4a9)(^8C=e)
+    (^9B^2BC)(^8F=2d)(^B2=0)]
+  [2E(^88=0)(^81^152)(^82^14A)(^86^153)(^83^154)(^84=)(^87=4b6)(^8C=f)
+    (^9B^2BC)(^8F=2e)(^B2=0)]
+  [2F(^88=0)(^81^156)(^82^14A)(^86^157)(^83^158)(^84=)(^87=4c7)(^8C=e)
+    (^9B^2BC)(^8F=2f)(^B2=0)]
+  [30(^88=0)(^81^15A)(^82^15B)(^86^15C)(^83^15D)(^84=)(^87=4ac)(^8C=f)
+    (^9B^2BC)(^8F=30)(^B2=0)]
+  [31(^88=0)(^81^15F)(^82^14A)(^86^160)(^83^161)(^84=)(^87=51a)(^8C=11)
+    (^9B^2BC)(^8F=31)(^B2=0)]
+  [32(^88=10)(^81^163)(^82^164)(^86^165)(^83^166)(^84^167)(^87=76b)
+    (^8C=17)(^9B=1c)(^8F=1c)(^B2=0)]
+  [33(^88=0)(^81^16A)(^82^14A)(^86^16B)(^83^16C)(^84=)(^87=5bd)(^8C=16)
+    (^9B^2BC)(^8F=33)(^B2=0)]
+  [34(^88=0)(^81^16E)(^82^14A)(^86^16F)(^83^170)(^84=)(^87=948)(^8C=25)
+    (^9B^2BC)(^8F=34)(^B2=0)]
+  [35(^88=0)(^81^173)(^82^14A)(^86^174)(^83^175)(^84=)(^87=61b)(^8C=16)
+    (^9B^2BC)(^8F=35)(^B2=0)]
+  [36(^88=10)(^81^173)(^82^177)(^86^178)(^83^179)(^84^17A)(^87=601)
+    (^8C=12)(^9B=35)(^8F=35)(^B2=0)]
+  [37(^88=10)(^81^173)(^82^177)(^86^17D)(^83^17E)(^84^17F)(^87=6fe)
+    (^8C=18)(^9B=36)(^8F=35)(^B2=0)]
+  [38(^88=0)(^81^181)(^82^182)(^86^183)(^83^184)(^84=)(^87^185)(^8C=100)
+    (^9B^2BC)(^8F=38)(^B2=0)]
+  [39(^88=0)(^81^16E)(^82^14A)(^86^187)(^83^188)(^84=)(^87=6c6)(^8C=19)
+    (^9B^2BC)(^8F=39)(^B2=0)]
+  [3A(^88=0)(^81^18B)(^82^18C)(^86^18D)(^83^18E)(^84=)(^87=47f)(^8C=c)
+    (^9B^2BC)(^8F=3a)(^B2=0)]
+  [3B(^88=10)(^81^190)(^82^182)(^86^191)(^83^192)(^84^193)(^87=4f9)
+    (^8C=e)(^9B=3a)(^8F=3a)(^B2=0)]
+  [3C(^88=0)(^81^195)(^82^14A)(^86^196)(^83^197)(^84=)(^87=6aa)(^8C=1a)
+    (^9B^2BC)(^8F=3c)(^B2=0)]
+  [3D(^88=0)(^81^199)(^82^182)(^86^19A)(^83^19B)(^84=)(^87=3d9)(^8C=d)
+    (^9B^2BC)(^8F=3d)(^B2=0)]
+  [3E(^88=0)(^81^19D)(^82^19E)(^86^19F)(^83^1A0)(^84=)(^87=509)(^8C=c)
+    (^9B^2BC)(^8F=3e)(^B2=0)]
+  [3F(^88=0)(^81^1A2)(^82^177)(^86^1A3)(^83^1A4)(^84=)(^87=482)(^8C=b)
+    (^9B^2BC)(^8F=3f)(^B2=0)]
+  [40(^88=0)(^81^1A6)(^82^14A)(^86^1A7)(^83^1A8)(^84=)(^87=8da)(^8C=21)
+    (^9B^2BC)(^8F=40)(^B2=0)]
+  [41(^88=0)(^81^1AA)(^82^14A)(^86^1AB)(^83^1AC)(^84=)(^87^1AD)(^8C=87)
+    (^9B^2BC)(^8F=41)(^B2=0)]
+  [42(^88=0)(^81^1AF)(^82^127)(^86^1B0)(^83^1B1)(^84=)(^87=439)(^8C=f)
+    (^9B^2BC)(^8F=42)(^B2=0)]
+  [43(^88=0)(^81^1B3)(^82^177)(^86^1B4)(^83^1B5)(^84=)(^87=512)(^8C=d)
+    (^9B^2BC)(^8F=43)(^B2=0)]
+  [44(^88=0)(^81^1B7)(^82^14A)(^86^1B8)(^83^1B9)(^84=)(^87=3ea)(^8C=c)
+    (^9B^2BC)(^8F=44)(^B2=0)]
+  [45(^88=0)(^81^1BB)(^82^14A)(^86^1BC)(^83^1BD)(^84=)(^87=7ba)(^8C=21)
+    (^9B^2BC)(^8F=45)(^B2=0)]
+  [46(^88=10)(^81^1BF)(^82^14A)(^86^1C0)(^83^1C1)(^84^1C2)(^87=68c)
+    (^8C=1a)(^9B=45)(^8F=45)(^B2=0)]
+  [47(^88=0)(^81^1C4)(^82^14A)(^86^1C5)(^83^1C6)(^84=)(^87=4c0)(^8C=e)
+    (^9B^2BC)(^8F=47)(^B2=0)]
+  [48(^88=0)(^81^1C8)(^82^14A)(^86^1C9)(^83^1CA)(^84=)(^87=fc2)(^8C=45)
+    (^9B^2BC)(^8F=48)(^B2=0)]
+  [49(^88=0)(^81^1CD)(^82^1CE)(^86^1CF)(^83^1D0)(^84=)(^87^1D1)(^8C=71)
+    (^9B^2BC)(^8F=49)(^B2=0)]
+  [4A(^88=0)(^81^1D3)(^82^14A)(^86^1D4)(^83^1D5)(^84=)(^87=a6d)(^8C=2b)
+    (^9B^2BC)(^8F=4a)(^B2=0)]
+  [4B(^88=10)(^81^1D8)(^82^1CE)(^86^1D9)(^83^1DA)(^84^1DB)(^87^1DC)
+    (^8C=3c)(^9B=4a)(^8F=4a)(^B2=0)]
+  [4C(^88=10)(^81^1D8)(^82^14A)(^86^1DE)(^83^1DF)(^84^1E0)(^87^1E1)
+    (^8C=47)(^9B=4b)(^8F=4a)(^B2=0)]
+  [4D(^88=0)(^81^1E2)(^82^1E3)(^86^1E4)(^83^1E5)(^84=)(^87=baa)(^8C=2d)
+    (^9B^2BC)(^8F=4d)(^B2=0)]
+  [4E(^88=0)(^81^1E8)(^82^14A)(^86^1E9)(^83^1EA)(^84=)(^87=533)(^8C=10)
+    (^9B^2BC)(^8F=4e)(^B2=0)]
+  [4F(^88=0)(^81^1EC)(^82^1ED)(^86^1EE)(^83^1EF)(^84=)(^87=eac)(^8C=3d)
+    (^9B^2BC)(^8F=4f)(^B2=0)]
+  [50(^88=0)(^81^1F2)(^82^14A)(^86^1F3)(^83^1F4)(^84=)(^87=f05)(^8C=41)
+    (^9B^2BC)(^8F=50)(^B2=0)]
+  [51(^88=0)(^81^1F7)(^82^14A)(^86^1F8)(^83^1F9)(^84=)(^87^1FA)(^8C=48)
+    (^9B^2BC)(^8F=51)(^B2=0)]
+  [52(^88=0)(^81^1FC)(^82^14A)(^86^1FD)(^83^1FE)(^84=)(^87=9a9)(^8C=26)
+    (^9B^2BC)(^8F=52)(^B2=0)]
+  [53(^88=0)(^81^201)(^82^14A)(^86^202)(^83^203)(^84=)(^87=5f4)(^8C=16)
+    (^9B^2BC)(^8F=53)(^B2=0)]
+  [54(^88=0)(^81^205)(^82^206)(^86^207)(^83^208)(^84=)(^87^209)(^8C=35)
+    (^9B^2BC)(^8F=54)(^B2=0)]
+  [55(^88=0)(^81^20B)(^82^1CE)(^86^20C)(^83^20D)(^84=)(^87=4b7)(^8C=b)
+    (^9B^2BC)(^8F=55)(^B2=0)]
+  [56(^88=0)(^81^20F)(^82^210)(^86^211)(^83^212)(^84=)(^87^213)(^8C=8f)
+    (^9B^2BC)(^8F=56)(^B2=0)]
+  [57(^88=0)(^81^215)(^82^210)(^86^216)(^83^217)(^84=)(^87=7dc)(^8C=17)
+    (^9B^2BC)(^8F=57)(^B2=0)]
+  [58(^88=0)(^81^219)(^82^14A)(^86^21A)(^83^21B)(^84=)(^87^21C)(^8C=c5)
+    (^9B^2BC)(^8F=58)(^B2=0)]
+  [59(^88=0)(^81^21E)(^82^21F)(^86^220)(^83^221)(^84=)(^87=7a1)(^8C=1b)
+    (^9B^2BC)(^8F=59)(^B2=0)]
+  [5A(^88=0)(^81^224)(^82^14A)(^86^225)(^83^226)(^84=)(^87^227)(^8C=7e)
+    (^9B^2BC)(^8F=5a)(^B2=0)]
+  [5B(^88=0)(^81^229)(^82^14A)(^86^22A)(^83^22B)(^84=)(^87=873)(^8C=1e)
+    (^9B^2BC)(^8F=5b)(^B2=0)]
+  [5C(^88=0)(^81^22E)(^82^14A)(^86^22F)(^83^230)(^84=)(^87=b3b)(^8C=33)
+    (^9B^2BC)(^8F=5c)(^B2=0)]
+  [5D(^88=10)(^81^233)(^82^14A)(^86^234)(^83^235)(^84^236)(^87=650)
+    (^8C=15)(^9B=5c)(^8F=5c)(^B2=0)]
+  [5E(^88=0)(^81^239)(^82^14A)(^86^23A)(^83^23B)(^84=)(^87=5e8)(^8C=13)
+    (^9B^2BC)(^8F=5e)(^B2=0)]
+  [5F(^88=0)(^81^23E)(^82^14A)(^86^23F)(^83^240)(^84=)(^87=6f5)(^8C=17)
+    (^9B^2BC)(^8F=5f)(^B2=0)]
+  [60(^88=10)(^81^242)(^82^86)(^86^243)(^83^244)(^84^245)(^87=8d5)(^8C=26)
+    (^9B=5f)(^8F=5f)(^B2=0)]
+  [61(^88=0)(^81^247)(^82^86)(^86^248)(^83^249)(^84=)(^87=ecc)(^8C=3d)
+    (^9B^2BC)(^8F=61)(^B2=0)]
+  [62(^88=0)(^81^24B)(^82^14A)(^86^24C)(^83^24D)(^84=)(^87=4dd)(^8C=16)
+    (^9B^2BC)(^8F=62)(^B2=0)]
+  [63(^88=10)(^81^247)(^82^86)(^86^24F)(^83^250)(^84^251)(^87=6a5)(^8C=1c)
+    (^9B=61)(^8F=61)(^B2=0)]
+  [64(^88=0)(^81^254)(^82^255)(^86^256)(^83^257)(^84=)(^87=80c)(^8C=1b)
+    (^9B^2BC)(^8F=64)(^B2=0)]
+  [65(^88=0)(^81^259)(^82^25A)(^86^25B)(^83^25C)(^84=)(^87=c7c)(^8C=2d)
+    (^9B^2BC)(^8F=65)(^B2=0)]
+  [66(^88=0)(^81^25E)(^82^25F)(^86^260)(^83^261)(^84=)(^87=5b1)(^8C=12)
+    (^9B^2BC)(^8F=66)(^B2=0)]
+  [67(^88=0)(^81^263)(^82^14A)(^86^264)(^83^265)(^84=)(^87^266)(^8C=5f)
+    (^9B^2BC)(^8F=67)(^B2=0)]
+  [68(^88=0)(^81^268)(^82^86)(^86^269)(^83^26A)(^84=)(^87^26B)(^8C=3f)
+    (^9B^2BC)(^8F=68)(^B2=0)]
+  [69(^88=0)(^81^26D)(^82^86)(^86^26E)(^83^26F)(^84=)(^87=715)(^8C=1a)
+    (^9B^2BC)(^8F=69)(^B2=0)]
+  [6A(^88=10)(^81^271)(^82^86)(^86^272)(^83^273)(^84^274)(^87=4b7)(^8C=f)
+    (^9B=69)(^8F=69)(^B2=0)]
+  [6B(^88=0)(^81^275)(^82^86)(^86^276)(^83^277)(^84=)(^87^278)(^8C=c1)
+    (^9B^2BC)(^8F=6b)(^B2=0)]
+  [6C(^88=0)(^81^27A)(^82^86)(^86^27B)(^83^27C)(^84=)(^87=4c2)(^8C=12)
+    (^9B^2BC)(^8F=6c)(^B2=0)]
+  [6D(^88=10)(^81^27A)(^82^86)(^86^27E)(^83^27F)(^84^280)(^87=4c9)(^8C=10)
+    (^9B=6c)(^8F=6c)(^B2=0)]
+  [6E(^88=0)(^81^27A)(^82^86)(^86^282)(^83^283)(^84=)(^87=411)(^8C=c)
+    (^9B^2BC)(^8F=6e)(^B2=0)]
+  [6F(^88=10)(^81^27A)(^82^86)(^86^285)(^83^286)(^84^287)(^87=447)(^8C=e)
+    (^9B=6e)(^8F=6e)(^B2=0)]
+  [70(^88=10)(^81^27A)(^82^25F)(^86^289)(^83^28A)(^84^287)(^87=575)
+    (^8C=f)(^9B=6e)(^8F=6e)(^B2=0)]
+  [71(^88=0)(^81^28C)(^82^25A)(^86^28D)(^83^28E)(^84=)(^87=759)(^8C=1c)
+    (^9B^2BC)(^8F=71)(^B2=0)]
+  [72(^88=0)(^81^290)(^82^14A)(^86^291)(^83^292)(^84=)(^87=421)(^8C=b)
+    (^9B^2BC)(^8F=72)(^B2=0)]
+  [73(^88=0)(^81^85)(^82^86)(^86^294)(^83^295)(^84=)(^87=5bd)(^8C=13)
+    (^9B^2BC)(^8F^2BD)(^B2=0)]
+  [74(^88=10)(^81^85)(^82^86)(^86^296)(^83^297)(^84^298)(^87=4cf)(^8C=11)
+    (^9B=73)(^8F^2BD)(^B2=0)]
+  [75(^88=10)(^81^85)(^82^86)(^86^29A)(^83^29B)(^84^29C)(^87=7c1)(^8C=1b)
+    (^9B=1)(^8F^2BD)(^B2=0)]
+  [76(^88=0)(^81^29E)(^82^14A)(^86^29F)(^83^2A0)(^84=)(^87=6ed)(^8C=1e)
+    (^9B^2BC)(^8F=76)(^B2=0)]
+  [77(^88=10)(^81^85)(^82^86)(^86^2A2)(^83^2A3)(^84^298)(^87=6e0)(^8C=1f)
+    (^9B=73)(^8F^2BD)(^B2=0)]
+  [78(^88=0)(^81^2A6)(^82^14A)(^86^2A7)(^83^2A8)(^84=)(^87=7cd)(^8C=30)
+    (^9B^2BC)(^8F=78)(^B2=0)]
+  [79(^88=0)(^81^2AB)(^82^2AC)(^86^2AD)(^83^2AE)(^84=)(^87=59a)(^8C=10)
+    (^9B^2BC)(^8F=79)(^B2=0)]
+  [7A(^88=0)(^81^2B0)(^82^86)(^86^2B1)(^83^2B2)(^84=)(^87=68d)(^8C=18)
+    (^9B^2BC)(^8F=7a)(^B2=0)]
+  [7B(^88=10)(^81^2B0)(^82^86)(^86^2B4)(^83^2B5)(^84^2B6)(^87=650)(^8C=16)
+    (^9B=7a)(^8F=7a)(^B2=0)]
+  [7C(^88=0)(^81^2B7)(^82^86)(^86^2B8)(^83^2B9)(^84=)(^87=676)(^8C=1a)
+    (^9B^2BC)(^8F=7c)(^B2=0)]}
+{2:^80 {(k^98:c)(s=9)2:m } 2 }
+{3:^80 {(k^98:c)(s=9)3:m } 3 }
+{4:^80 {(k^98:c)(s=9)4:m } 4 }
+{5:^80 {(k^98:c)(s=9)5:m } 5 }
+{6:^80 {(k^98:c)(s=9)6:m } 6 }
+{7:^80 {(k^98:c)(s=9)7:m } 7 }
+{8:^80 {(k^98:c)(s=9)8:m } 8 }
+{9:^80 {(k^98:c)(s=9)9:m } 9 }
+{A:^80 {(k^98:c)(s=9)A:m } A }
+{B:^80 {(k^98:c)(s=9)B:m } B 14 }
+{C:^80 {(k^98:c)(s=9)C:m } C }
+{D:^80 {(k^98:c)(s=9)D:m } D }
+{E:^80 {(k^98:c)(s=9)E:m } E }
+{F:^80 {(k^98:c)(s=9)F:m } F }
+{10:^80 {(k^98:c)(s=9)10:m } 10 }
+{11:^80 {(k^98:c)(s=9)11:m } 11 }
+{12:^80 {(k^98:c)(s=9)12:m } 12 }
+{13:^80 {(k^98:c)(s=9)13:m } 13 }
+{15:^80 {(k^98:c)(s=9)14:m } 15 16 17 }
+{18:^80 {(k^98:c)(s=9)15:m } 18 }
+{19:^80 {(k^98:c)(s=9)16:m } 19 1A }
+{1B:^80 {(k^98:c)(s=9)17:m } 1B }
+{1C:^80 {(k^98:c)(s=9)18:m } 1C 32 }
+{1D:^80 {(k^98:c)(s=9)19:m } 1D }
+{1E:^80 {(k^98:c)(s=9)1A:m } 1E }
+{1F:^80 {(k^98:c)(s=9)1B:m } 1F 20 }
+{21:^80 {(k^98:c)(s=9)1C:m } 21 22 }
+{23:^80 {(k^98:c)(s=9)1D:m } 23 }
+{24:^80 {(k^98:c)(s=9)1E:m } 24 25 }
+{26:^80 {(k^98:c)(s=9)1F:m } 26 }
+{27:^80 {(k^98:c)(s=9)20:m } 27 }
+{28:^80 {(k^98:c)(s=9)21:m } 28 }
+{29:^80 {(k^98:c)(s=9)22:m } 29 }
+{2A:^80 {(k^98:c)(s=9)23:m } 2A }
+{2B:^80 {(k^98:c)(s=9)24:m } 2B }
+{2C:^80 {(k^98:c)(s=9)25:m } 2C }
+{2D:^80 {(k^98:c)(s=9)26:m } 2D }
+{2E:^80 {(k^98:c)(s=9)27:m } 2E }
+{FFFFFFFE:^80 {(k^98:c)(s=9)1:m } 73 74 1 75 77 }
+{2F:^80 {(k^98:c)(s=9)28:m } 2F }
+{30:^80 {(k^98:c)(s=9)29:m } 30 }
+{31:^80 {(k^98:c)(s=9)2A:m } 31 }
+{33:^80 {(k^98:c)(s=9)2B:m } 33 }
+{34:^80 {(k^98:c)(s=9)2C:m } 34 }
+{35:^80 {(k^98:c)(s=9)2D:m } 35 36 37 }
+{38:^80 {(k^98:c)(s=9)2E:m } 38 }
+{39:^80 {(k^98:c)(s=9)2F:m } 39 }
+{3A:^80 {(k^98:c)(s=9)30:m } 3A 3B }
+{3C:^80 {(k^98:c)(s=9)31:m } 3C }
+{3D:^80 {(k^98:c)(s=9)32:m } 3D }
+{3E:^80 {(k^98:c)(s=9)33:m } 3E }
+{3F:^80 {(k^98:c)(s=9)34:m } 3F }
+{40:^80 {(k^98:c)(s=9)35:m } 40 }
+{41:^80 {(k^98:c)(s=9)36:m } 41 }
+{42:^80 {(k^98:c)(s=9)37:m } 42 }
+{43:^80 {(k^98:c)(s=9)38:m } 43 }
+{44:^80 {(k^98:c)(s=9)39:m } 44 }
+{45:^80 {(k^98:c)(s=9)3A:m } 45 46 }
+{47:^80 {(k^98:c)(s=9)3B:m } 47 }
+{48:^80 {(k^98:c)(s=9)3C:m } 48 }
+{49:^80 {(k^98:c)(s=9)3D:m } 49 }
+{4A:^80 {(k^98:c)(s=9)3E:m } 4A 4B 4C }
+{4D:^80 {(k^98:c)(s=9)3F:m } 4D }
+{4E:^80 {(k^98:c)(s=9)40:m } 4E }
+{4F:^80 {(k^98:c)(s=9)41:m } 4F }
+{50:^80 {(k^98:c)(s=9)42:m } 50 }
+{51:^80 {(k^98:c)(s=9)43:m } 51 }
+{52:^80 {(k^98:c)(s=9)44:m } 52 }
+{53:^80 {(k^98:c)(s=9)45:m } 53 }
+{54:^80 {(k^98:c)(s=9)46:m } 54 }
+{55:^80 {(k^98:c)(s=9)47:m } 55 }
+{56:^80 {(k^98:c)(s=9)48:m } 56 }
+{57:^80 {(k^98:c)(s=9)49:m } 57 }
+{58:^80 {(k^98:c)(s=9)4A:m } 58 }
+{59:^80 {(k^98:c)(s=9)4B:m } 59 }
+{5A:^80 {(k^98:c)(s=9)4C:m } 5A }
+{5B:^80 {(k^98:c)(s=9)4D:m } 5B }
+{5C:^80 {(k^98:c)(s=9)4E:m } 5C 5D }
+{5E:^80 {(k^98:c)(s=9)4F:m } 5E }
+{5F:^80 {(k^98:c)(s=9)50:m } 5F 60 }
+{61:^80 {(k^98:c)(s=9)51:m } 61 63 }
+{62:^80 {(k^98:c)(s=9)52:m } 62 }
+{64:^80 {(k^98:c)(s=9)53:m } 64 }
+{65:^80 {(k^98:c)(s=9)54:m } 65 }
+{66:^80 {(k^98:c)(s=9)55:m } 66 }
+{67:^80 {(k^98:c)(s=9)56:m } 67 }
+{68:^80 {(k^98:c)(s=9)57:m } 68 }
+{69:^80 {(k^98:c)(s=9)58:m } 69 6A }
+{6B:^80 {(k^98:c)(s=9)59:m } 6B }
+{6C:^80 {(k^98:c)(s=9)5A:m } 6C 6D }
+{6E:^80 {(k^98:c)(s=9)5B:m } 6E 6F 70 }
+{71:^80 {(k^98:c)(s=9)5C:m } 71 }
+{72:^80 {(k^98:c)(s=9)5D:m } 72 }
+{76:^80 {(k^98:c)(s=9)5E:m } 76 }
+{78:^80 {(k^98:c)(s=9)5F:m } 78 }
+{79:^80 {(k^98:c)(s=9)60:m } 79 }
+{7A:^80 {(k^98:c)(s=9)61:m } 7A 7B }
+{7C:^80 {(k^98:c)(s=9)62:m } 7C }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} [FFFFFFFE(^95^85)]
+  [2(^95^8C)]
+  [3(^95^92)]
+  [4(^95^97)]
+  [5(^95^9C)]
+  [6(^95^A0)]
+  [7(^95^A5)]
+  [8(^95^AA)]
+  [9(^95^AF)]
+  [A(^95^B3)]
+  [B(^95^B8)]
+  [C(^95^BC)]
+  [D(^95^C2)]
+  [E(^95^C7)]
+  [F(^95^CC)]
+  [10(^95^D0)]
+  [11(^95^D5)]
+  [12(^95^D9)]
+  [13(^95^DE)]
+  [15(^95^E7)]
+  [18(^95^F4)]
+  [19(^95^F8)]
+  [1B(^95^101)]
+  [1C(^95^105)]
+  [1D(^95^10A)]
+  [1E(^95^10F)]
+  [1F(^95^113)]
+  [21(^95^11B)]
+  [23(^95^123)]
+  [24(^95^E7)]
+  [26(^95^130)]
+  [27(^95^E7)]
+  [28(^95^139)]
+  [29(^95^13E)]
+  [2A(^95^113)]
+  [2B(^95^113)]
+  [2C(^95^BC)]
+  [2D(^95^14E)]
+  [2E(^95^152)]
+  [2F(^95^156)]
+  [30(^95^15A)]
+  [31(^95^15F)]
+  [33(^95^16A)]
+  [34(^95^16E)]
+  [35(^95^173)]
+  [38(^95^181)]
+  [39(^95^16E)]
+  [3A(^95^18B)]
+  [3C(^95^195)]
+  [3D(^95^199)]
+  [3E(^95^19D)]
+  [3F(^95^1A2)]
+  [40(^95^1A6)]
+  [41(^95^1AA)]
+  [42(^95^1AF)]
+  [43(^95^1B3)]
+  [44(^95^1B7)]
+  [45(^95^1BB)]
+  [47(^95^1C4)]
+  [48(^95^1C8)]
+  [49(^95^1CD)]
+  [4A(^95^1D3)]
+  [4D(^95^1E2)]
+  [4E(^95^1E8)]
+  [4F(^95^1EC)]
+  [50(^95^1F2)]
+  [51(^95^1F7)]
+  [52(^95^1FC)]
+  [53(^95^201)]
+  [54(^95^205)]
+  [55(^95^20B)]
+  [56(^95^20F)]
+  [57(^95^215)]
+  [58(^95^219)]
+  [59(^95^21E)]
+  [5A(^95^224)]
+  [5B(^95^229)]
+  [5C(^95^22E)]
+  [5E(^95^239)]
+  [5F(^95^23E)]
+  [61(^95^247)]
+  [62(^95^24B)]
+  [64(^95^254)]
+  [65(^95^259)]
+  [66(^95^25E)]
+  [67(^95^263)]
+  [68(^95^268)]
+  [69(^95^26D)]
+  [6B(^95^275)]
+  [6C(^95^27A)]
+  [6E(^95^27A)]
+  [71(^95^28C)]
+  [72(^95^290)]
+  [76(^95^29E)]
+  [78(^95^2A6)]
+  [79(^95^2AB)]
+  [7A(^95^2B0)]
+  [7C(^95^2B7)]}
+
+<(2BB=1-124)(2BE=1631841611)>
+{1:^9F {(k^A0:c)(s=9u)} 
+  [1(^AC=1)(^AD=0)(^AE=1)(^88=1)(^AF=)(^AA=7c)(^A9=7c)(^B1^2BB)(^A1=7c)
+    (^A2=7c)(^A6=7c)(^B3^2BE)]}
+
+@$${4{@
+@$$}4}@
+
+@$${5{@
+< <(a=c)> // (f=iso-8859-1)
+  (B8=columnStates)(B9=retainBy)(BA=daysToKeepHdrs)(BB=numHdrsToKeep)
+  (BC=daysToKeepBodies)(BD=useServerDefaults)(BE=cleanupBodies)
+  (BF=applyToFlaggedMessages)(C0=useServerRetention)(B4=sortType)
+  (B5=sortOrder)(B6=viewFlags)(B7=viewType)>
+[-1:^9F(^AC=1)(^AD=0)(^AE=1)(^88=1)(^AF=)(^AA=0)(^A9=0)(^B1^2BB)(^A1=7c)
+    (^A2=7c)(^A6=7c)(^B3^2BE)(^C0=1)]
+@$$}5}@
+
+@$${6{@
+< <(a=c)> // (f=iso-8859-1)
+  (C1=LastPurgeTime)>
+<(30E=Fri Sep 17 03:20:18 2021)>
+[1:^9F(^C1^30E)]
+@$$}6}@
+
+@$${7{@
+<(30F=1631841618)>[1:^9F(^B3^30F)]
+@$$}7}@
+
+@$${8{@
+< <(a=c)> // (f=iso-8859-1)
+  (C2=sortColumns)(C3=customSortCol)>
+<(310=$151)(311
+    ={"threadCol":{"visible":true},"attachmentCol":{"visible":true},"flaggedCo\
+l":{"visible":true},"subjectCol":{"visible":true},"unreadButtonColHeader":{"vi\
+sible":true},"senderCol":{"visible":true},"recipientCol":{"visible":false},"co\
+rrespondentCol":{"visible":false},"junkStatusCol":{"visible":false},"dateCol":\
+{"visible":true},"locationCol":{"visible":false}})>
+[-1:^9F(^AC=1)(^AD=0)(^AE=1)(^88=1)(^AF=)(^AA=0)(^A9=0)(^B1^2BB)(^A1=7c)
+    (^A2=7c)(^A6=7c)(^B3^30F)(^C0=1)(^C1^30E)(^B4=15)(^B5=1)(^B6=1)
+    (^B7=0)(^C2^310)(^B8^311)]
+@$$}8}@
+
+@$${9{@
+<(312
+    ={"selectCol":{"visible":false,"ordinal":"1"},"threadCol":{"visible":true,\
+"ordinal":"3"},"flaggedCol":{"visible":true,"ordinal":"5"},"attachmentCol":{"v\
+isible":true,"ordinal":"7"},"subjectCol":{"visible":true,"ordinal":"15"},"unre\
+adButtonColHeader":{"visible":true,"ordinal":"9"},"senderCol":{"visible":true,\
+"ordinal":"17"},"recipientCol":{"visible":false,"ordinal":"19"},"correspondent\
+Col":{"visible":false,"ordinal":"21"},"junkStatusCol":{"visible":false,"ordina\
+l":"11"},"receivedCol":{"visible":false,"ordinal":"23"},"dateCol":{"visible":t\
+rue,"ordinal":"25"},"statusCol":{"visible":false,"ordinal":"27"},"sizeCol":{"v\
+isible":false,"ordinal":"29"},"tagsCol":{"visible":false,"ordinal":"31"},"acco\
+untCol":{"visible":false,"ordinal":"33"},"priorityCol":{"visible":false,"ordin\
+al":"35"},"unreadCol":{"visible":false,"ordinal":"37"},"totalCol":{"visible":f\
+alse,"ordinal":"39"},"locationCol":{"visible":false,"ordinal":"41"},"idCol":{"\
+visible":false,"ordinal":"43"},"deleteCol":{"visible":false,"ordinal":"13"}})>
+[1:^9F(^B8^312)]
+@$$}9}@
+
+@$${A{@
+< <(a=c)> // (f=iso-8859-1)
+  (C4=keywords)(C5=imageSize)(C6=junkscore)(C7=sender_name)>
+<(313=0|Luca Corrieri)>[66:^80(^C7^313)]
+<(314=0|Marin Hannache)>[67:^80(^C7^314)]
+<(315=0|Marc 'risson' Schmitt)>[68:^80(^C7^315)]
+[69:^80(^C7^315)]
+[6B:^80(^C7^315)]
+[6C:^80(^C7^315)]
+[6E:^80(^C7^315)]
+<(316=0|Nicolas Froger)>[71:^80(^C7^316)]
+[72:^80(^C7^314)]
+[73:^80(^C7^315)]
+[74:^80(^C7^315)]
+[75:^80(^C7^315)]
+[76:^80(^C7^314)]
+[77:^80(^C7^315)]
+[78:^80(^C7^314)]
+<(317=0|Pierre 'rootmout' KELBERT)>
+[79:^80(^C7^317)]
+[7A:^80(^C7^315)]
+[7C:^80(^C7^315)]
+[1:^80(^C7^315)]
+@$$}A}@
+
+@$${B{@
+@$$}B}@
+
+@$${C{@
+[40:m(^94=0)]
+[41:m(^94=0)]
+[42:m(^94=0)]
+[43:m(^94=0)]
+[44:m(^94=0)]
+[45:m(^94=0)]
+[46:m(^94=0)]
+[47:m(^94=0)]
+[48:m(^94=0)]
+[49:m(^94=0)]
+[4A:m(^94=0)]
+[4B:m(^94=0)]
+[4C:m(^94=0)]
+[4D:m(^94=0)]
+[4E:m(^94=0)]
+[4F:m(^94=0)]
+[50:m(^94=0)]
+[51:m(^94=0)]
+[52:m(^94=0)]
+[53:m(^94=0)]
+[54:m(^94=0)]
+[55:m(^94=0)]
+[56:m(^94=0)]
+[57:m(^94=0)]
+[58:m(^94=0)]
+[59:m(^94=0)]
+[5A:m(^94=0)]
+[5B:m(^94=0)]
+[5C:m(^94=0)]
+[5D:m(^94=0)]
+[5E:m(^94=0)]
+[5F:m(^94=0)]
+[60:m(^94=0)]
+[61:m(^94=0)]
+[62:m(^94=0)]
+[1:m(^94=0)]
+[2:m(^94=0)]
+[3:m(^94=0)]
+[4:m(^94=0)]
+[5:m(^94=0)]
+[6:m(^94=0)]
+[7:m(^94=0)]
+[8:m(^94=0)]
+[9:m(^94=0)]
+[A:m(^94=0)]
+[B:m(^94=0)]
+[C:m(^94=0)]
+[D:m(^94=0)]
+[E:m(^94=0)]
+[F:m(^94=0)]
+[10:m(^94=0)]
+[11:m(^94=0)]
+[12:m(^94=0)]
+[13:m(^94=0)]
+[14:m(^94=0)]
+[15:m(^94=0)]
+[16:m(^94=0)]
+[17:m(^94=0)]
+[18:m(^94=0)]
+[19:m(^94=0)]
+[1A:m(^94=0)]
+[1B:m(^94=0)]
+[1C:m(^94=0)]
+[1D:m(^94=0)]
+[1E:m(^94=0)]
+[1F:m(^94=0)]
+[20:m(^94=0)]
+[21:m(^94=0)]
+[22:m(^94=0)]
+[23:m(^94=0)]
+[24:m(^94=0)]
+[25:m(^94=0)]
+[26:m(^94=0)]
+[27:m(^94=0)]
+[28:m(^94=0)]
+[29:m(^94=0)]
+[2A:m(^94=0)]
+[2B:m(^94=0)]
+[2C:m(^94=0)]
+[2D:m(^94=0)]
+[2E:m(^94=0)]
+[2F:m(^94=0)]
+[30:m(^94=0)]
+[31:m(^94=0)]
+[32:m(^94=0)]
+[33:m(^94=0)]
+[34:m(^94=0)]
+[35:m(^94=0)]
+[36:m(^94=0)]
+[37:m(^94=0)]
+[38:m(^94=0)]
+[39:m(^94=0)]
+[3A:m(^94=0)]
+[3B:m(^94=0)]
+[3C:m(^94=0)]
+[3D:m(^94=0)]
+[3E:m(^94=0)]
+[3F:m(^94=0)]
+[-50:^80(^88=1)(^81^1F2)(^82^14A)(^86^1F3)(^83^1F4)(^84=)(^87=f05)
+    (^8C=41)(^9B^2BC)(^8F=50)(^B2=0)(^C7^314)]
+[-51:^80(^88=1)(^81^1F7)(^82^14A)(^86^1F8)(^83^1F9)(^84=)(^87^1FA)
+    (^8C=48)(^9B^2BC)(^8F=51)(^B2=0)(^C7^314)]
+[-52:^80(^88=1)(^81^1FC)(^82^14A)(^86^1FD)(^83^1FE)(^84=)(^87=9a9)
+    (^8C=26)(^9B^2BC)(^8F=52)(^B2=0)(^C7^314)]
+[-53:^80(^88=1)(^81^201)(^82^14A)(^86^202)(^83^203)(^84=)(^87=5f4)
+    (^8C=16)(^9B^2BC)(^8F=53)(^B2=0)(^C7^314)]
+<(31B=0|Arthur Outhenin-Chalandre)>
+[-54:^80(^88=1)(^81^205)(^82^206)(^86^207)(^83^208)(^84=)(^87^209)
+    (^8C=35)(^9B^2BC)(^8F=54)(^B2=0)(^C7^31B)]
+<(31C=0|Marc Schmitt)>[-55:^80(^88=1)(^81^20B)(^82^1CE)(^86^20C)(^83^20D)
+    (^84=)(^87=4b7)(^8C=b)(^9B^2BC)(^8F=55)(^B2=0)(^C7^31C)]
+<(319=0|Sevan Murriguian)>[-56:^80(^88=1)(^81^20F)(^82^210)(^86^211)
+    (^83^212)(^84=)(^87^213)(^8C=8f)(^9B^2BC)(^8F=56)(^B2=0)(^C7^319)]
+[-57:^80(^88=1)(^81^215)(^82^210)(^86^216)(^83^217)(^84=)(^87=7dc)
+    (^8C=17)(^9B^2BC)(^8F=57)(^B2=0)(^C7^319)]
+[-58:^80(^88=1)(^81^219)(^82^14A)(^86^21A)(^83^21B)(^84=)(^87^21C)
+    (^8C=c5)(^9B^2BC)(^8F=58)(^B2=0)(^C7^314)]
+<(31A=0|James Landrein)>[-59:^80(^88=1)(^81^21E)(^82^21F)(^86^220)
+    (^83^221)(^84=)(^87=7a1)(^8C=1b)(^9B^2BC)(^8F=59)(^B2=0)(^C7^31A)]
+[-5A:^80(^88=1)(^81^224)(^82^14A)(^86^225)(^83^226)(^84=)(^87^227)
+    (^8C=7e)(^9B^2BC)(^8F=5a)(^B2=0)(^C7^314)]
+[-5B:^80(^88=1)(^81^229)(^82^14A)(^86^22A)(^83^22B)(^84=)(^87=873)
+    (^8C=1e)(^9B^2BC)(^8F=5b)(^B2=0)(^C7^314)]
+[-5C:^80(^88=1)(^81^22E)(^82^14A)(^86^22F)(^83^230)(^84=)(^87=b3b)
+    (^8C=33)(^9B^2BC)(^8F=5c)(^B2=0)(^C7^314)]
+[-5D:^80(^88=11)(^81^233)(^82^14A)(^86^234)(^83^235)(^84^236)(^87=650)
+    (^8C=15)(^9B=5c)(^8F=5c)(^B2=0)(^C7^314)]
+[-5E:^80(^88=1)(^81^239)(^82^14A)(^86^23A)(^83^23B)(^84=)(^87=5e8)
+    (^8C=13)(^9B^2BC)(^8F=5e)(^B2=0)(^C7^314)]
+[-5F:^80(^88=1)(^81^23E)(^82^14A)(^86^23F)(^83^240)(^84=)(^87=6f5)
+    (^8C=17)(^9B^2BC)(^8F=5f)(^B2=0)(^C7^314)]
+[-60:^80(^88=11)(^81^242)(^82^86)(^86^243)(^83^244)(^84^245)(^87=8d5)
+    (^8C=26)(^9B=5f)(^8F=5f)(^B2=0)(^C7^315)]
+[-61:^80(^88=1)(^81^247)(^82^86)(^86^248)(^83^249)(^84=)(^87=ecc)(^8C=3d)
+    (^9B^2BC)(^8F=61)(^B2=0)(^C7^315)]
+[-62:^80(^88=1)(^81^24B)(^82^14A)(^86^24C)(^83^24D)(^84=)(^87=4dd)
+    (^8C=16)(^9B^2BC)(^8F=62)(^B2=0)(^C7^314)]
+[-63:^80(^88=11)(^81^247)(^82^86)(^86^24F)(^83^250)(^84^251)(^87=6a5)
+    (^8C=1c)(^9B=61)(^8F=61)(^B2=0)(^C7^315)]
+<(318=0|Charles Decoux)>[-64:^80(^88=1)(^81^254)(^82^255)(^86^256)
+    (^83^257)(^84=)(^87=80c)(^8C=1b)(^9B^2BC)(^8F=64)(^B2=0)(^C7^318)]
+[-65:^80(^88=1)(^81^259)(^82^25A)(^86^25B)(^83^25C)(^84=)(^87=c7c)
+    (^8C=2d)(^9B^2BC)(^8F=65)(^B2=0)(^C7^316)]
+[66:^80(^88=1)]
+[67:^80(^88=1)]
+[68:^80(^88=1)]
+[69:^80(^88=1)]
+[6A:^80(^88=11)]
+[6B:^80(^88=1)]
+[6C:^80(^88=1)]
+[6D:^80(^88=11)]
+[6E:^80(^88=1)]
+[6F:^80(^88=11)]
+[70:^80(^88=11)]
+[71:^80(^88=1)]
+[72:^80(^88=1)]
+[73:^80(^88=1)]
+[74:^80(^88=11)]
+[75:^80(^88=11)]
+[76:^80(^88=1)]
+[77:^80(^88=11)]
+[78:^80(^88=1)]
+[79:^80(^88=1)]
+[7A:^80(^88=1)]
+[7B:^80(^88=11)]
+[7C:^80(^88=1)]
+[1:^80(^88=11)]
+<(327=0|Nicolas Geniteau)>[-2:^80(^88=1)(^81^8C)(^82^8D)(^86^8E)(^83^8F)
+    (^84=)(^87^90)(^8C=d)(^9B^2BC)(^8F=2)(^B2=0)(^C7^327)]
+[-3:^80(^88=1)(^81^92)(^82^8D)(^86^93)(^83^94)(^84=)(^87^95)(^8C=7)
+    (^9B^2BC)(^8F=3)(^B2=0)(^C7^327)]
+[-4:^80(^88=1)(^81^97)(^82^8D)(^86^98)(^83^99)(^84=)(^87^9A)(^8C=a)
+    (^9B^2BC)(^8F=4)(^B2=0)(^C7^327)]
+[-5:^80(^88=1)(^81^9C)(^82^8D)(^86^9D)(^83^9E)(^84=)(^87^9F)(^8C=d)
+    (^9B^2BC)(^8F=5)(^B2=0)(^C7^327)]
+[-6:^80(^88=1)(^81^A0)(^82^8D)(^86^A1)(^83^A2)(^84=)(^87^A3)(^8C=f)
+    (^9B^2BC)(^8F=6)(^B2=0)(^C7^327)]
+[-7:^80(^88=1)(^81^A5)(^82^8D)(^86^A6)(^83^A7)(^84=)(^87^A8)(^8C=18)
+    (^9B^2BC)(^8F=7)(^B2=0)(^C7^327)]
+[-8:^80(^88=1)(^81^AA)(^82^8D)(^86^AB)(^83^AC)(^84=)(^87^AD)(^8C=1a)
+    (^9B^2BC)(^8F=8)(^B2=0)(^C7^327)]
+[-9:^80(^88=1)(^81^AF)(^82^8D)(^86^B0)(^83^B1)(^84=)(^87^B2)(^8C=a)
+    (^9B^2BC)(^8F=9)(^B2=0)(^C7^327)]
+[-A:^80(^88=1)(^81^B3)(^82^8D)(^86^B4)(^83^B5)(^84=)(^87^B6)(^8C=b)
+    (^9B^2BC)(^8F=a)(^B2=0)(^C7^327)]
+[-B:^80(^88=1)(^81^B8)(^82^8D)(^86^B9)(^83^BA)(^84=)(^87^BB)(^8C=f)
+    (^9B^2BC)(^8F=b)(^B2=0)(^C7^327)]
+[-C:^80(^88=1)(^81^BC)(^82^BD)(^86^BE)(^83^BF)(^84=)(^87^C0)(^8C=e)
+    (^9B^2BC)(^8F=c)(^B2=0)(^C7^314)]
+[-D:^80(^88=1)(^81^C2)(^82^8D)(^86^C3)(^83^C4)(^84=)(^87^C5)(^8C=8)
+    (^9B^2BC)(^8F=d)(^B2=0)(^C7^327)]
+<(323=0|Jordan Jacobelli)>[-E:^80(^88=1)(^81^C7)(^82^C8)(^86^C9)(^83^CA)
+    (^84=)(^87^CB)(^8C=b)(^9B^2BC)(^8F=e)(^B2=0)(^C7^323)]
+[-F:^80(^88=1)(^81^CC)(^82^BD)(^86^CD)(^83^CE)(^84=)(^87^CF)(^8C=14)
+    (^9B^2BC)(^8F=f)(^B2=0)(^C7^314)]
+<(326=0|Antoine Bardoux)>[-10:^80(^88=1)(^81^D0)(^82^D1)(^86^D2)(^83^D3)
+    (^84=)(^87^D4)(^8C=a)(^9B^2BC)(^8F=10)(^B2=0)(^C7^326)]
+[-11:^80(^88=1)(^81^D5)(^82^D1)(^86^D6)(^83^D7)(^84=)(^87^D8)(^8C=d)
+    (^9B^2BC)(^8F=11)(^B2=0)(^C7^326)]
+[-12:^80(^88=1)(^81^D9)(^82^BD)(^86^DA)(^83^DB)(^84=)(^87^DC)(^8C=9)
+    (^9B^2BC)(^8F=12)(^B2=0)(^C7^314)]
+[-13:^80(^88=1)(^81^DE)(^82^C8)(^86^DF)(^83^E0)(^84=)(^87^E1)(^8C=f)
+    (^9B^2BC)(^8F=13)(^B2=0)(^C7^323)]
+[14:^80(^88=11)]
+[-15:^80(^88=1)(^81^E7)(^82^C8)(^86^E8)(^83^E9)(^84=)(^87^EA)(^8C=21)
+    (^9B^2BC)(^8F=15)(^B2=0)(^C7^323)]
+[16:^80(^88=11)]
+[17:^80(^88=11)]
+[-18:^80(^88=1)(^81^F4)(^82^BD)(^86^F5)(^83^F6)(^84=)(^87^F7)(^8C=b)
+    (^9B^2BC)(^8F=18)(^B2=0)(^C7^314)]
+[-19:^80(^88=1)(^81^F8)(^82^BD)(^86^F9)(^83^FA)(^84=)(^87^FB)(^8C=54)
+    (^9B^2BC)(^8F=19)(^B2=0)(^C7^314)]
+[1A:^80(^88=11)]
+[-1B:^80(^88=1)(^81^101)(^82^BD)(^86^102)(^83^103)(^84=)(^87=44c)(^8C=d)
+    (^9B^2BC)(^8F=1b)(^B2=0)(^C7^314)]
+[-1C:^80(^88=1)(^81^105)(^82^BD)(^86^106)(^83^107)(^84=)(^87=d26)(^8C=47)
+    (^9B^2BC)(^8F=1c)(^B2=0)(^C7^314)]
+[-1D:^80(^88=1)(^81^10A)(^82^BD)(^86^10B)(^83^10C)(^84=)(^87^10D)(^8C=77)
+    (^9B^2BC)(^8F=1d)(^B2=0)(^C7^314)]
+[-1E:^80(^88=1)(^81^10F)(^82^BD)(^86^110)(^83^111)(^84=)(^87=493)(^8C=10)
+    (^9B^2BC)(^8F=1e)(^B2=0)(^C7^314)]
+[-1F:^80(^88=1)(^81^113)(^82^BD)(^86^114)(^83^115)(^84=)(^87=448)(^8C=c)
+    (^9B^2BC)(^8F=1f)(^B2=0)(^C7^314)]
+[20:^80(^88=11)]
+[-21:^80(^88=1)(^81^11B)(^82^C8)(^86^11C)(^83^11D)(^84=)(^87=424)(^8C=a)
+    (^9B^2BC)(^8F=21)(^B2=0)(^C7^323)]
+[22:^80(^88=11)]
+[-23:^80(^88=1)(^81^123)(^82^BD)(^86^124)(^83^125)(^84=)(^87=4d5)(^8C=10)
+    (^9B^2BC)(^8F=23)(^B2=0)(^C7^314)]
+<(31F=0|Cyril Duval)>[-24:^80(^88=1)(^81^E7)(^82^127)(^86^128)(^83^129)
+    (^84=)(^87=3fd)(^8C=b)(^9B^2BC)(^8F=24)(^B2=0)(^C7^31F)]
+[25:^80(^88=11)]
+<(324=0|Julien DOCHE)>[-26:^80(^88=1)(^81^130)(^82^131)(^86^132)(^83^133)
+    (^84=)(^87=660)(^8C=18)(^9B^2BC)(^8F=26)(^B2=0)(^C7^324)]
+<(325=0|news.epita.fr)>[-27:^80(^88=1)(^81^E7)(^82^135)(^86^136)(^83^137)
+    (^84=)(^87=480)(^8C=b)(^9B^2BC)(^8F=27)(^B2=0)(^C7^325)]
+[-28:^80(^88=1)(^81^139)(^82^13A)(^86^13B)(^83^13C)(^84=)(^87=54a)
+    (^8C=11)(^9B^2BC)(^8F=28)(^B2=0)(^C7^31F)]
+[-29:^80(^88=1)(^81^13E)(^82^13A)(^86^13F)(^83^140)(^84=)(^87=623)
+    (^8C=16)(^9B^2BC)(^8F=29)(^B2=0)(^C7^31F)]
+<(320=0|Juliette Garreau)>[-2A:^80(^88=1)(^81^113)(^82^143)(^86^144)
+    (^83^145)(^84=)(^87=40a)(^8C=b)(^9B^2BC)(^8F=2a)(^B2=0)(^C7^320)]
+[-2B:^80(^88=1)(^81^113)(^82^C8)(^86^147)(^83^148)(^84=)(^87=41f)(^8C=b)
+    (^9B^2BC)(^8F=2b)(^B2=0)(^C7^323)]
+[-2C:^80(^88=1)(^81^BC)(^82^14A)(^86^14B)(^83^14C)(^84=)(^87=4a2)(^8C=e)
+    (^9B^2BC)(^8F=2c)(^B2=0)(^C7^314)]
+[-2D:^80(^88=1)(^81^14E)(^82^BD)(^86^14F)(^83^150)(^84=)(^87=4a9)(^8C=e)
+    (^9B^2BC)(^8F=2d)(^B2=0)(^C7^314)]
+[-2E:^80(^88=1)(^81^152)(^82^14A)(^86^153)(^83^154)(^84=)(^87=4b6)
+    (^8C=f)(^9B^2BC)(^8F=2e)(^B2=0)(^C7^314)]
+[-2F:^80(^88=1)(^81^156)(^82^14A)(^86^157)(^83^158)(^84=)(^87=4c7)
+    (^8C=e)(^9B^2BC)(^8F=2f)(^B2=0)(^C7^314)]
+[-30:^80(^88=1)(^81^15A)(^82^15B)(^86^15C)(^83^15D)(^84=)(^87=4ac)
+    (^8C=f)(^9B^2BC)(^8F=30)(^B2=0)(^C7^314)]
+[-31:^80(^88=1)(^81^15F)(^82^14A)(^86^160)(^83^161)(^84=)(^87=51a)
+    (^8C=11)(^9B^2BC)(^8F=31)(^B2=0)(^C7^314)]
+[32:^80(^88=11)]
+[-33:^80(^88=1)(^81^16A)(^82^14A)(^86^16B)(^83^16C)(^84=)(^87=5bd)
+    (^8C=16)(^9B^2BC)(^8F=33)(^B2=0)(^C7^314)]
+[-34:^80(^88=1)(^81^16E)(^82^14A)(^86^16F)(^83^170)(^84=)(^87=948)
+    (^8C=25)(^9B^2BC)(^8F=34)(^B2=0)(^C7^314)]
+[-35:^80(^88=1)(^81^173)(^82^14A)(^86^174)(^83^175)(^84=)(^87=61b)
+    (^8C=16)(^9B^2BC)(^8F=35)(^B2=0)(^C7^314)]
+[36:^80(^88=11)]
+[37:^80(^88=11)]
+[-38:^80(^88=1)(^81^181)(^82^182)(^86^183)(^83^184)(^84=)(^87^185)
+    (^8C=100)(^9B^2BC)(^8F=38)(^B2=0)(^C7^31F)]
+[-39:^80(^88=1)(^81^16E)(^82^14A)(^86^187)(^83^188)(^84=)(^87=6c6)
+    (^8C=19)(^9B^2BC)(^8F=39)(^B2=0)(^C7^314)]
+<(322=0|Valentin Ouvrard)>[-3A:^80(^88=1)(^81^18B)(^82^18C)(^86^18D)
+    (^83^18E)(^84=)(^87=47f)(^8C=c)(^9B^2BC)(^8F=3a)(^B2=0)(^C7^322)]
+[-3B:^80(^88=11)(^81^190)(^82^182)(^86^191)(^83^192)(^84^193)(^87=4f9)
+    (^8C=e)(^9B=3a)(^8F=3a)(^B2=0)(^C7^31F)]
+[-3C:^80(^88=1)(^81^195)(^82^14A)(^86^196)(^83^197)(^84=)(^87=6aa)
+    (^8C=1a)(^9B^2BC)(^8F=3c)(^B2=0)(^C7^314)]
+[-3D:^80(^88=1)(^81^199)(^82^182)(^86^19A)(^83^19B)(^84=)(^87=3d9)
+    (^8C=d)(^9B^2BC)(^8F=3d)(^B2=0)(^C7^31F)]
+<(321=0|Mathis Raguin)>[-3E:^80(^88=1)(^81^19D)(^82^19E)(^86^19F)(^83^1A0)
+    (^84=)(^87=509)(^8C=c)(^9B^2BC)(^8F=3e)(^B2=0)(^C7^321)]
+[-3F:^80(^88=1)(^81^1A2)(^82^177)(^86^1A3)(^83^1A4)(^84=)(^87=482)
+    (^8C=b)(^9B^2BC)(^8F=3f)(^B2=0)(^C7^320)]
+[-40:^80(^88=1)(^81^1A6)(^82^14A)(^86^1A7)(^83^1A8)(^84=)(^87=8da)
+    (^8C=21)(^9B^2BC)(^8F=40)(^B2=0)(^C7^314)]
+[-41:^80(^88=1)(^81^1AA)(^82^14A)(^86^1AB)(^83^1AC)(^84=)(^87^1AD)
+    (^8C=87)(^9B^2BC)(^8F=41)(^B2=0)(^C7^314)]
+[-42:^80(^88=1)(^81^1AF)(^82^127)(^86^1B0)(^83^1B1)(^84=)(^87=439)
+    (^8C=f)(^9B^2BC)(^8F=42)(^B2=0)(^C7^31F)]
+[-43:^80(^88=1)(^81^1B3)(^82^177)(^86^1B4)(^83^1B5)(^84=)(^87=512)
+    (^8C=d)(^9B^2BC)(^8F=43)(^B2=0)(^C7^320)]
+[-44:^80(^88=1)(^81^1B7)(^82^14A)(^86^1B8)(^83^1B9)(^84=)(^87=3ea)
+    (^8C=c)(^9B^2BC)(^8F=44)(^B2=0)(^C7^314)]
+[-45:^80(^88=1)(^81^1BB)(^82^14A)(^86^1BC)(^83^1BD)(^84=)(^87=7ba)
+    (^8C=21)(^9B^2BC)(^8F=45)(^B2=0)(^C7^314)]
+[-46:^80(^88=11)(^81^1BF)(^82^14A)(^86^1C0)(^83^1C1)(^84^1C2)(^87=68c)
+    (^8C=1a)(^9B=45)(^8F=45)(^B2=0)(^C7^314)]
+[-47:^80(^88=1)(^81^1C4)(^82^14A)(^86^1C5)(^83^1C6)(^84=)(^87=4c0)
+    (^8C=e)(^9B^2BC)(^8F=47)(^B2=0)(^C7^314)]
+[-48:^80(^88=1)(^81^1C8)(^82^14A)(^86^1C9)(^83^1CA)(^84=)(^87=fc2)
+    (^8C=45)(^9B^2BC)(^8F=48)(^B2=0)(^C7^314)]
+[-49:^80(^88=1)(^81^1CD)(^82^1CE)(^86^1CF)(^83^1D0)(^84=)(^87^1D1)
+    (^8C=71)(^9B^2BC)(^8F=49)(^B2=0)(^C7^31C)]
+[-4A:^80(^88=1)(^81^1D3)(^82^14A)(^86^1D4)(^83^1D5)(^84=)(^87=a6d)
+    (^8C=2b)(^9B^2BC)(^8F=4a)(^B2=0)(^C7^314)]
+[-4B:^80(^88=11)(^81^1D8)(^82^1CE)(^86^1D9)(^83^1DA)(^84^1DB)(^87^1DC)
+    (^8C=3c)(^9B=4a)(^8F=4a)(^B2=0)(^C7^31C)]
+[-4C:^80(^88=11)(^81^1D8)(^82^14A)(^86^1DE)(^83^1DF)(^84^1E0)(^87^1E1)
+    (^8C=47)(^9B=4b)(^8F=4a)(^B2=0)(^C7^314)]
+<(31E=0|Pierre KELBERT)>[-4D:^80(^88=1)(^81^1E2)(^82^1E3)(^86^1E4)
+    (^83^1E5)(^84=)(^87=baa)(^8C=2d)(^9B^2BC)(^8F=4d)(^B2=0)(^C7^31E)]
+[-4E:^80(^88=1)(^81^1E8)(^82^14A)(^86^1E9)(^83^1EA)(^84=)(^87=533)
+    (^8C=10)(^9B^2BC)(^8F=4e)(^B2=0)(^C7^314)]
+<(31D=0|arthur)>[-4F:^80(^88=1)(^81^1EC)(^82^1ED)(^86^1EE)(^83^1EF)
+    (^84=)(^87=eac)(^8C=3d)(^9B^2BC)(^8F=4f)(^B2=0)(^C7^31D)]
+[-1:^9F(^AC=1)(^AD=0)(^AE=1)(^88=1)(^AF^2BB)(^AA=0)(^A9=0)(^B1^2BB)
+    (^A1=7c)(^A2=0)(^A6=7c)(^B3^30F)(^C0=1)(^C1^30E)(^B4=15)(^B5=1)
+    (^B6=1)(^B7=0)(^C2^310)(^B8^312)]
+@$$}C}@

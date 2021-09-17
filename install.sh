@@ -41,6 +41,9 @@ ln -sfv ~/.dotfiles/kitty ~/.config
 # fehbg handling
 ln -sfv ~/.dotfiles/.fehbg ~
 
+# Thunderbird
+ln -sfv ~/.dotfiles/.thunderbird ~
+
 # Wallpaper
 echo "==> Add the lock wallpaper"
 

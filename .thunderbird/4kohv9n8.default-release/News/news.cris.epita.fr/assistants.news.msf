@@ -1,0 +1,290 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
+  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
+  (8A=label)(8B=statusOfset)(8C=numLines)(8D=ccList)(8E=bccList)
+  (8F=msgThreadId)(90=threadId)(91=threadFlags)(92=threadNewestMsgDate)
+  (93=children)(94=unreadChildren)(95=threadSubject)(96=msgCharSet)
+  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
+  (99=ns:msg:db:table:kind:allthreads)
+  (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
+  (9D=msgOffset)(9E=offlineMsgSize)
+  (9F=ns:msg:db:row:scope:dbfolderinfo:all)
+  (A0=ns:msg:db:table:kind:dbfolderinfo)(A1=numMsgs)(A2=numNewMsgs)
+  (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
+  (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
+  (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)(AD=forceReparse)
+  (AE=fixedBadRefThreading)(AF=readSet)(B0=folderName)(B1=knownArts)
+  (B2=ProtoThreadFlags)(B3=MRUTime)(B4=lastMissingCheck)>
+<(83=734)(E1=611d7c37)(81=0)(80=1)>
+[14:m(^9C^83)(^90^83)(^92^E1)(^91=0)(^93=1)(^94=1)]
+<(E6=721)(86=607a8b8f)>[1:m(^9C^E6)(^90^E6)(^92^86)(^91=0)(^93=1)(^94=1)]
+<(E9=722)(8C=607a9a72)>[2:m(^9C^E9)(^90^E9)(^92^8C)(^91=0)(^93=1)(^94=1)]
+<(EB=723)(90=607ab40d)>[3:m(^9C^EB)(^90^EB)(^92^90)(^91=0)(^93=1)(^94=1)]
+<(ED=724)(96=607e9bf6)>[4:m(^9C^ED)(^90^ED)(^92^96)(^91=0)(^93=1)(^94=1)]
+<(EF=725)(9B=6083e499)>[5:m(^9C^EF)(^90^EF)(^92^9B)(^91=0)(^93=1)(^94=1)]
+<(F1=726)(A1=608aa488)>[6:m(^9C^F1)(^90^F1)(^92^A1)(^91=0)(^93=1)(^94=1)]
+<(F3=727)(A7=6096e78a)>[7:m(^9C^F3)(^90^F3)(^92^A7)(^91=0)(^93=1)(^94=1)]
+<(F5=728)(AC=609a96e0)>[8:m(^9C^F5)(^90^F5)(^92^AC)(^91=0)(^93=1)(^94=1)]
+<(F7=729)(B0=609bc1a5)>[9:m(^9C^F7)(^90^F7)(^92^B0)(^91=0)(^93=1)(^94=1)]
+<(F9=72a)(B5=609e351a)>[A:m(^9C^F9)(^90^F9)(^92^B5)(^91=0)(^93=1)(^94=1)]
+<(FA=72b)(BA=609e77dd)>[B:m(^9C^FA)(^90^FA)(^92^BA)(^91=0)(^93=1)(^94=1)]
+<(FB=72c)(BF=60aa425c)>[C:m(^9C^FB)(^90^FB)(^92^BF)(^91=0)(^93=1)(^94=1)]
+<(FC=72d)(C3=60b52b9e)>[D:m(^9C^FC)(^90^FC)(^92^C3)(^91=0)(^93=1)(^94=1)]
+<(FD=72e)(C8=60be0b6c)>[E:m(^9C^FD)(^90^FD)(^92^C8)(^91=0)(^93=1)(^94=1)]
+<(FE=72f)(CC=60de1805)>[F:m(^9C^FE)(^90^FE)(^92^CC)(^91=0)(^93=1)(^94=1)]
+<(100=730)(CF=60e5e900)>[10:m(^9C=730)(^90=730)(^92^CF)(^91=0)(^93=1)
+    (^94=1)]
+<(101=731)(D3=60eef12b)>[11:m(^9C=731)(^90=731)(^92^D3)(^91=0)(^93=1)
+    (^94=1)]
+<(102=732)(D9=60f1e47f)>[12:m(^9C=732)(^90=732)(^92^D9)(^91=0)(^93=1)
+    (^94=1)]
+<(104=733)(DD=60f867dd)>[13:m(^9C=733)(^90=733)(^92^DD)(^91=0)(^93=1)
+    (^94=1)]
+
+<(8A=[JWS][TRACES] Erreurs dans les traces)(8B
+    =Responsable des Assistants <chef@assistants.epita.fr>)(8D
+    =s5e5pj\$2f5\$1@news-1.int.cri.epita.net)(82=)(8E=4ee)(8F=d)(E5
+    =ffffffff)>
+{722:^80 {(k^98:c)(s=9)2:m } [722(^88=0)(^81^8A)(^82^8B)(^86^8C)(^83^8D)
+    (^84=)(^87^8E)(^8C=d)(^9B^E5)(^8F^E9)(^B2=0)]}
+
+<(84=[JWS][TRACES] Mise en ligne des traces du dementor)(85
+    =Albin Parou <albin.parou@epita.fr>)(91
+    =s5ec6d\$6ar\$1@news-1.int.cri.epita.net)(92=61e)(93=17)>
+{723:^80 {(k^98:c)(s=9)3:m } [723(^88=0)(^81^84)(^82^85)(^86^90)(^83^91)
+    (^84=)(^87^92)(^8C=17)(^9B^E5)(^8F^EB)(^B2=0)]}
+
+<(87=s5e22f\$d6\$1@news-1.int.cri.epita.net)(88=635)(89=15)(94
+    =partiels-ing1@tickets.cri.epita.fr)(95
+    =Junior Porte <junior.porte@epita.fr>)(97
+    =s5m65o\$stt\$1@news-1.int.cri.epita.net)(98=ad0)(99=28)(9A
+    =[JWS][TRACES] Mise en ligne des traces)(9C
+    =s60oap\$h5u\$1@news-1.int.cri.epita.net)(9D=590)(9E=14)(9F
+    =[INTRA][MAINTENANCE] Perturbation des services des assistants)
+  (A0=Melchior de Roquefeuil <melchior@cri.epita.fr>)(A2
+    =s6e8a9\$v76\$1@news-1.int.cri.epita.net)(A3=496)(A4=b)(A5
+    =[AJAVA][RENDU] Approche de la date de rendu)(A6
+    =Responsable des assistants <chef@assistants.epita.fr>)(A8
+    =s76p22\$s89\$1@news-1.int.cri.epita.net)(A9=7c5)(AA=1a)(AB
+    =[PERM][HORAIRE] Horaire de permanence)(AD
+    =s7e4sn\$jsd\$1@news-1.int.cri.epita.net)(AE=578)(AF
+    ==?UTF-8?Q?=5bS5=5d=5bRENDU=5d_D=c3=a9calage_de_la_date_des_re-rendu?= =?U\
+TF-8?Q?s?=)(B1=s7gfir\$3ld\$1@news-1.int.cri.epita.net)(B2=4d8)(B3=c)
+  (B4==?UTF-8?Q?=5bACPP=5d=5bTRICHE=5d_D=c3=a9tection_de_triche?=)(B6
+    =s7lceg\$6i7\$1@news-1.int.cri.epita.net)(B7=538)(B8=e)(B9
+    ==?UTF-8?B?W1BFUk1dW1BSRVNFTlRJRUxdIMOJdHVkaWFudHMgY29udmnDqXM=?=)
+  (BB=s7lt4j\$ggh\$1@news-1.int.cri.epita.net)(BC=42f)(BD=a)(BE
+    =[RELOADS][TRACES] Mise en ligne des traces du 5e reload)(C0
+    =s8dfos\$1he\$1@news-1.int.cri.epita.net)(C1=5bb)(C2
+    =[PING][REPO] Ouverture des repositories)(C4
+    =s93a2d\$km2\$1@news-1.int.cri.epita.net)(C5=5e1)(C6=10)(C7
+    =[PING][RENDUS] Ouverture des soumissions)(C9
+    =s9l20q\$i3i\$1@news-1.int.cri.epita.net)(CA=62b)(CB
+    =[JEB][TRACES] Mise en ligne des traces)(CD
+    =sbl565\$7vs\$1@news-1.int.cri.epita.net)(CE=5ba)(D0
+    =sc4pe0\$fre\$1@news-1.int.cri.epita.net)(D1=5ea)(D2
+    =[RELOAD][JWS] Push final)(D4=scmree\$bb2\$1@news-1.int.cri.epita.net)
+  (D5=5a9)(D6=11)(D7=[JWS][TRACES] Mise en ligne des traces du reload)
+  (D8=Tanguy Segarra <tanguy.segarra@epita.fr>)(DA
+    =scso4q\$s52\$1@news-1.int.cri.epita.net)(DB=57a)(DC
+    =[INTRA][ACCES] Coupure de l'intranet assistant)(DE
+    =sd9p40\$tm1\$1@news-1.int.cri.epita.net)(DF=490)(E0
+    =[YAKA][RETOURS] Retours sur les projets)(E2
+    =sfju6f\$3r1\$2@news-7c5dccc484-46nlw.cri.epita.fr)(E3=6c1)>
+{1:^80 {(k^97:c)(s=9)} 
+  [721(^88=0)(^81^84)(^82^85)(^86^86)(^83^87)(^84=)(^87^88)(^8C=15)
+    (^9B^E5)(^8F^E6)(^B2=0)]722 723 
+  [724(^88=0)(^81^94)(^82^95)(^86^96)(^83^97)(^84=)(^87^98)(^8C=28)
+    (^9B^E5)(^8F^ED)(^B2=0)]
+  [725(^88=0)(^81^9A)(^82^85)(^86^9B)(^83^9C)(^84=)(^87^9D)(^8C=14)
+    (^9B^E5)(^8F^EF)(^B2=0)]
+  [726(^88=0)(^81^9F)(^82^A0)(^86^A1)(^83^A2)(^84=)(^87^A3)(^8C=b)(^9B^E5)
+    (^8F^F1)(^B2=0)]
+  [727(^88=0)(^81^A5)(^82^A6)(^86^A7)(^83^A8)(^84=)(^87^A9)(^8C=1a)
+    (^9B^E5)(^8F^F3)(^B2=0)]
+  [728(^88=0)(^81^AB)(^82^A6)(^86^AC)(^83^AD)(^84=)(^87^AE)(^8C=14)
+    (^9B^E5)(^8F^F5)(^B2=0)]
+  [729(^88=0)(^81^AF)(^82^A6)(^86^B0)(^83^B1)(^84=)(^87^B2)(^8C=c)(^9B^E5)
+    (^8F^F7)(^B2=0)]
+  [72A(^88=0)(^81^B4)(^82^A6)(^86^B5)(^83^B6)(^84=)(^87^B7)(^8C=e)(^9B^E5)
+    (^8F^F9)(^B2=0)]
+  [72B(^88=0)(^81^B9)(^82^A6)(^86^BA)(^83^BB)(^84=)(^87^BC)(^8C=a)(^9B^E5)
+    (^8F^FA)(^B2=0)]
+  [72C(^88=0)(^81^BE)(^82^85)(^86^BF)(^83^C0)(^84=)(^87^C1)(^8C=15)
+    (^9B^E5)(^8F^FB)(^B2=0)]
+  [72D(^88=0)(^81^C2)(^82^A6)(^86^C3)(^83^C4)(^84=)(^87^C5)(^8C=10)
+    (^9B^E5)(^8F^FC)(^B2=0)]
+  [72E(^88=0)(^81^C7)(^82^A6)(^86^C8)(^83^C9)(^84=)(^87^CA)(^8C=14)
+    (^9B^E5)(^8F^FD)(^B2=0)]
+  [72F(^88=0)(^81^CB)(^82^85)(^86^CC)(^83^CD)(^84=)(^87^CE)(^8C=15)
+    (^9B^E5)(^8F^FE)(^B2=0)]
+  [730(^88=0)(^81^CB)(^82^85)(^86^CF)(^83^D0)(^84=)(^87^D1)(^8C=15)
+    (^9B^E5)(^8F=730)(^B2=0)]
+  [731(^88=0)(^81^D2)(^82^A6)(^86^D3)(^83^D4)(^84=)(^87^D5)(^8C=11)
+    (^9B^E5)(^8F=731)(^B2=0)]
+  [732(^88=0)(^81^D7)(^82^D8)(^86^D9)(^83^DA)(^84=)(^87^DB)(^8C=14)
+    (^9B^E5)(^8F=732)(^B2=0)]
+  [733(^88=0)(^81^DC)(^82^A6)(^86^DD)(^83^DE)(^84=)(^87^DF)(^8C=c)(^9B^E5)
+    (^8F=733)(^B2=0)]
+  [734(^88=0)(^81^E0)(^82^A6)(^86^E1)(^83^E2)(^84=)(^87^E3)(^8C=14)
+    (^9B^E5)(^8F^83)(^B2=0)]}
+{724:^80 {(k^98:c)(s=9)4:m } 724 }
+{725:^80 {(k^98:c)(s=9)5:m } 725 }
+{726:^80 {(k^98:c)(s=9)6:m } 726 }
+{727:^80 {(k^98:c)(s=9)7:m } 727 }
+{728:^80 {(k^98:c)(s=9)8:m } 728 }
+{729:^80 {(k^98:c)(s=9)9:m } 729 }
+{72A:^80 {(k^98:c)(s=9)A:m } 72A }
+{72B:^80 {(k^98:c)(s=9)B:m } 72B }
+{72C:^80 {(k^98:c)(s=9)C:m } 72C }
+{72D:^80 {(k^98:c)(s=9)D:m } 72D }
+{72E:^80 {(k^98:c)(s=9)E:m } 72E }
+{72F:^80 {(k^98:c)(s=9)F:m } 72F }
+{730:^80 {(k^98:c)(s=9)10:m } 730 }
+{731:^80 {(k^98:c)(s=9)11:m } 731 }
+{732:^80 {(k^98:c)(s=9)12:m } 732 }
+{733:^80 {(k^98:c)(s=9)13:m } 733 }
+{734:^80 {(k^98:c)(s=9)14:m } 734 }
+{721:^80 {(k^98:c)(s=9)1:m } 721 }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} [721(^95^84)]
+  [722(^95^8A)]
+  [723(^95^84)]
+  [724(^95^94)]
+  [725(^95^9A)]
+  [726(^95^9F)]
+  [727(^95^A5)]
+  [728(^95^AB)]
+  [729(^95^AF)]
+  [72A(^95^B4)]
+  [72B(^95^B9)]
+  [72C(^95^BE)]
+  [72D(^95^C2)]
+  [72E(^95^C7)]
+  [72F(^95^CB)]
+  [730(^95^CB)]
+  [731(^95^D2)]
+  [732(^95^D7)]
+  [733(^95^DC)]
+  [734(^95^E0)]}
+
+<(E8=1-1824)(E4=1825-1844)(E7=1631841609)>
+{1:^9F {(k^A0:c)(s=9u)} 
+  [1(^AC=1)(^AD=0)(^AE=1)(^88=1)(^AF^E8)(^AA^83)(^A9^83)(^B1^E4)(^A1=14)
+    (^A2=14)(^A6^83)(^B3^E7)(^B4=733)]}
+
+@$${4{@
+@$$}4}@
+
+@$${5{@
+< <(a=c)> // (f=iso-8859-1)
+  (B8=viewType)(B9=columnStates)(BA=retainBy)(BB=daysToKeepHdrs)
+  (BC=numHdrsToKeep)(BD=daysToKeepBodies)(BE=useServerDefaults)
+  (BF=cleanupBodies)(C0=applyToFlaggedMessages)(C1=useServerRetention)
+  (B5=sortType)(B6=sortOrder)(B7=viewFlags)>
+[-1:^9F(^AC=1)(^AD=0)(^AE=1)(^88=1)(^AF^E8)(^AA=0)(^A9=0)(^B1^E4)(^A1=14)
+    (^A2=14)(^A6^83)(^B3^E7)(^B4=733)(^C1=1)]
+@$$}5}@
+
+@$${6{@
+< <(a=c)> // (f=iso-8859-1)
+  (C2=LastPurgeTime)>
+<(106=Fri Sep 17 03:20:55 2021)>
+[1:^9F(^C2^106)]
+@$$}6}@
+
+@$${7{@
+<(107=1631841655)>[1:^9F(^B3^107)]
+@$$}7}@
+
+@$${8{@
+< <(a=c)> // (f=iso-8859-1)
+  (C3=sortColumns)(C4=customSortCol)>
+<(108=$151)(109
+    ={"threadCol":{"visible":true},"attachmentCol":{"visible":true},"flaggedCo\
+l":{"visible":true},"subjectCol":{"visible":true},"unreadButtonColHeader":{"vi\
+sible":true},"senderCol":{"visible":true},"recipientCol":{"visible":false},"co\
+rrespondentCol":{"visible":false},"junkStatusCol":{"visible":false},"dateCol":\
+{"visible":true},"locationCol":{"visible":false}})>
+[-1:^9F(^AC=1)(^AD=0)(^AE=1)(^88=1)(^AF^E8)(^AA=0)(^A9=0)(^B1^E4)(^A1=14)
+    (^A2=14)(^A6^83)(^B3^107)(^B4=733)(^C1=1)(^C2^106)(^B5=15)(^B6=1)
+    (^B7=1)(^B8=0)(^C3^108)(^B9^109)]
+@$$}8}@
+
+@$${9{@
+< <(a=c)> // (f=iso-8859-1)
+  (C5=keywords)(C6=imageSize)(C7=junkscore)(C8=sender_name)>
+<(10A=0|Albin Parou)>[730:^80(^C8^10A)]
+<(10E=0|Responsable des assistants)>
+[731:^80(^C8^10E)]
+<(10F=0|Tanguy Segarra)>[732:^80(^C8^10F)]
+[733:^80(^C8^10E)]
+[734:^80(^C8^10E)]
+[721:^80(^C8^10A)]
+<(10B=0|Responsable des Assistants)>
+[722:^80(^C8^10B)]
+[723:^80(^C8^10A)]
+<(10C=0|Junior Porte)>[724:^80(^C8^10C)]
+[725:^80(^C8^10A)]
+<(10D=0|Melchior de Roquefeuil)>
+[726:^80(^C8^10D)]
+[727:^80(^C8^10E)]
+[728:^80(^C8^10E)]
+[729:^80(^C8^10E)]
+[72A:^80(^C8^10E)]
+[72B:^80(^C8^10E)]
+[72C:^80(^C8^10A)]
+[72D:^80(^C8^10E)]
+[72E:^80(^C8^10E)]
+[72F:^80(^C8^10A)]
+<(110=720)>[1:^9F(^A9=720)]
+@$$}9}@
+
+@$${A{@
+@$$}A}@
+
+@$${B{@
+[14:m(^94=0)]
+[1:m(^94=0)]
+[2:m(^94=0)]
+[3:m(^94=0)]
+[4:m(^94=0)]
+[5:m(^94=0)]
+[6:m(^94=0)]
+[7:m(^94=0)]
+[8:m(^94=0)]
+[9:m(^94=0)]
+[A:m(^94=0)]
+[B:m(^94=0)]
+[C:m(^94=0)]
+[D:m(^94=0)]
+[E:m(^94=0)]
+[F:m(^94=0)]
+[10:m(^94=0)]
+[11:m(^94=0)]
+[12:m(^94=0)]
+[13:m(^94=0)]
+[730:^80(^88=1)]
+[731:^80(^88=1)]
+[732:^80(^88=1)]
+[733:^80(^88=1)]
+[734:^80(^88=1)]
+[721:^80(^88=1)]
+[722:^80(^88=1)]
+[723:^80(^88=1)]
+[724:^80(^88=1)]
+[725:^80(^88=1)]
+[726:^80(^88=1)]
+[727:^80(^88=1)]
+[728:^80(^88=1)]
+[729:^80(^88=1)]
+[72A:^80(^88=1)]
+[72B:^80(^88=1)]
+[72C:^80(^88=1)]
+[72D:^80(^88=1)]
+[72E:^80(^88=1)]
+[72F:^80(^88=1)]
+<(111=1-1844)>[-1:^9F(^AC=1)(^AD=0)(^AE=1)(^88=1)(^AF^111)(^AA=0)(^A9=0)
+    (^B1^E4)(^A1=14)(^A2=0)(^A6^83)(^B3^107)(^B4=733)(^C1=1)(^C2^106)
+    (^B5=15)(^B6=1)(^B7=1)(^B8=0)(^C3^108)(^B9^109)]
+@$$}B}@

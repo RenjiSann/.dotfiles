@@ -1,7 +1,7 @@
 numlockx
 kitty
 dmenu
-vim
+gvim
 git
 volumeicon
 pulseaudio

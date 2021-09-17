@@ -1,4 +1,0 @@
-announcement.ing1: 
-assistants.news: 
-assistants.piscine: 
-cri.news: 

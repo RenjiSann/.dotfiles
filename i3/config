@@ -172,12 +172,13 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 
 # Open applications on specific workspaces
-# assign [class="Thunderbird"] $ws1
 # assign [class="Pale moon"] $ws2
 # assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
 assign [class="firefox"] $ws3
 assign [class="discord"] $ws4
+assign [class="Slack"] $ws4
+assign [class="Thunderbird"] $ws5
 
 # Open specific applications in floating mode
 for_window [class="Clipgrab"] floating enable

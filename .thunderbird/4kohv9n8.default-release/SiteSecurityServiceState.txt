@@ -1,5 +1,0 @@
-start.thunderbird.net^partitionKey=%28http%2Cthunderbird.net%29:HSTS	0	18887	1663377141683,1,0,2
-autoconfig.thunderbird.net:HSTS	0	18887	1663377130553,1,0,2
-www.epita.fr:HSTS	0	18887	1663377130131,1,0,2
-location.services.mozilla.com:HSTS	0	18887	1663377109219,1,1,2
-epita.fr:HSTS	0	18887	1663377129467,1,0,2

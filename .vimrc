@@ -63,6 +63,7 @@ set clipboard=unnamed	" Link the system clipboard to vim
 
 " Map F7 to reindent all file
 map <F7> gg=G<C-o><C-o>
+map Q <Nop>		" unmap Q from 'Entering Ex Mode'
 " Map F5 to copy and F6 to paste while in visual mode
 vnoremap <F5> "+y		
 noremap <F6> "+p

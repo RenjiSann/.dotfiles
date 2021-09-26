@@ -32,9 +32,11 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start program launcher
+# start dmenu
 bindsym $mod+d exec --no-startup-id dmenu_run_history -fn 'JuliaMono-Regular'
 
+# Launch the screenshot utility
+bindsym Print exec --no-startup-id flameshot gui
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -60,7 +62,10 @@ bindsym $mod+F3 exec discord
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b -i 1.0
 
+# Restart notification daemon
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
+
+# Kill a task by clicking its window
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # Disable focus following mouse

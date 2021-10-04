@@ -33,7 +33,7 @@ colors() {
 
 # Change TAB button behavior
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
-#[[ $- = *i* ]] && bind TAB:menu-complete
+[[ $- = *i* ]] && bind TAB:menu-complete
 
 
 # Change the window title of X terminals
@@ -151,7 +151,7 @@ ex ()
 }
 
 # Auto complete Makefile variables
-complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' ?akefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" make
+#complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' ?akefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" make
 
 # Remap the caps lock btn to escape
 # setxkbmap -option caps:escape -model pc105

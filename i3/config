@@ -62,6 +62,9 @@ bindsym $mod+F3 exec discord
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b -i 1.0
 
+# Lock the screen
+bindsym $mod+Shift+n exec --no-startup-id i3lockmore --image-fill /usr/share/backgrounds/lock_wallpaper.png
+
 # Restart notification daemon
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 

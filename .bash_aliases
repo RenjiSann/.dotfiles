@@ -9,5 +9,6 @@ alias gcm='git commit -m'
 alias gstt='git status'
 alias gph='git push'
 alias gpl='git pull'
+alias gpft='git push --follow-tags'
 
 alias matrix='ncmatrix -I wlp1s0 -R red -T yellow'

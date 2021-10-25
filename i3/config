@@ -7,6 +7,23 @@ set $mod Mod4
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
+################################################################################
+
+# Autostart applications
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id picom -b -i 1.0
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
+#exec --no-startup-id xautolock -time 10 -locker 'dm-tool lock'
+exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 'i3lockmore --image-fill /usr/share/backgrounds/lock_wallpaper.png' ''
+
+exec --no-startup-id onedrive --monitor
+
+# Load the background
+exec --no-startup-id eval '~/.fehbg'
+
+################################################################################
+
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border none
 default_floating_border normal
@@ -180,8 +197,6 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 
 # Open applications on specific workspaces
-# assign [class="Pale moon"] $ws2
-# assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
 assign [class="firefox"] $ws3
 assign [class="discord"] $ws4
@@ -243,17 +258,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-
-# Autostart applications
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id picom -b -i 1.0
-exec --no-startup-id nm-applet
-exec --no-startup-id blueman-applet
-#exec --no-startup-id xautolock -time 10 -locker 'dm-tool lock'
-exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 'i3lockmore --image-fill /usr/share/backgrounds/lock_wallpaper.png' ''
-
-# Load the background
-exec --no-startup-id eval '~/.fehbg'
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:

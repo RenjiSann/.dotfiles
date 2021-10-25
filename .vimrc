@@ -1,8 +1,6 @@
 "   RenjiSann .vimrc 2021
 " Start
 
-
-
 "   PLUGINS
 call plug#begin('~/.vim/plugged')
 
@@ -50,7 +48,7 @@ set autoindent          " Auto indent new lines depending on the one above
 set tabstop=4           " Make TAB length equal to 4 spaces
 set softtabstop=4       " Set the number of tabs to clear when hitting backspace
 set shiftwidth=4        " Set the indent shift width
-set listchars=space:.
+set listchars=space:.,tab:\|\ 
 set list
 
 
@@ -67,6 +65,8 @@ map Q <Nop>     " unmap Q from 'Entering Ex Mode'
 " Map F5 to copy and F6 to paste while in visual mode
 vnoremap <F5> "+y
 noremap <F6> "+p
+" Remap F3 and F4 to buffer switch
+noremap <F3> :tabNext <CR>
 
 
 

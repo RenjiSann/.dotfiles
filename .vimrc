@@ -6,20 +6,23 @@ call plug#begin('~/.vim/plugged')
 
 "Status lines
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 "Linters and LSPs
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'dense-analysis/ale'
 
+Plug 'cjuniet/clang-format.vim'
 
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 Plug 'townk/vim-autoclose'
 Plug 'sheerun/vim-polyglot'
 
 "Themes
 Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
-"Plug 'humanoid-colors/vim-humanoid-colorscheme'
+Plug 'humanoid-colors/vim-humanoid-colorscheme'
 
 call plug#end()
 "End Plugins
@@ -37,10 +40,9 @@ syntax enable           " Enable syntaxic coloration
 " Display
 set statusline=%!DetectMode(mode()) " Set the statusline to vim-airline
 set showtabline=2                   " Always show the opened tabs
-set rnu nu                          " Display relative line numbers
+set nu                          " Display relative line numbers
 set laststatus=2                    " Always display the statusline
 set bs=2                            " Set Backspace mode to 2
-
 
 " Indentation
 set expandtab           " TAB inserts a tabulation instead of spaces
@@ -67,6 +69,43 @@ vnoremap <F5> "+y
 noremap <F6> "+p
 " Remap F3 and F4 to buffer switch
 noremap <F3> :tabNext <CR>
+noremap <F4> :tabnext <CR>
+" Map F8 and F9 to vertical resize
+nnoremap <F8> :vertical res -5 <CR>
+nnoremap <F9> :vertical res +5 <CR>
+
+" Set clang-format style
+let g:clang_format_style="file"
+
+
+
+" Statusline configuration
+
+" use ascii symnols for status bar
+let g:airline_symbols_ascii = 1
+
+" map vimairline symbols
+" unicode symbols
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_left_sep = ''
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_sep = ''
+let g:airline_symbols.colnr = ' | c'
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.linenr = ' | '
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.maxlinenr = '㏑'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.spell = 'Ꞩ'
+let g:airline_symbols.notexists = 'Ɇ'
+let g:airline_symbols.whitespace = 'Ξ'
 
 
 

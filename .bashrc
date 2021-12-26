@@ -6,7 +6,6 @@
 
 colors() {
 	local fgc bgc vals seq0
-
 	printf "Color escapes are %s\n" '\e[${value};...;${value}m'
 	printf "Values 30..37 are \e[33mforeground colors\e[m\n"
 	printf "Values 40..47 are \e[43mbackground colors\e[m\n"
@@ -162,3 +161,5 @@ source ~/.bash_aliases
 # source ~/.bash_profile
 
 export PATH="/home/renji/.local/bin:$PATH"
+export PATH="/home/renji/.cargo/bin:$PATH"
+. "$HOME/.cargo/env"

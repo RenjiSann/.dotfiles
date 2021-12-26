@@ -18,6 +18,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'townk/vim-autoclose'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-commentary'
 
 "Themes
 Plug 'joshdick/onedark.vim'
@@ -73,6 +74,8 @@ noremap <F4> :tabnext <CR>
 " Map F8 and F9 to vertical resize
 nnoremap <F8> :vertical res -5 <CR>
 nnoremap <F9> :vertical res +5 <CR>
+" Enable fold remap
+nnoremap <F6> mb%zf'b<CR>
 
 " Set clang-format style
 let g:clang_format_style="file"

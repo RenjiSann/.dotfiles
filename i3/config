@@ -12,14 +12,17 @@ set $mod Mod4
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id picom -b -i 1.0
+
+# Applets
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
+exec --no-startup-id jetbrains-toolbox --minimize
+exec --no-startup-id flameshot
+
 #exec --no-startup-id xautolock -time 10 -locker 'dm-tool lock'
 exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 'i3lockmore --image-fill /usr/share/backgrounds/lock_wallpaper.png' ''
 
 exec --no-startup-id onedrive --monitor
-
-#exec --no-startup-id xrandr --dpi 96
 
 # Load the background
 exec --no-startup-id eval '~/.fehbg'
@@ -51,8 +54,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu
-bindsym $mod+d exec --no-startup-id dmenu_run_history -fn 'JuliaMono-Regular'
+# start dmenu/RoFi
+#bindsym $mod+d exec --no-startup-id dmenu_run_history -fn 'JuliaMono-Regular'
+bindsym $mod+d exec --no-startup-id rofi -show run
 
 # Launch the screenshot utility
 bindsym Print exec --no-startup-id flameshot gui

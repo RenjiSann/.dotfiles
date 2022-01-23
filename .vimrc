@@ -11,8 +11,9 @@ Plug 'vim-airline/vim-airline-themes'
 "Linters and LSPs
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'dense-analysis/ale'
+" Plug 'preservim/nerdtree'
 
-Plug 'cjuniet/clang-format.vim'
+Plug 'vim-autoformat/vim-autoformat'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -76,9 +77,8 @@ nnoremap <F8> :vertical res -5 <CR>
 nnoremap <F9> :vertical res +5 <CR>
 " Enable fold remap
 nnoremap <F6> mb%zf'b<CR>
-
-" Set clang-format style
-let g:clang_format_style="file"
+" Map ^K to formatting
+map <C-k> :Autoformat<CR>
 
 
 
@@ -251,8 +251,5 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-
-
-
 
 " End

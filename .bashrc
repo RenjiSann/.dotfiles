@@ -160,6 +160,9 @@ numlockx on
 source ~/.bash_aliases
 # source ~/.bash_profile
 
-export PATH="/home/renji/.local/bin:$PATH"
-export PATH="/home/renji/.cargo/bin:$PATH"
 . "$HOME/.cargo/env"
+
+
+# BEGIN_KITTY_SHELL_INTEGRATION
+if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
+# END_KITTY_SHELL_INTEGRATION

@@ -4,10 +4,6 @@
 
 sudo pacman -S --needed - < required_packages.txt
 
-# Make dmenu_run_history executable and move it to proper location
-chmod +x resources/dmenu_run_history
-sudo cp resources/dmenu_run_history /usr/bin/
-
 
 # SYMLINKS
 

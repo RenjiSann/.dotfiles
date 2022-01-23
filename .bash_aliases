@@ -13,6 +13,6 @@ alias gpft='git push --follow-tags'
 
 alias matrix='ncmatrix -I wlp1s0 -R red -T yellow'
 
-alias format-epita='find . -iname "*.[ch]" | xargs clang-format -i'
+alias format-epita='find . -iname "*.[ch]" -or -iname "*.[ch]pp" | xargs clang-format -i'
 
 alias gccc='gcc -Wall -Wextra -Werror -pedantic -std=c99'

@@ -53,7 +53,7 @@ set autoindent          " Auto indent new lines depending on the one above
 set tabstop=4           " Make TAB length equal to 4 spaces
 set softtabstop=4       " Set the number of tabs to clear when hitting backspace
 set shiftwidth=4        " Set the indent shift width
-set listchars=space:.,tab:\|\
+set listchars=space:.,tab:\|-
 set list
 
 

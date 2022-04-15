@@ -163,6 +163,19 @@ source ~/.bash_aliases
 . "$HOME/.cargo/env"
 
 
+
+
+# Remove trash files I dont want
+if [ -f ~/.viminfo ]
+then
+    rm ~/.viminfo
+fi
+if [ -f ~/.xsession-errors ]
+then
+    rm ~/.xsession*
+fi
+
+
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
 # END_KITTY_SHELL_INTEGRATION

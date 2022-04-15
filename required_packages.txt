@@ -4,6 +4,7 @@ dmenu
 gvim
 git
 volumeicon
+pipewire
 pulseaudio
 pavucontrol
 xautolock

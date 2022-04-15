@@ -21,10 +21,13 @@ ln -sfv ~/.dotfiles/.bash_aliases ~
 # .zshrc
 ln -sfv ~/.dotfiles/.zshrc ~/
 
-
 # i3
 rm -rf ~/.config/i3
 ln -sfv ~/.dotfiles/i3 ~/.config/
+
+# i3status
+rm -rf ~/.config/i3status
+ln -sfv ~/.dotfiles/i3status ~/.config/
 
 # git
 ln -sfv ~/.dotfiles/.gitconfig ~

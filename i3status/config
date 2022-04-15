@@ -1,0 +1,92 @@
+general {
+    output_format = "i3bar"
+        colors = true
+        interval = 5
+}
+
+order += "battery 0"
+order += "cpu_temperature 0"
+order += "memory"
+order += "disk /"
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "load"
+order += "tztime paris"
+
+wireless _first_ {
+# %quality
+# %essid
+# %bitrate
+# %ip
+    format_up = "📶 (%quality at %essid, %bitrate) %ip"
+        format_down = "W: down"
+}
+
+ethernet _first_ {
+# %speed
+# %ip
+    format_up = "E: %ip (%speed)"
+        format_down = ""
+}
+
+battery 0 {
+# %emptytime: Estimated time limit without charging
+# %remaining: Estimated time remaining without charging
+# %status: Battery status
+# %percentage: current battery percentage
+    format = "%status %percentage %remaining"
+        format_down = "No battery"
+        status_chr = "⚡ CHR"
+        status_bat = "🔋 BAT"
+        status_unk = "❓ UNK"
+        status_full = "👌 FULL"
+        path = "/sys/class/power_supply/BAT1/uevent"
+        low_threshold = 10
+}
+
+tztime paris{
+    format = "📅 %Y-%m-%d %H:%M:%S"
+        timezone = "Europe/Paris"
+}
+
+load {
+    format = "%5min"
+}
+
+cpu_temperature 0 {
+    format = "🌡️ %degrees °C"
+        #path = "/sys/devices/platform/coretemp.0/temp1_input"
+        path = "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp1_input"
+        max_threshold = "70"
+        format_above_threshold = "☣️  %degrees °C"
+}
+
+memory {
+    format = "🚃 %used %available"
+        threshold_degraded = "10%"
+        format_degraded = "RAM: %free"
+}
+
+disk "/" {
+    format = "💾 %avail"
+}
+
+# ==================== PROBABLY NEVER TO BE USED ======================
+
+run_watch DHCP {
+    pidfile = "/var/run/dhclient*.pid"
+}
+
+run_watch VPNC {
+# file containing the PID of a vpnc process
+    pidfile = "/var/run/vpnc/pid"
+}
+
+path_exists VPN {
+# path exists when a VPN tunnel launched by nmcli/nm-applet is active
+    path = "/proc/sys/net/ipv4/conf/tun0"
+}
+
+read_file uptime {
+    path = "/proc/uptime"
+}

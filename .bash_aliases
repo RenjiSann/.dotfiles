@@ -1,16 +1,16 @@
 alias ls='exa'
 alias la='exa -a'
-alias ll='exa -l'
+alias ll='exa -l --git'
 alias lla='exa -la'
 alias lh='exa -lh'
 
 alias p3='python3'
 
-alias gadd='git add'
-alias gcm='git commit -m'
-alias gstt='git status'
-alias gph='git push'
-alias gpl='git pull'
+#   alias gadd='git add'
+#   alias gcm='git commit -m'
+#   alias gstt='git status'
+#   alias gph='git push'
+#   alias gpl='git pull'
 alias gpft='git push --follow-tags'
 
 alias matrix='ncmatrix -I wlp1s0 -R red -T yellow'

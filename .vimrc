@@ -31,90 +31,7 @@ call plug#end()
 "End Plugins
 
 
-" Theme
-set background=dark
-colorscheme onedark     " Change colorTheme
-let &t_ut=''            " Set default background element
-set termguicolors       " For color and colorscheme purposes
-set colorcolumn=72,80   " Set a color column at 80th
-syntax enable           " Enable syntaxic coloration
-
-
-" Display
-set statusline=%!DetectMode(mode()) " Set the statusline to vim-airline
-set showtabline=2                   " Always show the opened tabs
-set nu                              " Display relative line numbers
-set laststatus=2                    " Always display the statusline
-set bs=2                            " Set Backspace mode to 2
-
-" Indentation
-set expandtab           " TAB inserts a tabulation instead of spaces
-set autoindent          " Auto indent new lines depending on the one above
-set tabstop=4           " Make TAB length equal to 4 spaces
-set softtabstop=4       " Set the number of tabs to clear when hitting backspace
-set shiftwidth=4        " Set the indent shift width
-set listchars=space:.,tab:\|-
-set list
-
-
-
-" Misc
-set ic              " Ignore case when searching
-set belloff=all     " Disable bell sounds "
-set timeoutlen=100      " Set the detection of insert mode to normal mode to 100ms
-set clipboard=unnamed   " Link the system clipboard to vim
-
-" Map F7 to reindent all file
-map <F7> gg=G<C-o><C-o>
-map Q <Nop>     " unmap Q from 'Entering Ex Mode'
-" Map F5 to copy and F6 to paste while in visual mode
-vnoremap <F5> "+y
-noremap <F6> "+p
-" Remap F3 and F4 to buffer switch
-noremap <F3> :tabNext <CR>
-noremap <F4> :tabnext <CR>
-" Map F8 and F9 to vertical resize
-nnoremap <F8> :vertical res -5 <CR>
-nnoremap <F9> :vertical res +5 <CR>
-" Map ^K to formatting
-map <C-k> :Autoformat<CR>
-" Enable fold remap
-" nnoremap <F6> mb%zf'b<CR>
-
-
-
-" Statusline configuration
-
-" use ascii symnols for status bar
-let g:airline_symbols_ascii = 1
-
-" map vimairline symbols
-" unicode symbols
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_left_sep = ''
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_sep = ''
-let g:airline_symbols.colnr = ' | c'
-let g:airline_symbols.crypt = '🔒'
-let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.linenr = ' | '
-let g:airline_symbols.maxlinenr = ''
-let g:airline_symbols.maxlinenr = '㏑'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.spell = 'Ꞩ'
-let g:airline_symbols.notexists = 'Ɇ'
-let g:airline_symbols.whitespace = 'Ξ'
-
-
-
-
-" CoC Plugin config
+" Start COC_CFG
 
 " Set command line number to 2 to display messages more easily
 set cmdheight=2
@@ -253,4 +170,90 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-" End
+" End COC_CFG
+
+
+" Theme
+set background=dark
+colorscheme onedark     " Change colorTheme
+let &t_ut=''            " Set default background element
+set termguicolors       " For color and colorscheme purposes
+set colorcolumn=72,80   " Set a color column at 80th
+syntax enable           " Enable syntaxic coloration
+
+
+" Display
+set statusline=%!DetectMode(mode()) " Set the statusline to vim-airline
+set showtabline=2                   " Always show the opened tabs
+set nu                              " Display relative line numbers
+set laststatus=2                    " Always display the statusline
+set bs=2                            " Set Backspace mode to 2
+
+"Display spaces at EOL in red
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
+" Indentation
+set expandtab           " TAB inserts a tabulation instead of spaces
+set autoindent          " Auto indent new lines depending on the one above
+set tabstop=4           " Make TAB length equal to 4 spaces
+set softtabstop=4       " Set the number of tabs to clear when hitting backspace
+set shiftwidth=4        " Set the indent shift width
+set listchars=space:.,tab:\|-
+set list
+
+
+" Misc
+set ic              " Ignore case when searching
+set belloff=all     " Disable bell sounds
+set timeoutlen=100      " Set the detection of insert mode to normal mode to 100ms
+set clipboard=unnamed   " Link the system clipboard to vim
+
+" Map F7 to reindent all file
+map <F7> gg=G<C-o><C-o>
+map Q <Nop>     " unmap Q from 'Entering Ex Mode'
+" Map F5 to copy and F6 to paste while in visual mode
+vnoremap <F5> "+y
+noremap <F6> "+p
+" Remap F3 and F4 to buffer switch
+noremap <F3> :tabNext <CR>
+noremap <F4> :tabnext <CR>
+" Map F8 and F9 to vertical resize
+nnoremap <F8> :vertical res -5 <CR>
+nnoremap <F9> :vertical res +5 <CR>
+" Map ^K to formatting
+map <C-k> :Autoformat<CR>
+" Enable fold remap
+" nnoremap <F6> mb%zf'b<CR>
+
+
+
+" Statusline configuration
+
+" use ascii symnols for status bar
+let g:airline_symbols_ascii = 1
+
+" map vimairline symbols
+" unicode symbols
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_left_sep = ''
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_sep = ''
+let g:airline_symbols.colnr = ' | c'
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.linenr = ' | '
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.maxlinenr = '㏑'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.spell = 'Ꞩ'
+let g:airline_symbols.notexists = 'Ɇ'
+let g:airline_symbols.whitespace = 'Ξ'
+
+

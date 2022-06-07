@@ -9,6 +9,9 @@ sudo pacman -S --needed - < required_packages.txt
 
 echo "==> Symlinking..."
 
+# Xprofile
+ln -sfv ~/.dotfiles/.xprofile ~
+
 # vim
 rm -rf ~/.vim
 ln -sfv ~/.dotfiles/.vim ~
@@ -20,6 +23,7 @@ ln -sfv ~/.dotfiles/.bash_aliases ~
 
 # .zshrc
 ln -sfv ~/.dotfiles/.zshrc ~/
+ln -sfv ~/.dotfiles/.oh-my-zsh ~/
 
 # i3
 rm -rf ~/.config/i3

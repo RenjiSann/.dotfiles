@@ -36,10 +36,10 @@ battery 0 {
 # %percentage: current battery percentage
     format = "%status %percentage %remaining"
         format_down = "No battery"
-        status_chr = "⚡ CHR"
-        status_bat = "🔋 BAT"
-        status_unk = "❓ UNK"
-        status_full = "👌 FULL"
+        status_chr = "⚡"
+        status_bat = "🔋"
+        status_unk = "❓"
+        status_full = "👌"
         path = "/sys/class/power_supply/BAT1/uevent"
         low_threshold = 10
 }

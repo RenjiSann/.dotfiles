@@ -12,13 +12,14 @@ order += "wireless _first_"
 order += "ethernet _first_"
 order += "load"
 order += "tztime paris"
+order += "tztime dublin"
 
 wireless _first_ {
 # %quality
 # %essid
 # %bitrate
 # %ip
-    format_up = "📶 (%quality at %essid, %bitrate) %ip"
+    format_up = "📶 %essid (%quality, %bitrate) IP: %ip"
         format_down = "W: down"
 }
 
@@ -45,8 +46,13 @@ battery 0 {
 }
 
 tztime paris{
-    format = "📅 %Y-%m-%d %H:%M:%S"
+    format = "📅 %Y-%m-%d 🕑 (Paris) %H:%M:%S"
         timezone = "Europe/Paris"
+}
+
+tztime dublin{
+    format = "🕑 (Dublin) %H:%M:%S"
+        timezone = "Europe/Dublin"
 }
 
 load {

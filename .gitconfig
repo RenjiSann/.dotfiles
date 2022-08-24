@@ -9,3 +9,6 @@
 	addIgnoredFile = false
 [credential]
 	helper = cache --timeout=6004
+[push]
+    # Automatically create the new branch on the remote when necessary
+    autoSetupRemote = true

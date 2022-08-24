@@ -19,3 +19,7 @@ alias cf='find . -iname "*.[ch]" -or -iname "*.[ch]pp" -or -iname "*.cc" -or -in
 
 alias gccc='gcc -Wall -Wextra -Werror -pedantic -std=c99'
 alias gppp='g++ -Wall -Wextra -Werror -pedantic -std=c++20'
+
+alias cgt='cargo test'
+alias cgb='cargo build'
+alias cgc='cargo clean'

@@ -47,7 +47,7 @@ font xft:URWGothic-Book 11
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
-# start a terminal
+# Open a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
@@ -217,7 +217,6 @@ for_window [class="GParted"] floating enable border normal
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
 for_window [class="Pavucontrol"] floating enable

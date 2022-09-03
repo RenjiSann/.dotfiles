@@ -20,6 +20,8 @@ alias cf='find . -iname "*.[ch]" -or -iname "*.[ch]pp" -or -iname "*.cc" -or -in
 alias gccc='gcc -Wall -Wextra -Werror -pedantic -std=c99'
 alias gppp='g++ -Wall -Wextra -Werror -pedantic -std=c++20'
 
+# Rust cargo aliases
 alias cgt='cargo test'
+alias cgti='cargo test -- --include-ignored'
 alias cgb='cargo build'
 alias cgc='cargo clean'

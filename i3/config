@@ -57,6 +57,9 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec --no-startup-id dmenu_run_history -fn 'JuliaMono-Regular'
 bindsym $mod+d exec --no-startup-id rofi -show run
 
+# Open Emoji rofi
+bindsym $mod+e exec rofi -modi emoji -show emoji
+
 # Launch the screenshot utility
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
@@ -74,8 +77,8 @@ bindsym $mod+Ctrl+m exec pavucontrol
 ################################################################################################
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send -t 500 <<< echo Brightness $(xbacklight -get)"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send -t 500 <<< echo Brightness $(xbacklight -get)"
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send -i brightness-high -t 500 <<< echo Brightness $(xbacklight -get)"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send -i Brightness-high -t 500 <<< echo Brightness $(xbacklight -get)"
 
 # Start Applications
 bindsym $mod+F2 exec firefox
@@ -135,9 +138,9 @@ bindsym $mod+q split toggle
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+# bindsym $mod+s layout stacking
+# bindsym $mod+w layout tabbed
+# bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle

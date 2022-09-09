@@ -146,3 +146,5 @@ autoload -U add-zsh-hook
 add-zsh-hook chpwd python_venv
 
 python_venv
+
+. ~/.zsh_functions

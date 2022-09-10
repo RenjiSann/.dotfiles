@@ -2,6 +2,24 @@
 
 local M = {}
 
+M.mason = {
+  ensure_installed = {
+    -- lua stuff
+    "lua-language-server",
+    "stylua",
+
+    -- Rust
+    "rust-analyzer",
+
+    -- C/C++
+    "clangd",
+    "clang-format",
+
+    -- shell
+    "shellcheck",
+  },
+}
+
 M.treesitter = {
   ensure_installed = {
     "vim",
@@ -65,21 +83,5 @@ M.alpha = {
   },
 }
 
-M.mason = {
-  ensure_installed = {
-    -- lua stuff
-    "lua-language-server",
-    "stylua",
-
-    -- Rust
-    "rust-analyzer",
-
-    -- C/C++
-    "clangd",
-
-    -- shell
-    "shellcheck",
-  },
-}
 
 return M

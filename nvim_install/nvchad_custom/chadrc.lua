@@ -4,7 +4,7 @@ M.plugins = require "custom.plugins"
 
 M.ui = {
   -- theme stuff
-  theme = "everforest",
+  theme = "onedark",
   theme_toggle = { "onedark", "one_light" },
 
   -- highlight groups!

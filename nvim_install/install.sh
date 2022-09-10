@@ -15,7 +15,7 @@ if [ -d "$NVIM_CFG" ]; then
     rm -rf "$NVIM_CFG"
 fi
 
-ln -sfv -T "${NVCHAD_GIT}" "${NVIM_CFG}"
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 
 # Create a symlink to the custom config
 declare -r SRC="$(pwd)/nvchad_custom"

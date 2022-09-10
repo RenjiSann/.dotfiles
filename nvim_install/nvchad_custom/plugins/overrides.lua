@@ -2,22 +2,12 @@
 
 local M = {}
 
-M.mason = {
-  ensure_installed = {
-    -- lua stuff
-    "lua-language-server",
-
-    -- rust
-    "rust-analyzer"
-  },
-}
-
 M.treesitter = {
   ensure_installed = {
     "vim",
---  "html",
---  "css",
---  "javascript",
+    "html",
+    "css",
+    "javascript",
     "json",
     "toml",
     "markdown",
@@ -25,14 +15,12 @@ M.treesitter = {
     "bash",
     "lua",
     "rust",
---  "norg",
   },
 }
 
 M.nvimtree = {
   git = {
     enable = true,
-    ignore = false
   },
 
   renderer = {
@@ -43,10 +31,6 @@ M.nvimtree = {
       },
     },
   },
-
-  filters = {
-    dotfiles = true,
-  }
 }
 
 M.blankline = {
@@ -81,5 +65,21 @@ M.alpha = {
   },
 }
 
+M.mason = {
+  ensure_installed = {
+    -- lua stuff
+    "lua-language-server",
+    "stylua",
+
+    -- Rust
+    "rust-analyzer",
+
+    -- C/C++
+    "clangd",
+
+    -- shell
+    "shellcheck",
+  },
+}
 
 return M

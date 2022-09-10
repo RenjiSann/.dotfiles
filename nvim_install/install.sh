@@ -1,21 +1,24 @@
-NVIM_LOCAL=$HOME/.local/share/nvim
-NVIM_CFG=$HOME/.config/nvim
+echo "Installing NeoVim config"
 
+declare -r NVIM_LOCAL=$HOME/.local/share/nvim
+declare -r NVIM_CFG=$HOME/.config/nvim
+declare -r NVCHAD_GIT="$(pwd)/nvchad"
 
 # Install NvChad, and remove the folder ~/.local/share/nvim
 # as advised on https://nvchad.com/quickstart/install
-echo "Removing old '$NVIM_LOCAL'..."
-rm -rf $NVIM_LOCAL
-echo "Removing old '$NVIM_CFG'..."
-rm -rf $NVIM_CFG
+if [ -d "$NVIM_LOCAL" ]; then
+    echo "Removing old '$NVIM_LOCAL'..."
+    rm -rf "$NVIM_LOCAL"
+fi
+if [ -d "$NVIM_CFG" ]; then
+    echo "Removing old '$NVIM_CFG'..."
+    rm -rf "$NVIM_CFG"
+fi
 
-git clone https://github.com/NvChad/NvChad $NVIM_CFG --depth 1
+ln -sfv -T "${NVCHAD_GIT}" "${NVIM_CFG}"
 
 # Create a symlink to the custom config
-NVCHAD_CUST=nvchad_custom
-SRC=$(pwd)/$NVCHAD_CUST
-DEST=$NVIM_CFG/lua/custom
+declare -r SRC="$(pwd)/nvchad_custom"
+declare -r DEST="$NVIM_CFG/lua/custom"
 
-echo "Symlinking '$SRC' to '$DEST'"
-
-ln -sf -T $SRC $DEST
+ln -sfv -T "$SRC" "$DEST"

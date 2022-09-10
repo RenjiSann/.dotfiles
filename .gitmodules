@@ -1,6 +1,9 @@
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
+[submodule "shell_install/zsh/oh-my-zsh"]
+	path = shell_install/zsh/oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
-[submodule "nvim"]
-	path = nvim
+[submodule "shell_install/zsh/zsh-autosuggestions"]
+	path = shell_install/zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "nvim_install/nvchad"]
+	path = nvim_install/nvchad
 	url = https://github.com/NvChad/NvChad.git

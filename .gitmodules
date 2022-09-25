@@ -1,6 +1,3 @@
-[submodule "shell_install/zsh/zsh-autosuggestions"]
-	path = shell_install/zsh/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "nvim_install/nvchad"]
 	path = nvim_install/nvchad
 	url = https://github.com/NvChad/NvChad.git

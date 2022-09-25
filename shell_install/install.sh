@@ -19,10 +19,11 @@ zsh_install() {
     ln -sfv "${ZSH_FILES}/zshrc" "$HOME/.zshrc"
 
     # .oh-my-zsh
-    ln -sfv "${ZSH_FILES}/oh-my-zsh" "$HOME/.oh-my-zsh"
+    git clone https://github.com/ohmyzsh/ohmyzsh "${HOME}/.oh-my-zsh"
 
     # Auto suggestion plugin
-    ln -sfv "${ZSH_FILES}/zsh-autosuggestions" "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+    #ln -sfv "${ZSH_FILES}/zsh-autosuggestions" "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+    git clone https://github.com/zsh-users/zsh-autosuggestions "${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
 
 }
 

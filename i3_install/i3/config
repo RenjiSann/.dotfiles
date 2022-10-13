@@ -19,7 +19,7 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id flameshot
 
 #exec --no-startup-id xautolock -time 10 -locker 'dm-tool lock'
-exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 'i3lockmore --image-fill /usr/share/backgrounds/lock_wallpaper.png' ''
+exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 'betterlockscreen -l --off 30' ''
 
 exec --no-startup-id onedrive --monitor
 
@@ -30,7 +30,8 @@ exec --no-startup-id eval '~/.fehbg'
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border none
-default_floating_border normal
+default_floating_border none
+for_window [class="^.*"] border none
 
 # Hide borders
 hide_edge_borders none
@@ -58,7 +59,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id rofi -show run
 
 # Open Emoji rofi
-bindsym $mod+e exec rofi -modi emoji -show emoji
+bindsym $mod+z exec rofi -modi emoji -show emoji
 
 # Launch the screenshot utility
 bindsym Print exec --no-startup-id flameshot gui
@@ -89,7 +90,7 @@ bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b -i 1.0
 
 # Lock the screen
-bindsym $mod+Shift+n exec --no-startup-id i3lockmore --image-fill /usr/share/backgrounds/lock_wallpaper.png
+bindsym $mod+Shift+n exec --no-startup-id betterlockscreen -l --off 30
 
 # Restart notification daemon
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -138,9 +139,9 @@ bindsym $mod+q split toggle
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s layout stacking
-# bindsym $mod+w layout tabbed
-# bindsym $mod+e layout toggle split
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -273,7 +274,7 @@ mode "resize" {
 # Change the variable name at the place you want to match the color
 # of your terminal like this:
 # [example]
-# If you want your bar to have the same background color as your 
+# If you want your bar to have the same background color as your
 # terminal background change the line 362 from:
 # background #14191D
 # to:

@@ -27,8 +27,5 @@ Enable power management
 
 ## additional yay packages
 
-i3lockmore
-ncmatrix for bling
 vtop for monitoring
 xidlehook (better than xautolock)
-bash-completion

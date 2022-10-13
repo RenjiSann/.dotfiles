@@ -22,44 +22,11 @@ ask_then_perform "Install shell config ?" 'cd ${SHELL_INSTALL_DIR} && ./install.
 # Install kitty config
 ask_then_perform "Install Kitty ?" 'cd ${KITTY_INSTALL_DIR} && ./install.sh && cd ..'
 
-# Install kitty config
+# Install vim config
 ask_then_perform "Install Vim ?" 'cd ${VIM_INSTALL_DIR} && ./install.sh && cd ..'
 
+ask_then_perform "Install libinput-gesture config ?" 'ln -sfv -T "$(pwd)/libinput-gestures.conf" ~/.config/libinput-gestures.conf'
 
-#   # INSTALL PACKAGES
-
-#   sudo pacman -S --needed - < required_packages.txt
-
-
-#   # SYMLINKS
-
-#   echo "==> Symlinking..."
-
-#   # Xprofile
-#   ln -sfv ~/.dotfiles/.xprofile ~
-
-#   # vim
-#   rm -rf ~/.vim
-#   ln -sfv ~/.dotfiles/.vim ~
-#   ln -sfv ~/.dotfiles/.vimrc ~
-
-#   # .bashrc etc...
-#   ln -sfv ~/.dotfiles/.bashrc ~/
-#   ln -sfv ~/.dotfiles/.bash_aliases ~
-
-#   # git
-#   ln -sfv ~/.dotfiles/.gitconfig ~
-#   ln -sfv ~/.dotfiles/.git-prompt.sh ~
-
-#   # kitty
-#   rm -rf ~/.config/kitty
-#   ln -sfv ~/.dotfiles/kitty ~/.config
-
-#   # fehbg handling
-#   ln -sfv ~/.dotfiles/.fehbg ~
-
-#   # Thunderbird
-#   ln -sfv ~/.dotfiles/.thunderbird ~
 
 #   # Wallpaper
 #   echo "==> Add the lock wallpaper"

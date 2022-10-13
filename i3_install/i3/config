@@ -7,6 +7,7 @@ set $mod Mod4
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
+# Startup applications
 ################################################################################
 
 # Autostart applications
@@ -18,41 +19,29 @@ exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id flameshot
 
-#exec --no-startup-id xautolock -time 10 -locker 'dm-tool lock'
+# Lock the screen after idling
 exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 'betterlockscreen -l --off 30' ''
 
+# Launch onedrive agent
 exec --no-startup-id onedrive --monitor
 
 # Load the background
 exec --no-startup-id eval '~/.fehbg'
 
 ################################################################################
-
-# Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border none
-default_floating_border none
-for_window [class="^.*"] border none
-
-# Hide borders
-hide_edge_borders none
-
-# change borders
-bindsym $mod+u border none
-bindsym $mod+y border pixel 1
-bindsym $mod+n border normal
-
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
-font xft:URWGothic-Book 11
-
-# Use Mouse+$mod to drag floating windows
-floating_modifier $mod
+# Key bindings
+################################################################################
 
 # Open a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
+# Kill a task by clicking its window
+bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+
+# Lock the screen
+bindsym $mod+Shift+n exec --no-startup-id betterlockscreen -l --off 30
 
 # start dmenu/RoFi
 #bindsym $mod+d exec --no-startup-id dmenu_run_history -fn 'JuliaMono-Regular'
@@ -65,21 +54,32 @@ bindsym $mod+z exec rofi -modi emoji -show emoji
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 
-################################################################################################
-## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
-################################################################################################
-
-exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec pavucontrol
-#exec --no-startup-id pulseaudio
-#exec --no-startup-id pa-applet
-#bindsym $mod+Ctrl+m exec pavucontrol
-
-################################################################################################
-
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send -i brightness-high -t 500 <<< echo Brightness $(xbacklight -get)"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send -i Brightness-high -t 500 <<< echo Brightness $(xbacklight -get)"
+
+# change borders
+bindsym $mod+u border none
+bindsym $mod+y border pixel 1
+bindsym $mod+n border normal
+
+# hide/unhide i3status bar
+bindsym $mod+m bar mode toggle
+
+# switch to workspace with urgent window automatically
+for_window [urgent=latest] focus
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# Use Mouse+$mod to drag floating windows
+floating_modifier $mod
 
 # Start Applications
 bindsym $mod+F2 exec firefox
@@ -89,17 +89,52 @@ bindsym $mod+F3 exec discord
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b -i 1.0
 
-# Lock the screen
-bindsym $mod+Shift+n exec --no-startup-id betterlockscreen -l --off 30
-
 # Restart notification daemon
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 
-# Kill a task by clicking its window
-bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
-
 # Disable focus following mouse
 focus_follows_mouse no
+
+################################################################################
+# Visual settings
+################################################################################
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font xft:URWGothic-Book 11
+
+# Configure border style <normal|1pixel|pixel xx|none|pixel>
+default_border none
+default_floating_border none
+for_window [class="^.*"] border none
+
+# Hide borders
+hide_edge_borders none
+
+################################################################################################
+## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
+################################################################################################
+
+exec --no-startup-id volumeicon
+bindsym $mod+Ctrl+m exec pavucontrol
+
+################################################################################
+# i3 Workspace management
+################################################################################
+
+# Workspace names
+# to display names or symbols instead of plain workspace numbers you can use
+# something like: set $ws1 1:mail
+#                 set $ws2 2:
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
 
 # change focus
 bindsym $mod+h focus left
@@ -107,23 +142,11 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
 
 # workspace back and forth (with/without active container)
 workspace_auto_back_and_forth no
@@ -149,29 +172,9 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# toggle sticky
-# bindsym $mod+Shift+s sticky toggle
-
-# focus the parent container
-bindsym $mod+a focus parent
-
 #navigate workspaces next / previous
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
-
-# Workspace names
-# to display names or symbols instead of plain workspace numbers you can use
-# something like: set $ws1 1:mail
-#                 set $ws2 2:
-set $ws1 1
-set $ws2 2
-set $ws3 3
-set $ws4 4
-set $ws5 5
-set $ws6 6
-set $ws7 7
-set $ws8 8
-set $ws9 9
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -210,38 +213,10 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 # assign [class="Skype"] $ws5
 assign [class="firefox"] $ws3
 assign [class="discord"] $ws4
-assign [class="Slack"] $ws4
 assign [class="Thunderbird"] $ws5
 
 # Open specific applications in floating mode
-for_window [class="Clipgrab"] floating enable
-for_window [title="File Transfer*"] floating enable
-for_window [class="fpakman"] floating enable
-for_window [class="GParted"] floating enable border normal
-for_window [title="i3_help"] floating enable sticky enable border normal
-for_window [class="Lightdm-settings"] floating enable
-for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Oblogout"] fullscreen enable
-for_window [class="octopi"] floating enable
 for_window [class="Pavucontrol"] floating enable
-for_window [class="qt5ct"] floating enable sticky enable border normal
-for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
-for_window [class="Simple-scan"] floating enable border normal
-for_window [class="Timeset-gui"] floating enable border normal
-for_window [class="(?i)virtualbox"] floating enable border normal
-
-# switch to workspace with urgent window automatically
-for_window [urgent=latest] focus
-
-# reload the configuration file
-bindsym $mod+Shift+c reload
-
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
 
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
@@ -305,10 +280,6 @@ bar {
 	status_command i3status
 	position bottom
 
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
-
 	bindsym button4 nop
 	bindsym button5 nop
 #   font xft:URWGothic-Book 11
@@ -328,16 +299,13 @@ bar {
     }
 }
 
-# hide/unhide i3status bar
-bindsym $mod+m bar mode toggle
-
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
   client.focused          #556064 #556064 #80FFF9 #FDF6E3
   client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
   client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
   client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+  client.placeholder      #000000 #0c0c0c #ffffff #000000
 
   client.background       #2B2C2B
 
@@ -357,7 +325,7 @@ gaps outer -1
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
 
-# Smart borders (draw borders around container only if it is not the only container on this workspace) 
+# Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
 

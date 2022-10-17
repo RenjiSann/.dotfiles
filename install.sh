@@ -4,14 +4,10 @@
 . ./utils/dotfile_functions.sh
 
 # Installation directories
-declare -r NVIM_INSTALL_DIR="nvim_install"
 declare -r VIM_INSTALL_DIR="vim_install"
 declare -r I3_INSTALL_DIR="i3_install"
 declare -r SHELL_INSTALL_DIR="shell_install"
 declare -r KITTY_INSTALL_DIR="kitty_install"
-
-# Install nvim
-ask_then_perform "Install NeoVim ?" 'cd ${NVIM_INSTALL_DIR} && ./install.sh && cd ..'
 
 # Install i3 config
 ask_then_perform "Install i3 ?" 'cd ${I3_INSTALL_DIR} && ./install.sh && cd ..'
@@ -27,6 +23,11 @@ ask_then_perform "Install Vim ?" 'cd ${VIM_INSTALL_DIR} && ./install.sh && cd ..
 
 ask_then_perform "Install libinput-gesture config ?" 'ln -sfv -T "$(pwd)/libinput-gestures.conf" ~/.config/libinput-gestures.conf'
 
+echo "===> Installing .xprofile"
+create_symlink "$(pwd)/xprofile" "${HOME}/.xprofile"
+
+echo "===> Installing wallpaper"
+create_symlink "$(pwd)/fehbg" "${HOME}/.fehbg"
 
 #   # Wallpaper
 #   echo "==> Add the lock wallpaper"

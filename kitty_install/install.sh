@@ -1,12 +1,10 @@
 #! /bin/sh
 
+# Load the utils
+. ../utils/dotfile_functions.sh
+
+
 declare -r KITTY_CFG="${HOME}/.config/kitty"
+echo "Installing kitty config"
 
-# Remove old link if exists
-if [ -L "${KITTY_CFG}" ]; then
-    rm "${KITTY_CFG}"
-fi
-
-SRC="$(pwd)/kitty"
-DEST="${KITTY_CFG}"
-ln -sfv -T "$SRC" "$DEST"
+create_symlink "$(pwd)/kitty" "${KITTY_CFG}"

@@ -9,11 +9,6 @@ Add `set bell-style none`
 `$ xset b off`
 
 
-## For HONOR Backlight working
-
-install `acpilight` package to provide better implementation of xbacklight
-then chmod 666 on /sys/class/backlight/amdgpu_bl0/brightness.
-
 ## For wireless card to work after suspend
 
 Modify /etc/NetworkManager/conf.d/default-wifi-powersave.conf with:
@@ -27,5 +22,13 @@ Enable power management
 
 ## additional yay packages
 
-vtop for monitoring
-xidlehook (better than xautolock)
+xidlehook
+
+### libinput-gestures (advanced touchpad gestures)
+NEED PKGS: libinput, libinput-gestures, wmctrl
+In order to work, the user must be in the `input` group.
+
+## For HONOR brightness working
+NEED PKGS: acpilight
+In order to work, the user must be in the `video` group.
+

@@ -28,6 +28,9 @@ exec --no-startup-id onedrive --monitor
 # Load the background
 exec --no-startup-id eval '~/.fehbg'
 
+# Launch the macOS like swipping
+exec --no-startup-id libinput-gestures
+
 ################################################################################
 # Key bindings
 ################################################################################

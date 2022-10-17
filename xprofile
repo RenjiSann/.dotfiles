@@ -13,3 +13,4 @@ fi
 export TERMINAL=kitty
 export TERM=kitty
 export GTK_THEME=Adwaita:dark
+export EDITOR=vim

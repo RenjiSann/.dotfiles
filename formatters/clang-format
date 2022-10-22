@@ -1,3 +1,6 @@
+# Reference documentation at
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+#
 AccessModifierOffset: -4
 AlignAfterOpenBracket: Align
 AlignConsecutiveAssignments: false
@@ -15,23 +18,26 @@ AlwaysBreakBeforeMultilineStrings: false
 AlwaysBreakTemplateDeclarations: Yes
 BinPackArguments: true
 BinPackParameters: true
+
+# Braces {}
+BreakBeforeBraces: Custom
 BraceWrapping:
-    AfterEnum: true
-    AfterClass: true
-    AfterControlStatement: true
-    AfterFunction: true
-    AfterNamespace: true
-    AfterStruct: true
-    AfterUnion: true
-    AfterExternBlock: true
-    BeforeCatch: true
-    BeforeElse: true
+    AfterEnum: false
+    AfterClass: false
+    AfterControlStatement: false
+    AfterFunction: false
+    AfterNamespace: false
+    AfterStruct: false
+    AfterUnion: false
+    AfterExternBlock: false
+    BeforeCatch: false
+    BeforeElse: false
     IndentBraces: false
     SplitEmptyFunction: false
     SplitEmptyRecord: false
     SplitEmptyNamespace: false
+
 BreakBeforeBinaryOperators: NonAssignment
-BreakBeforeBraces: Custom
 BreakBeforeTernaryOperators: true
 BreakConstructorInitializers: BeforeComma
 BreakInheritanceList: BeforeComma

@@ -1,0 +1,23 @@
+{
+  // Theme
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.startupEditor": "none",
+
+  "editor.minimap.enabled": false,
+  "editor.rulers": [80, 85],
+
+  // For caps:escape
+"keyboard.dispatch": "keyCode",
+"editor.fontFamily": "'JuliaMono', 'monospace', monospace",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

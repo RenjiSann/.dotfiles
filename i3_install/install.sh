@@ -14,3 +14,7 @@ if confirm_action "Install i3status config as well ?"; then
     declare -r I3_STATUS_CFG="$DOT_CFG/i3status"
     create_symlink "$(pwd)/i3status" "${I3_STATUS_CFG}"
 fi
+
+echo "Installing dunst config"
+declare -r DUNST_CFG="$DOT_CFG/dunst"
+create_symlink "$(pwd)/dunst" "${DUNST_CFG}"

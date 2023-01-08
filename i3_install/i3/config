@@ -44,26 +44,29 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # Lock the screen
-bindsym $mod+Shift+n exec --no-startup-id betterlockscreen -l --off 30
+bindsym $mod+Ctrl+q exec --no-startup-id betterlockscreen -l --off 30
 
 # start dmenu/RoFi
 #bindsym $mod+d exec --no-startup-id dmenu_run_history -fn 'JuliaMono-Regular'
 bindsym $mod+d exec --no-startup-id rofi -show run
 
 # Open Emoji rofi
-bindsym $mod+z exec rofi -modi emoji -show emoji
+bindsym $mod+e exec rofi -modi emoji -show emoji
 
 # Launch the screenshot utility
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send -i brightness-high -t 500 <<< echo Brightness $(xbacklight -get)"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send -i Brightness-high -t 500 <<< echo Brightness $(xbacklight -get)"
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"; \
+exec "notify-send -c device -t 500 -h int:value:$(xbacklight -get) Brightness"
+
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"; \
+exec "notify-send -c device -t 500 -h int:value:$(xbacklight -get) Brightness"
 
 # change borders
 bindsym $mod+u border none
-bindsym $mod+y border pixel 1
+bindsym $mod+y border pixel 10
 bindsym $mod+n border normal
 
 # hide/unhide i3status bar
@@ -72,11 +75,11 @@ bindsym $mod+m bar mode toggle
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
+# RELOAD/RESTART i3
 # reload the configuration file
-bindsym $mod+Shift+c reload
-
+bindsym $mod+Ctrl+r reload; exec notify-send "Reloading i3 config"
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift+r restart; exec notify-send "Restarting i3wm"
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
@@ -89,11 +92,11 @@ bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec discord
 
 # Enable / disable opacity
-bindsym $mod+t exec --no-startup-id pkill picom
-bindsym $mod+Ctrl+t exec --no-startup-id picom -b -i 1.0
+bindsym $mod+Shift+o exec --no-startup-id pkill picom
+bindsym $mod+Ctrl+o exec --no-startup-id picom -b -i 1.0
 
 # Restart notification daemon
-bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
+bindsym $mod+Shift+d --release exec "killall dunst"; exec notify-send 'restart dunst'
 
 # Disable focus following mouse
 focus_follows_mouse no
@@ -108,7 +111,7 @@ font xft:URWGothic-Book 11
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border none
-default_floating_border none
+default_floating_border normal
 for_window [class="^.*"] border none
 
 # Hide borders
@@ -157,17 +160,16 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+g split h;exec notify-send 'tile horizontally'
-bindsym $mod+v split v;exec notify-send 'tile vertically'
-bindsym $mod+q split toggle
+bindsym $mod+g split h; exec notify-send 'tile horizontally'
+bindsym $mod+v split v; exec notify-send 'tile vertically'
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+z layout stacking; exec notify-send 'Switching layout to: stacking'
+bindsym $mod+x layout tabbed; exec notify-send 'Switching layout to: tabbed'
+bindsym $mod+c layout toggle split; exec notify-send 'Switching layout to: splitting'
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle

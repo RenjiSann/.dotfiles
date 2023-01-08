@@ -59,10 +59,20 @@ bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"; \
-exec "notify-send -c device -t 500 -h int:value:$(xbacklight -get) Brightness"
+exec "notify-send \
+        -c device\
+        -i /usr/share/icons/breeze-dark/actions/22/brightness-high.svg \
+        -t 500 \
+        -h int:value:$(xbacklight -get) \
+        Brightness"
 
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"; \
-exec "notify-send -c device -t 500 -h int:value:$(xbacklight -get) Brightness"
+exec "notify-send \
+        -c device\
+        -i /usr/share/icons/breeze-dark/actions/22/brightness-low.svg \
+        -t 500 \
+        -h int:value:$(xbacklight -get) \
+        Brightness"
 
 # change borders
 bindsym $mod+u border none

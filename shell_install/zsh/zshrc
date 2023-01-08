@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="my_agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -129,21 +129,23 @@ ex ()
 # Shut the fuck up
 unsetopt BEEP
 
+# Alias ssh if using xterm kitty, so the SSH session is not broken,
+[ "$TERM" = "xterm-kitty" ] && alias kssh="kitty +kitten ssh"
 
-# Automatically load a python virtual environment if present
-python_venv() {
+#   # Automatically load a python virtual environment if present
+#   python_venv() {
 
-  MYVENV=./venv
-  # when you cd into a folder that contains $MYVENV
-  [[ -d $MYVENV ]] && source $MYVENV/bin/activate > /dev/null 2>&1
-  # when you cd into a folder that doesn't
-  [[ ! -d $MYVENV ]] && deactivate > /dev/null 2>&1
+#     MYVENV=./venv
+#     # when you cd into a folder that contains $MYVENV
+#     [[ -d $MYVENV ]] && source $MYVENV/bin/activate > /dev/null 2>&1
+#     # when you cd into a folder that doesn't
+#     [[ ! -d $MYVENV ]] && deactivate > /dev/null 2>&1
 
-  # Avoid failure
-  return 0
-}
-autoload -U add-zsh-hook
-add-zsh-hook chpwd python_venv
+#     # Avoid failure
+#     return 0
+#   }
+#   autoload -U add-zsh-hook
+#   add-zsh-hook chpwd python_venv
 
-python_venv
+#   python_venv
 

@@ -21,6 +21,9 @@ zsh_install() {
     # .oh-my-zsh
     git clone https://github.com/ohmyzsh/ohmyzsh "${HOME}/.oh-my-zsh"
 
+    # Custom themes
+    ln -sfv "${ZSH_FILES}/*.zsh-theme" "$HOME/.oh-my-zsh/custom/themes/"
+
     # Auto suggestion plugin
     #ln -sfv "${ZSH_FILES}/zsh-autosuggestions" "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
     git clone https://github.com/zsh-users/zsh-autosuggestions "${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions"

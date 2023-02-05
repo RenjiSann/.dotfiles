@@ -5,7 +5,7 @@
   "workbench.startupEditor": "none",
 
   "editor.minimap.enabled": false,
-  "editor.rulers": [80, 85],
+  "editor.rulers": [80],
 
   // For caps:escape
 "keyboard.dispatch": "keyCode",

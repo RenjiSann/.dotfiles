@@ -4,6 +4,8 @@ alias ll='exa -l --git'
 alias lla='exa -la'
 alias lh='exa -lh'
 
+alias cat='bat'
+
 alias p3='python3'
 
 alias gpft='git push --follow-tags'
@@ -20,3 +22,5 @@ alias cgt='cargo test'
 alias cgti='cargo test -- --include-ignored'
 alias cgb='cargo build'
 alias cgc='cargo clean'
+
+alias vim="nvim"

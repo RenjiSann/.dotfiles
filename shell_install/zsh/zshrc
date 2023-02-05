@@ -149,3 +149,7 @@ unsetopt BEEP
 
 #   python_venv
 
+
+if [ -e /home/renji/.nix-profile/etc/profile.d/nix.sh ]; then . /home/renji/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+export NNTPSERVER="news.epita.fr"

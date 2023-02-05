@@ -12,7 +12,7 @@ order += "wireless _first_"
 order += "ethernet _first_"
 order += "load"
 order += "tztime paris"
-order += "tztime dublin"
+# order += "tztime dublin"
 
 wireless _first_ {
 # %quality

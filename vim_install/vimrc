@@ -8,14 +8,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-"Linters and LSPs
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'dense-analysis/ale'
-" Plug 'preservim/nerdtree'
-"Plug 'scrooloose/nerdtree'
-
-Plug 'vim-autoformat/vim-autoformat'
-
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'townk/vim-autoclose'
@@ -80,17 +72,9 @@ map Q <Nop>
 " Map F5 to copy and F6 to paste while in visual mode
 vnoremap <F5> "+y
 noremap <F6> "+p
-" Remap F3 and F4 to buffer switch
-noremap <F3> :tabNext <CR>
-noremap <F4> :tabnext <CR>
 " Map F8 and F9 to vertical resize
 nnoremap <F8> :vertical res -5 <CR>
 nnoremap <F9> :vertical res +5 <CR>
-" Map ^K to formatting
-map <C-k> :Autoformat<CR>
-" Enable fold remap
-" nnoremap <F6> mb%zf'b<CR>
-
 
 
 " Statusline configuration
@@ -120,5 +104,4 @@ let g:airline_symbols.paste = '∥'
 let g:airline_symbols.spell = 'Ꞩ'
 let g:airline_symbols.notexists = 'Ɇ'
 let g:airline_symbols.whitespace = 'Ξ'
-
 

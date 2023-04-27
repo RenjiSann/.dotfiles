@@ -70,7 +70,7 @@ ZSH_THEME="my_agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history zsh-autosuggestions rust)
+plugins=(git history zsh-autosuggestions rust nix-shell)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -153,3 +153,10 @@ unsetopt BEEP
 if [ -e /home/renji/.nix-profile/etc/profile.d/nix.sh ]; then . /home/renji/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 export NNTPSERVER="news.epita.fr"
+
+eval "$(starship init zsh)"
+
+export QSYS_ROOTDIR="/home/renji/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"
+
+# opam configuration
+[[ ! -r /home/renji/.opam/opam-init/init.zsh ]] || source /home/renji/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

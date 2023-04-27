@@ -26,5 +26,11 @@
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 200,
   "editor.inlayHints.enabled": "offUnlessPressed",
-  "workbench.colorTheme": "Catppuccin Mocha"
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "arduino.useArduinoCli": true,
+  "window.zoomLevel": 1
 }

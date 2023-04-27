@@ -1,8 +1,8 @@
 alias ls='exa'
 alias la='exa -a'
-alias ll='exa -l --git'
-alias lla='exa -la'
-alias lh='exa -lh'
+alias ll='exa -lg --git'
+alias lla='exa -lga'
+alias lh='exa -lgh'
 
 alias cat='bat'
 
@@ -22,5 +22,3 @@ alias cgt='cargo test'
 alias cgti='cargo test -- --include-ignored'
 alias cgb='cargo build'
 alias cgc='cargo clean'
-
-alias vim="nvim"

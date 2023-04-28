@@ -30,13 +30,6 @@ zsh_install() {
 
 }
 
-bash_install() {
-    echo "Installing bash config"
-
-    # .bashrc
-    ln -sfv "$(pwd)/bashrc" "$HOME/.bashrc"
-}
-
 other_shell_install() {
     echo "There is no config for this shell"
 }
@@ -44,15 +37,8 @@ other_shell_install() {
 SHELL_NAME=$(grep $USER /etc/passwd | cut -d: -f7 | xargs basename)
 echo "Detected shell: $SHELL_NAME"
 
-if confirm_action "Install only for detected shell ?"; then
-    case "$SHELL_NAME" in
-        zsh ) zsh_install ;;
-        bash ) bash_install ;;
-        * ) other_shell_install ;;
-    esac
-else
+if confirm_action "Install ZSH dotfiles ?"; then
     zsh_install
-    bash_install
 fi
 
 common_install

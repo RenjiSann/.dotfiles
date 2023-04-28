@@ -9,10 +9,10 @@ echo "Installing i3 config"
 
 create_symlink "$(pwd)/i3" "${I3_CFG}"
 
-if confirm_action "Install i3status config as well ?"; then
+if confirm_action "Install i3status-rust config as well ?"; then
     echo "Installing i3status config"
-    declare -r I3_STATUS_CFG="$DOT_CFG/i3status"
-    create_symlink "$(pwd)/i3status" "${I3_STATUS_CFG}"
+    declare -r I3_STATUS_CFG="$DOT_CFG/i3status-rs"
+    create_symlink "$(pwd)/i3status-rs" "${I3_STATUS_CFG}"
 fi
 
 echo "Installing dunst config"

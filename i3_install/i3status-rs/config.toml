@@ -1,4 +1,4 @@
-cons_format = "{icon}"
+icons_format = "{icon}"
 
 [theme]
 theme = "solarized-dark"
@@ -11,6 +11,15 @@ icons = "awesome4"
 [icons.overrides]
 bat = ["|E|", "|_|", "|=|", "|F|"]
 bat_charging = "|^| "
+
+
+# Blocks
+
+[[block]]
+block = "battery"
+format = " $icon$percentage {$time |}"
+device = "DisplayDevice"
+driver = "upower"
 
 [[block]]
 block = "cpu"

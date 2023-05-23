@@ -25,7 +25,8 @@ exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 60
 exec --no-startup-id onedrive --monitor
 
 # Load the background
-exec --no-startup-id eval '~/.fehbg'
+# exec --no-startup-id eval '~/.fehbg'
+exec --no-startup-id betterlockscreen -w
 
 # Launch the macOS like swipping
 exec --no-startup-id libinput-gestures

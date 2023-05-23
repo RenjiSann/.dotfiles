@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale '/usr/share/backgrounds/windows-panic.png'
+feh --no-fehbg --bg-fill --no-xinerama '/home/renji/.cache/betterlockscreen/current/wall_resize.png' 

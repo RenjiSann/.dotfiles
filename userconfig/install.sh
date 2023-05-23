@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Load the utils
-. ./utils/dotfile_functions.sh
+. ../utils/dotfile_functions.sh
 
 # Installation directories
 declare -r VIM_INSTALL_DIR="vim_install"
@@ -45,7 +45,3 @@ ask_then_create_symlink \
     "$(pwd)/fehbg" \
     "${HOME}/.fehbg"
 
-#   # Wallpaper
-#   echo "==> Add the lock wallpaper"
-
-#   sudo cp ~/.dotfiles/resources/lock_wallpaper.png /usr/share/backgrounds/

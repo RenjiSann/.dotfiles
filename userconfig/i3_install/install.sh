@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Load the utils
-. ../utils/dotfile_functions.sh
+. ../../utils/dotfile_functions.sh
 
 declare -r DOT_CFG="$HOME/.config"
 declare -r I3_CFG="$DOT_CFG/i3"

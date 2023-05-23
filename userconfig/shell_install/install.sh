@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Load the utils
-. ../utils/dotfile_functions.sh
+. ../../utils/dotfile_functions.sh
 
 declare -r "ZSH_FILES=$(pwd)/zsh"
 

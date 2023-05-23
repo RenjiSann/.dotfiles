@@ -8,18 +8,6 @@ Add `set bell-style none`
 
 `$ xset b off`
 
-
-## For wireless card to work after suspend
-
-Modify /etc/NetworkManager/conf.d/default-wifi-powersave.conf with:
-```text
-[connection]
-wifi.powersave = 2
-```
-
-Enable power management
-`sudo iwconfig wlp1s0 power on`
-
 ## additional yay packages
 
 xidlehook

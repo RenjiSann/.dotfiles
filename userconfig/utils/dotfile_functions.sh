@@ -8,13 +8,11 @@ declare -r BOLDYELLOW='\e[1;33m'
 confirm_action(){
     # Given argument should be a question
     while true; do
-        read -p "$1 (y/n) " yn
+        read -p "$1 (y/N) " yn
         case "$yn" in
             [yY] ) return 0;
                 break ;;
-            [nN] ) return 1;
-                break ;;
-            * ) echo "Invalid response"
+            * ) return 1;
         esac
     done
 }
@@ -53,3 +51,24 @@ create_symlink() {
     ln -sfv -T "${TARGET}" "${DST}"
     return `true`
 }
+
+# Ask if a config file should be installed, and warn if overwriting
+ask_then_create_symlink() {
+    if [ $# != 3 ]; then exit 1; fi
+    PROMPT="$1"
+    TARGET="$2"
+    DST="$3"
+
+    if confirm_action "$1"; then
+        create_symlink "${TARGET}" "${DST}"
+        RES=`echo $?`
+        if [ "${RES}" == 0 ] ; then
+            echo -e "${BOLDGREEN}Success${RESET}\n"
+        else 
+            echo -e "${BOLDRED}Error : ${RES}${RESET}\n"
+        fi
+    else
+        echo -e "${BOLDYELLOW}Passed${RESET}\n"
+    fi
+}
+

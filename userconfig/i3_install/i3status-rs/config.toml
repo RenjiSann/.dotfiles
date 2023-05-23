@@ -1,0 +1,85 @@
+icons_format = "{icon}"
+
+[theme]
+theme = "nord-dark"
+[theme.overrides]
+idle_bg = "#123456"
+idle_fg = "#abcdef"
+# separator = ""
+separator = "\ue0b2"
+end_separator = ""
+alternating_tint_bg = "#1f1400"
+
+[icons]
+icons = "awesome6"
+[icons.overrides]
+bat = [
+    "\uf244 ", # fa-battery-empty
+    "\uf243 ", # fa-battery-quarter
+    "\uf242 ", # fa-battery-half
+    "\uf241 ", # fa-battery-three-quarters
+    "\uf240 ", # fa-battery-full
+]
+bat_charging = "\uf0e7" # fa-bolt
+
+
+# Blocks
+
+[[block]]
+block = "cpu"
+
+[[block]]
+block = "memory"
+
+format = " $icon $mem_used.eng(w:3) "
+format_alt = " $icon_swap $swap_used.eng(w:3) "
+
+[[block]]
+block = "disk_space"
+path = "/"
+info_type = "available"
+alert_unit = "GB"
+interval = 20
+warning = 20.0
+alert = 10.0
+
+format = " $icon root: $available.eng(w:2) "
+
+[[block]]
+block = "pacman"
+interval = 600
+error_interval = 300
+format = " $icon $both "
+format_singular = " $icon $both "
+format_up_to_date = " $icon Up to date "
+critical_updates_regex = "(linux|linux-lts|linux-zen)"
+# aur_command should output available updates to stdout (ie behave as echo -ne "update\n")
+aur_command = "yay -Qua"
+# Treat SIGUSR1 as a pacman block refresh request
+signal = 1
+
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+
+[[block]]
+block = "net"
+device = "^wlp1s0$"
+
+format = " $icon $ssid ($bitrate/s) "
+missing_format = " 󰌙 "
+
+[[block]]
+block = "battery"
+device = "DisplayDevice"
+driver = "upower"
+format = " $icon $percentage {$time |}"
+full_format = " $icon $percentage {$time |}"
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%d/%m %R') "

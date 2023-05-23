@@ -9,7 +9,7 @@
 
   // For caps:escape
 "keyboard.dispatch": "keyCode",
-"editor.fontFamily": "'JuliaMono', 'monospace', monospace",
+"editor.fontFamily": "'JetbrainsMono NF', 'monospace', monospace",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -28,9 +28,16 @@
   "editor.inlayHints.enabled": "offUnlessPressed",
   "workbench.colorTheme": "Catppuccin Mocha",
   "[python]": {
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "C_Cpp.intelliSenseEngine": "disabled",
-  "arduino.useArduinoCli": true,
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "git.confirmSync": false,
+  "terminal.integrated.fontFamily": "JetbrainsMono NF",
+  "sqltools.useNodeRuntime": true,
+  "git.openRepositoryInParentFolders": "never",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

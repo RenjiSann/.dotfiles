@@ -3,7 +3,6 @@
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
-
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
@@ -309,8 +308,11 @@ client.placeholder      $xcolor7       $xcolor7     $xcolor14
 
 client.background       #2B2C2B
 
+# exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# i3status-rs bar
 bar {
-    font pango:DejaVu Sans Mono, FontAwesome 12
+    font pango: JetbrainsMono Nerd Font
     position bottom
     status_command /usr/bin/i3status-rs /home/renji/.config/i3status-rs/config.toml
     colors {

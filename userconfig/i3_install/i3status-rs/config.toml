@@ -74,8 +74,10 @@ missing_format = " 󰌙 "
 
 [[block]]
 block = "battery"
-device = "DisplayDevice"
-driver = "upower"
+# device = "DisplayDevice"
+# driver = "upower"
+device = "BAT1"
+driver = "sysfs"
 format = " $icon $percentage {$time |}"
 full_format = " $icon $percentage {$time |}"
 

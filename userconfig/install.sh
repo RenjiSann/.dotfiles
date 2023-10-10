@@ -41,6 +41,11 @@ ask_then_create_symlink \
     "${HOME}/.xprofile"
 
 ask_then_create_symlink \
+    "Install .profile ?" \
+    "$(pwd)/profile" \
+    "${HOME}/.profile"
+
+ask_then_create_symlink \
     "Install .fehbg ?" \
     "$(pwd)/fehbg" \
     "${HOME}/.fehbg"

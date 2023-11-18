@@ -154,6 +154,19 @@ setup_kitty_aliases() {
 
 #   python_venv
 
+count_loc() {
+    if [ $# = 1 ] ; then
+        _FPATH=""
+        _FFILTER="$1"
+    elif [ $# = 2 ] ; then
+        _FPATH="$1"
+        _FFILTER="$2"
+    else
+        return
+    fi
+    rg -N . `find ${_FPATH} -name ${_FFILTER}` | wc -l
+}
+
 
 if [ -e /home/renji/.nix-profile/etc/profile.d/nix.sh ]; then . /home/renji/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 

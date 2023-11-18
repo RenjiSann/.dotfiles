@@ -6,6 +6,7 @@ if [ -d "$HOME/.local/bin" ]; then
         ;;
       (*)
         export PATH="$HOME/.local/bin:$PATH"
+        export PATH="$HOME/.config/emacs/bin:$PATH"
         ;;
     esac
 fi
@@ -14,3 +15,4 @@ export TERMINAL=kitty
 export TERM=kitty
 export GTK_THEME=Breeze-Dark
 export EDITOR=vim
+export JAVA_HOME=/usr/lib/jvm/default

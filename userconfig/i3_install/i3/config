@@ -10,7 +10,6 @@ set $mod Mod4
 ################################################################################
 
 # Autostart applications
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id picom -b -i 1.0
 
 # Applets
@@ -33,6 +32,8 @@ exec --no-startup-id libinput-gestures
 
 # Setup multiple screen on Startup
 exec --no-startup-id autorandr --change
+
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 ################################################################################
 # Key bindings
@@ -86,7 +87,7 @@ bindsym $mod+n border normal
 bindsym $mod+m bar mode toggle
 
 # switch to workspace with urgent window automatically
-for_window [urgent=latest] focus
+# for_window [urgent=latest] focus
 
 # RELOAD/RESTART i3
 # reload the configuration file

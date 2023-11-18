@@ -12,7 +12,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'townk/vim-autoclose'
 Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-commentary'
 
 "Themes
 Plug 'joshdick/onedark.vim'

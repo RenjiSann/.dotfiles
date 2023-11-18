@@ -22,3 +22,6 @@ alias cgt='cargo test'
 alias cgti='cargo test -- --include-ignored'
 alias cgb='cargo build'
 alias cgc='cargo clean'
+
+alias lzg='lazygit'
+alias lzd='lazydocker'

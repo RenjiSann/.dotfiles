@@ -26,13 +26,12 @@
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 200,
   "editor.inlayHints.enabled": "offUnlessPressed",
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "GitHub Dark",
   "[python]": {
     "editor.formatOnType": true,
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "ms-python.python"
   },
   "C_Cpp.intelliSenseEngine": "disabled",
-  "window.zoomLevel": 1,
   "git.confirmSync": false,
   "terminal.integrated.fontFamily": "JetbrainsMono NF",
   "sqltools.useNodeRuntime": true,
@@ -40,4 +39,9 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "python.formatting.blackArgs": [
+    "-l 79"
+  ],
+  "window.zoomLevel": 1,
+  "arduino.useArduinoCli": true,
 }

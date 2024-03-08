@@ -16,7 +16,7 @@ set -e
 pushd ~/.dotfiles/nixos/
 
 # Edit your config
-$EDITOR configuration.nix
+$EDITOR $HOSTNAME.nix
 
 # Autoformat your nix files
 alejandra . >/dev/null

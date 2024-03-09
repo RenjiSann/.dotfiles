@@ -61,6 +61,7 @@
     htop
     gcc
     gnumake
+    nix-index
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

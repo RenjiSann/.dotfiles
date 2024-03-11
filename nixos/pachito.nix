@@ -7,7 +7,11 @@
   # Enable unstable features.
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  # imports = [<nixpkgs/nixos/modules/profiles/headless.nix>];
+
   boot.loader.systemd-boot.enable = true;
+  # Do not wait for screen with nvidia GPU.
+  # boot.kernelParams = ["nomodeset" "video=uvesafb:mode_options=1024x768-16@60,mtrr=0,scroll=ywrap,noedid"];
 
   # Pick only one of the below networking options.
   networking.interfaces.enp6s0.wakeOnLan.enable = true;

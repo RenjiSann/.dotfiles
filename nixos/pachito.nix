@@ -52,7 +52,7 @@
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
     alejandra
-    rnix-lsp
+    # rnix-lsp
     vim
     wget
     tree

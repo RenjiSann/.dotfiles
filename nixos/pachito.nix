@@ -4,6 +4,9 @@
   pkgs,
   ...
 }: {
+  # Use home-manager
+  imports = [<home-manager/nixos>];
+
   # Enable unstable features.
   nix.settings.experimental-features = ["nix-command" "flakes"];
 

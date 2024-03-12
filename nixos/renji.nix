@@ -16,7 +16,11 @@
       lazygit
       rustup
     ];
-    programs.bash.enable = true;
+
+    home.file.".gdbinit".text = ''
+        set tui
+        set auto-load safe-path /nix/store
+    '';
 
     programs.git = {
       enable = true;

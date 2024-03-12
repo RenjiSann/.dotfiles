@@ -4,13 +4,11 @@
   pkgs,
   ...
 }: {
-  # Use home-manager
-  imports = [<home-manager/nixos>];
-
   # Enable unstable features.
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  # imports = [<nixpkgs/nixos/modules/profiles/headless.nix>];
+  # Import my home manager config
+  imports = [./renji.nix];
 
   boot.loader.systemd-boot.enable = true;
   # Do not wait for screen with nvidia GPU.
@@ -57,10 +55,6 @@
     home = "/home/renji";
     extraGroups = ["wheel" "docker"];
     group = "users";
-    packages = with pkgs; [
-      tmux
-      rustup
-    ];
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGwd3vcKQYugab+rDEMnRpkHsqk//LQBsTpgNglAiNe1 renji@opale"
     ];
@@ -68,17 +62,18 @@
 
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
-    alejandra
+    # docker
     # rnix-lsp
+    alejandra
+    gcc
+    git
+    gnumake
+    htop
+    nix-index
+    tree
+    tmux
     vim
     wget
-    tree
-    # docker
-    git
-    htop
-    gcc
-    gnumake
-    nix-index
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

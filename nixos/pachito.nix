@@ -53,12 +53,17 @@
     isNormalUser = true;
     createHome = true;
     home = "/home/renji";
+    shell = pkgs.zsh;
     extraGroups = ["wheel" "docker"];
     group = "users";
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGwd3vcKQYugab+rDEMnRpkHsqk//LQBsTpgNglAiNe1 renji@opale"
     ];
   };
+
+  programs.direnv.enable = true;
+  programs.zsh.enable = true;
+  programs.vim.defaultEditor = true;
 
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
@@ -83,9 +88,6 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
-
-  programs.direnv.enable = true;
-  programs.vim.defaultEditor = true;
 
   # List services that you want to enable:
 

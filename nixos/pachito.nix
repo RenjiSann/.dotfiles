@@ -13,6 +13,16 @@
   # Do not wait for screen with nvidia GPU.
   # boot.kernelParams = ["nomodeset" "video=uvesafb:mode_options=1024x768-16@60,mtrr=0,scroll=ywrap,noedid"];
 
+  services.xserver.videoDrivers = ["nvidia"];
+
+  nixpkgs.config.allowUnfree = true;
+  hardware.nvidia = {
+    modesetting.enable = true;
+    open = true;
+    nvidiaSettings = true;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+  };
+
   # Pick only one of the below networking options.
   networking.interfaces.enp6s0.wakeOnLan.enable = true;
 

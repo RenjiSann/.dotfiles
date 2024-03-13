@@ -1,0 +1,135 @@
+{% load static %}
+<nav class="navbar fixed-top navbar-light navbar-expand-md bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'events:home' %}">
+      <div class="d-block d-xs-flex  d-xl-none">
+        <img src="{% static 'img/logo_gcc_text_right.svg' %}" width="100"/>
+      </div>
+      <div class="d-none d-lg-none d-xl-flex row justify-content-start">
+        <div class="col">
+          <img src="{% static 'img/logo_gcc.svg' %}" width="100"/>
+        </div>
+        <div class="col text-home-header">Girls Can Code!</div>
+      </div>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="offcanvas navbar-offcanvas flex-grow-0 offcanvas-start"
+      id="navbarText"
+      tabindex="-1">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <a href="{% url 'events:home' %}">
+            <img src="{% static 'img/logo_gcc_text_right.svg' %}" width="100"/>
+          </a>
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close">
+        </button>
+      </div>
+
+      {# All the navbar buttons #}
+      <ul class="offcanvas-body navbar-nav me-auto mb-2 mb-lg-0 p-1">
+        <li class="nav-item d-flex flex-md-fill justify-content-center mx-1 my-1 my-md-0">
+          <a href="{% url 'events:events' %}" class="btn btn-light py-1 px-3 ">
+            Nos événements
+          </a>
+        </li>
+        <li class="nav-item d-flex flex-md-fill align-items-center mx-1 my-1 my-md-0">
+          <a href="{% url 'partners:partners' %}" class="btn btn-light py-1 px-3">
+            Nos partenaires
+          </a>
+        </li>
+        <li class="nav-item d-flex flex-md-fill justify-content-center mx-1 my-1 my-md-0">
+          <a href="{% url 'pages:FAQ' %}" class="btn btn-light py-1 px-3 ">
+            FAQ
+          </a>
+        </li>
+        <li class="nav-item d-flex flex-md-fill align-items-center mx-1 my-1 my-md-0">
+          <a href="{% url 'pages:about' %}" class="btn btn-light py-1 px-3 ">
+            À propos
+          </a>
+        </li>
+
+        {% if user.is_authenticated %}
+          {% if user.is_staff %}
+            <li class="nav-item d-flex flex-md-fill align-items-center mx-1 my-1 my-md-0">
+              <div class="dropdown-center">
+                <button
+                  class="btn btn-light py-1 px-3"
+                  data-bs-toggle="dropdown"
+                  data-bs-target="#dropdown-admin">
+                  <div class="row">
+                    <div class="col pe-0">
+                      <i class="fas fa-star me-1"></i>Admin
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </button>
+
+                {% include "gccsite/partial/navbar_admin_dropdown.html" with dd_id="dropdown-admin" %}
+
+              </div>
+            </li>
+          {% endif %}
+          <li class="nav-item d-flex flex-md-fill align-items-center mx-1 my-1 my-md-0">
+            <div class="dropdown-center">
+              <button
+                class="btn btn-light py-1 px-3"
+                data-bs-target="#dropdown-user"
+                data-bs-toggle="dropdown">
+                <div class="row">
+                  <div class="col pe-0">
+                    <i class="fas fa-user me-1"></i>{{ user.first_name }} {{ user.last_name }}
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+              </button>
+
+              {% include "gccsite/partial/navbar_user_dropdown.html" with dd_id="dropdown-user" %}
+
+            </div>
+          </li>
+        {% else %}
+          <li class="nav-item d-flex flex-md-fill align-items-center mx-1 my-1 my-md-0">
+            <a
+              type="button"
+              href="{% url 'users:login' %}"
+              class="btn btn-primary py-1 px-3"
+              >
+              Se connecter
+            </a>
+          </li>
+          <li class="nav-item d-flex flex-md-fill align-items-center mx-1 my-1 my-md-0">
+            <a
+              type="button"
+              href="{% url 'users:register' %}"
+              class="btn btn-primary py-1 px-3"
+              >
+              S'inscrire
+            </a>
+          </li>
+        {% endif %}
+
+      </ul>
+    </div>
+  </div>
+</nav>

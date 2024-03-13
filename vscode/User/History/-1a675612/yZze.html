@@ -1,0 +1,49 @@
+{% load custom_filters %}
+{% load static %}
+
+<div class="row f-flex justify-content-between event-card mb-4 p-3">
+  <div class="col row">
+    <div class="my-auto d-none d-md-block col-md-auto gcc-color-{{color}}">
+      <i class="fas fa-circle" style="font-size: 1.2em;"></i>
+    </div>
+
+    {# Event infos verticaly centered #}
+    <div class="col">
+      <h1>{{ event.name }}</h1>
+      <h2>Du {{ event.start_date|date:"l d F Y" }} au {{ event.end_date|date:"l d F Y" }}</h2>
+      <h3>{{ event.center.address.city }}</h3>
+    </div>
+  </div>
+
+  <div class="col-xl-auto ml-auto mt-4 mb-1 my-lg-auto" role="group">
+    {% comment %} Issue#80 : If user is authenticated and has at least 1 application for the stage,
+    use "mes candidatures" button instead. {% endcomment %}
+
+    {% if already_applied %}
+      <a type="button" href="{% url 'events:my_applications' %}" class="btn btn-primary py-2 px-4 w-100 mb-2" >
+        Mes candidatures
+      </a>
+    {% else %}
+      <button
+        class="btn btn-primary py-2 px-4 w-100 mb-2"
+        data-bs-toggle="modal"
+        data-bs-target="#application-form-modal"
+        data-bs-event-id="{{ event.id }}" {# Important for BS to setup the modal #}
+        >
+        S'inscrire à ce stage
+      </button>
+    {% endif %}
+    <button class="btn mx-auto ml-lg-auto mr-lg-4 btn-light btn-block" data-bs-toggle="modal" data-bs-target="#informationEventModal-{{id}}">
+      Plus d'informations
+    </button>
+  </div>
+
+  {# Modals #}
+
+  <div class="modal" id="informationEventModal-{{id}}" tabindex="-1" aria-labelledby="informationEventModalLabel" aria-hidden="true">
+    {% include "events/partial/event_info_modal.html" with event=event id=id %}
+  </div>
+
+  {% include "events/partial/event_schedule_modal.html" with event_format=event|event_format %}
+
+</div>

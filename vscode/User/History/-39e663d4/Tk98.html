@@ -1,0 +1,20 @@
+{% comment %}
+    Show a pill badge
+    Parameters:
+    - application: the application object
+{% endcomment %}
+{% if application.status == AppStatus.ENDED %}
+    <span class="badge rounded-pill gcc-status-badge text-bg-secondary">stage terminé</span>
+{% elif application.status == AppStatus.CONFIRMED %}
+    <span class="badge rounded-pill gcc-status-badge text-bg-success">confirmée</span>
+{% elif application.status == AppStatus.ACCEPTED %}
+    <span class="badge rounded-pill gcc-status-badge text-bg-info">acceptée</span>
+{% elif application.status == AppStatus.PENDING %}
+    <span class="badge rounded-pill gcc-status-badge text-bg-warning">en attente</span>
+{% elif application.status == AppStatus.CANCELLED %}
+    <span class="badge rounded-pill gcc-status-badge text-bg-secondary">annulée</span>
+{% elif application.status == AppStatus.WITHDRAWN %}
+    <span class="badge rounded-pill gcc-status-badge text-bg-secondary">retirée</span>
+{% elif application.status == AppStatus.REJECTED %}
+    <span class="badge rounded-pill gcc-status-badge text-bg-danger">rejetée</span>
+{% endif %}

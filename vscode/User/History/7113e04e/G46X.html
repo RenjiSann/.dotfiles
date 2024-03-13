@@ -1,0 +1,53 @@
+{% extends 'gccsite/base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/events/events.css' %}">
+<link rel="stylesheet" href="{% static 'css/forms.css' %}">
+{% endblock %}
+
+{% block content %}
+{% regroup events by year as grouped_events %}
+
+<h1> Review des candidatures </h1>
+<ul class="review-edition-years">
+    {% for year in years %}
+         <li><a href="?year={{year}}"> {{ year }} </a></li>
+    {% endfor %}
+</ul>
+
+<div class="container-fluid mb-4">
+    <div class="table-responsive custom-table">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td scope="col"> Année </td>
+                    <td scope="col"> Centre </td>
+                    <td scope="col"> </td>
+                </tr>
+
+            </thead>
+            <tbody>
+                {% if events_year %}
+                    {% for event in events_year %}
+                    <tr>
+                        <th scope="row"> {{ event.year }} </th>
+                        <td> {{ event.center }} </td>
+                        <td> <a href="{% url 'events:application_review' year=event.year event=event.id %}"> Review </a></td>
+                    </tr>
+                    {% endfor %}
+                {% else %}
+                    {% for event in events %}
+                    <tr>
+                        <th scope="row"> {{ event.year }} </th>
+                        <td> {{ event.center }} </td>
+                        <td> <a href="{% url 'events:application_review' year=event.year event=event.id %}"> Review </a></td>
+                    </tr>
+                    {% endfor %}
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

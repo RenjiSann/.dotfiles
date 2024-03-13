@@ -1,0 +1,142 @@
+{% extends "gccsite/base.html" %}
+{% load custom_filters %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/events/events.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+{% endblock head %}
+
+{% block content %}
+    <div class="basic-background p-md-4">
+        <div class="container">
+
+            {# Title #}
+            <div class="mb-3">
+                {% if "passed" in request.GET %}
+                    <h1>Nos stages passés</h1>
+                    <a href="{% url 'events:events' %}">
+                        <h6>Voir nos stages à venir</h6>
+                    </a>
+                {% else %}
+                    <h1>Nos stages à venir</h1>
+                    <a href="{% url 'events:events' %}?passed">
+                        <h6>Voir nos stages passés</h6>
+                    </a>
+                {% endif %}
+            </div>
+
+            <div class="p-2 bg-white rounded-3">
+                {% for event in object_list %}
+                    <div class="row m-2 p-2 border rounded-3 align-items-center justify-content-between">
+
+                        <div class="col-md-8">
+                            {# Title + status badge #}
+                            <div class="d-flex align-items-center">
+                                <span class="fs-4 fw-bold pe-2">{{ event.name }}</span>
+                                {% include "events/partial/event_status_badge.html" with event=event %}
+                            </div>
+
+                            {# Date #}
+                            <div class="row">
+                                <div class="col-auto">
+                                    <i class="far fa-calendar-check"></i>
+                                </div>
+                                <div class="col">
+                                    Du {{ event.start_date|date }}
+                                    au {{ event.end_date|date }}
+                                </div>
+                            </div>
+
+                            {# Location #}
+                            <div class="row">
+                                <div class="col-auto">
+                                    <i class="fas fa-location-dot"></i>
+                                </div>
+                                <div class="col">
+                                    {{ event.center.address.zip_code }},
+                                    {{ event.center.address.city }}
+                                </div>
+                            </div>
+                        </div>
+
+                        {# Finished events #}
+                        {% if "passed" in request.GET %}
+                            <div class="col-md-3 text-end">
+                                <div class="fst-italic">
+                                    Ce stage est terminé. Consulte les photos
+                                    <a href="{{ FLICKR_URL }}" target="blank">ici</a> !
+                                </div>
+                            </div>
+                            {# Ongoing events #}
+                        {% else %}
+                            <div class="col-md-3 offset-md-1 mt-3 mt-md-0" role="group">
+                                <button
+                                    class="btn mx-auto btn-primary btn-block"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#application-form-modal"
+                                    data-bs-event-id="{{ event.id }}"
+                                    {# Disable the registration button if not signup period #}
+                                    {% if not event|signup_opened %}disabled{% endif %}
+                                    >S'inscrire à ce stage</button>
+                                <button class="btn mx-auto btn-light btn-block mt-1"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#scheduleModal-{{ event|event_format }}">
+                                    Calendrier du stage
+                                </button>
+                            </div>
+                        {% endif %}
+
+                    </div>
+
+                {% endfor %}
+            </div>
+
+            <div class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Précédent</a>
+                    </li>
+                {% else %}
+                    <li class="page-item disabled">
+                        <a class="page-link">Précédent</a>
+                    </li>
+                {% endif %}
+                {% if page_obj.has_next %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ page_obj.next_page_number }}">Suivant</a>
+                    </li>
+                {% else %}
+                    <li class="page-item disabled">
+                        <a class="page-link">Suivant</a>
+                    </li>
+                {% endif %}
+                <span class="step-links">
+                    {% if page_obj.has_previous %}
+                        <a href="?page=1">&laquo; first</a>
+                        <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                    {% endif %}
+
+                    <span class="current">
+                        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                    </span>
+
+                    {% if page_obj.has_next %}
+                        <a href="?page={{ page_obj.next_page_number }}">next</a>
+                        <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                    {% endif %}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    {# MODALS #}
+    {% include "events/partial/event_application_form_modal.html" with color=1 %}
+    {% include "events/partial/event_schedule_modal.html" with event_format="week" %}
+    {% include "events/partial/event_schedule_modal.html" with event_format="weekend" %}
+
+{% endblock content %}
+
+{% block scripts %}
+    <script type="module" src="{% static 'js/forms/application_form.js'%}"></script>
+{% endblock scripts %}

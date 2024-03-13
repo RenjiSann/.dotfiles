@@ -1,0 +1,14 @@
+CC=gcc
+CPPFLAGS=-I/src
+CFLAGS=-O0 -g -fprofile-arcs -ftest-coverage
+LDFLAGS=-fprofile-arcs -ftest-coverage
+
+ref:
+	${CC} -o ref src/main.c ${CPPFLAGS} ${CFLAGS} ${LDFLAGS}
+
+ours:
+	${CC} -o ours src/main.c src/coverage.c -DCOVERAGE ${CPPFLAGS}  ${CFLAGS} ${LDFLAGS}
+
+clean:
+	rm -rf ref
+	rm -rf ours

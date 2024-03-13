@@ -1,0 +1,33 @@
+{% extends "users/base_auth.html" %}
+{% load i18n %}
+
+{% block title %}
+    Réinitialiser son mot de passe
+{% endblock title %}
+
+{% block form %}
+    <div class="container-fluid">
+        <p class="row">
+            Nous vous avons envoyé par email les instructions pour changer de mot
+            de passe, pour autant qu'un compte existe avec l'adresse que vous avez
+            indiquée. Vous devriez recevoir rapidement ce message.
+        </p>
+
+        <p class="row">
+            Si vous ne recevez pas de message, vérifiez que vous avez saisi
+            l'adresse avec laquelle vous vous êtes enregistré et vérifiez que le
+            message ne soit pas dans vos spams.
+        </p>
+
+        <div class="row">
+            <a type="button"
+               href="{% url 'events:home' %}"
+               class="col-auto mx-auto align-items-center btn btn-primary py-1 px-3">
+                Retour à l'accueil
+            </a>
+        </div>
+    </div>
+{% endblock form %}
+
+{% block bottom %}
+{% endblock bottom %}

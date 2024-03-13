@@ -1,0 +1,8 @@
+{
+    // Test
+    "ignore": "H006",
+    "indent": 4,
+    "max_blank_lines": 3,
+    "max_line_length": 80,
+    "preserve_blank_lines": true
+}

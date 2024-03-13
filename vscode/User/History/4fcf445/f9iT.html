@@ -1,0 +1,21 @@
+{% extends "users/base_auth.html" %}
+{% load i18n %}
+
+{% block title %}
+    Réinitialiser son mot de passe
+{% endblock title %}
+
+{% block form %}
+    <p>
+        Nous vous avons envoyé par courriel les instructions pour changer de mot
+        de passe, pour autant qu'un compte existe avec l'adresse que vous avez
+        indiquée. Vous devriez recevoir rapidement ce message.
+
+        Si vous ne recevez pas de message, vérifiez que vous avez saisi
+        l'adresse avec laquelle vous vous êtes enregistré et contrôlez votre
+        dossier de pourriels.
+    </p>
+{% endblock form %}
+
+{% block bottom %}
+{% endblock bottom %}

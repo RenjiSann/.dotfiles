@@ -1,0 +1,15 @@
+{% extends "users/base_auth.html" %}
+{% load i18n %}
+
+{% block title %}
+    Mot de passe oublié ?
+{% endblock title %}
+
+{% block form %}
+    <div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% translate 'Home' %}</a>
+    &rsaquo; {% translate 'Password reset' %}
+{% endblock form %}
+
+{% block bottom %}
+{% endblock bottom %}

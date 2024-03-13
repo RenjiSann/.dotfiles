@@ -1,0 +1,55 @@
+{% load static %}
+<footer class="footer-bg py-2 w-100 container-fluid">
+
+    {# Logo #}
+    <div class="row my-3">
+        <div class="col">
+            <a class="text-center" href="{% url 'events:home' %}">
+                <img src="{% static 'img/logo_gcc_text_right.svg' %}"
+                    alt="Logo des stages Girls Can Code!"
+                    class="footer-logo" />
+            </a>
+        </div>
+    </div>
+
+    {# Links #}
+    <div class="row justify-content-center my-2">
+        <div class="col-auto text-center">
+            <a href="{% url 'pages:privacy' %}"
+               class="secondary-button footer-link my-auto">
+                Politique de confidentialité
+            </a>
+        </div>
+        <div class="col-auto text-center">
+            <a href="{% url 'pages:legal_notices' %}"
+               class="secondary-button footer-link my-auto">
+                Mentions légales
+            </a>
+        </div>
+        <div class="col-auto text-center">
+            <a href="mailto:{{ CONTACT_EMAIL }}"
+               class="secondary-button footer-link my-auto">{{ CONTACT_EMAIL }}</a>
+        </div>
+    </div>
+
+    {# Social Networks #}
+    <div class="row col order-lg-12 justify-content-center my-2 mx-0"
+         align-h="center">
+        {% for sn in SOCIAL_NETWORKS %}
+            <a href="{{ sn.link }}"
+               class="col-auto text-center footer-link"
+               target="_blank"
+               rel="noopener noreferrer"
+               title="{{ sn.alt }}">
+                <i class="fa fa-brands {{ sn.logo }}"></i>
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="row">
+        <div class="col text-center fs-footnote text-gray">
+            2023 @ Association Prologin
+        </div>
+    </div>
+
+</footer>

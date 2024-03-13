@@ -1,0 +1,26 @@
+{% extends 'gccsite/base.html' %}
+
+{% block content %}
+<div class="basic-background">
+    <div class="row">
+        <div class="col offset-1">
+            <a href="{% url 'pages:privacy' %}">
+                <i class="fa-solid fa-arrow-left"></i>
+                Revenir aux
+                informations générales sur le traitement des données
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center m-3">
+            {{ TITLE }}
+        </h1>
+        <div class="container accordion mb-1" role="tablist">
+            {% for privacy_elm in PRIVACY_LIST %}
+                {% cycle 1 2 3 as color silent %}
+                {% include 'pages/partial/AccordionCard.html' with title=privacy_elm.title content=privacy_elm.content index=forloop.counter color=color %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

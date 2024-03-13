@@ -1,0 +1,8 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./exo7b/Cargo.toml",
+        "./exo7/Cargo.toml",
+        "./exo6/Cargo.toml",
+        "./exo6/Cargo.toml"
+    ]
+}

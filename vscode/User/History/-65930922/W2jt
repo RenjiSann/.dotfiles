@@ -1,0 +1,5 @@
+{
+    ignore = "H006" # H006: images should have width, height attributes
+    max_blank_lines = 3
+    max_line_length = 80
+}

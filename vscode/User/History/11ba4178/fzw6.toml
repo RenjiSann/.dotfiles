@@ -1,0 +1,12 @@
+name = "ex2"
+description = "Shiny new project"
+version = "0.1.0-dev"
+
+authors = ["Dorian Peron"]
+maintainers = ["Dorian Peron <dorian.peron@epita.fr>"]
+maintainers-logins = ["RenjiSann"]
+
+executables = ["ex2"]
+
+[build-switches]
+"*".constraints = "yes"

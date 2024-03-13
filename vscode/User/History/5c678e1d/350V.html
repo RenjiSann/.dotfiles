@@ -1,0 +1,29 @@
+{% comment %}
+    Template parameters:
+    - application: the application object.
+    - button_class: class for the button style
+{% endcomment %}
+
+<button type="button" class="btn btn-primary {{ button_class }}" data-bs-toggle="modal" data-bs-target="#cancelModal-{{ application.id }}">Annuler ma venue</button>
+
+<div class="modal fade" id="cancelModal-{{ application.id }}" tabindex="-1" aria-labelledby="cancelModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body col-md-auto mb-2">
+                Êtes vous sur de vouloir annuler votre candidature pour l'évenement {{ application.event.name }} ?
+            </div>
+            <div class="modal-footer">
+                <form class="" method="post" action="{% url 'events:update_status_applicant' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="application-id" value="{{ application.pk }}">
+                    <input type="hidden" name="status" value="-2">
+                    <input type="submit" class="btn btn-primary" value="Annuler ma venue">
+                </form>
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal"> Annuler </button>
+            </div>
+        </div>
+    </div>
+</div>

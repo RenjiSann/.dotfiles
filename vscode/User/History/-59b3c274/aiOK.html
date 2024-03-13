@@ -1,0 +1,16 @@
+{% extends "users/base_auth.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Mot de passe oublié ?
+{% endblock title %}
+
+{% block form %}
+    <form action="" method="post">
+        {% form|crispy %}
+    </form>
+{% endblock form %}
+
+{% block bottom %}
+{% endblock bottom %}

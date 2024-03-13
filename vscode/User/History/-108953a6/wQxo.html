@@ -1,0 +1,232 @@
+{% extends "gccsite/base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/events/events.css' %}">
+{% endblock head %}
+
+{% block content %}
+
+    <div class="container-fluid mt-2">
+        <div class="custom-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Nombre de participations</th>
+                        <th scope="col">Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for application in applications %}
+                        <tr {% if 'users.can_view_applications_details' in perms %} data-bs-toggle="collapse" data-bs-target="#row-{{ forloop.counter }}" aria-expanded="false" aria-controls="row-{{ forloop.counter }}" {% endif %}>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td>{{ application.last_name }} {{ application.first_name }}</td>
+                            <td>{{ application.nb_participations }}</td>
+                            <td>
+                                {% if application.status == REJECTED %}Candidature rejetée{% endif %}
+                                {% if application.status == WITHDRAWN %}
+                                    Candidature annulée de la part de la candidate
+                                {% endif %}
+                                {% if application.status == CANCELLED %}
+                                    Candidature annulée de la part des organisateurs
+                                {% endif %}
+                                {% if application.status == PENDING %}
+                                    Candidature en cours de traitement
+                                {% endif %}
+                                {% if application.status == ACCEPTED %}Candidature acceptée{% endif %}
+                                {% if application.status == CONFIRMED %}Candidature confirmée{% endif %}
+                                {% if application.status == ENDED %}Candidature confirmée{% endif %}
+                            </td>
+                        </tr>
+                        {% if 'users.can_view_applications_details' in perms %}
+                            <tr class="collapse" id="row-{{ forloop.counter }}">
+                                <td colspan="5">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="p-2">
+                                                {% if "users.can_view_applications_private_details" in perms %}
+                                                    <p>
+                                                        <h2>Informations sur la participante:</h2>
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa-solid fa-at"></i> {{ application.email_resp }}
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa-solid fa-phone"></i> {{ application.phone }}
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa-solid fa-house-user"></i> {{ application.address.zip_code }}
+                                                        {{ application.address.city }},
+                                                        {{ application.address.country }}
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa-solid fa-cake-candles"></i> {{ application.dob }}
+                                                    </p>
+                                                {% endif %}
+                                            </div>
+
+                                            <div class="p-2">
+                                                <p>
+                                                    <h2>Informations sur le responsable légal:</h2>
+                                                </p>
+                                                <p>
+                                                    <i class="fa-solid fa-user"></i> {{ application.first_name_resp }}
+                                                    {{ application.last_name_resp }}
+                                                </p>
+                                                {% if "users.can_view_applications_private_details" in perms %}
+                                                    <p>
+                                                        <i class="fa-solid fa-at"></i> {{ application.email_resp }}
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa-solid fa-phone"></i> {{ application.phone }}
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa-solid fa-house-user"></i> {{ application.address_resp.zip_code }}
+                                                        {{ application.address_resp.city }},
+                                                        {{ application.address_resp.country }}
+                                                    </p>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <p>
+                                                <h2>
+                                                    <i class="fa-solid fa-school"></i> Etablissement scolaire:
+                                                    {{ application.school.name }}
+                                                </h2>
+                                            </p>
+                                            <p>
+                                                <i class="fa-solid fa-location-dot"></i> {{ application.school.street }},
+                                                {{ application.school.zip_code }} {{ application.school.city }}
+                                            </p>
+                                            <p>
+                                                <i class="fa-solid fa-user-graduate"></i> {{ application.school.school_level }}
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row p-2">
+                                        <div class="col-md">
+                                            <h2>Réponse au questionnaires</h2>
+                                            <dl class="py-2">
+                                                <h3 class="questions">• Quelle est ta taille de t-shirt ?</h3>
+                                                <p class="answer">{{ application.form_answer.tshirt }}</p>
+
+                                                <h3 class="questions">
+                                                    • Y a-t-il quelque chose en particulier que tu espères apprendre pendant le stage
+                                                    ?
+                                                </h3>
+                                                <p class="answer">{{ application.form_answer.learning }}</p>
+
+                                                <h3 class="questions">
+                                                    • As-tu déjà programmé, si oui, quand as-tu codé pour la première fois et quels
+                                                    outils ou langages de programmation as-tu essayés ?
+                                                </h3>
+                                                <p class="answer">{{ application.form_answer.programing }}</p>
+
+                                                <h3 class="questions">
+                                                    • Y a-t-il des études en informatique qui t'intéresseraient ? Si oui, pourrais-tu
+                                                    préciser lesquelles ?
+                                                </h3>
+                                                <p class="answer">{{ application.form_answer.studies }}</p>
+
+                                                <h3 class="questions">
+                                                    • Comment as-tu connu l'association et les stages ? Essaye d'être précise, cela
+                                                    nous aide beaucoup !
+                                                </h3>
+                                                <p class="answer">{{ application.form_answer.association }}</p>
+
+                                                {% if "users.can_view_applications_private_details" in perms %}
+                                                    <h3 class="questions">• As-tu des allergies ?</h3>
+                                                    <p class="answer">{{ application.form_answer.allergies }}</p>
+
+                                                    <h3 class="questions">• As-tu un régime alimentaire particulier ?</h3>
+                                                    <p class="answer">{{ application.form_answer.diet }}</p>
+                                                {% endif %}
+
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <div class="row py-3 px-2">
+                                        <div class="col-12">
+                                            <h2>Notes sur la candidature:</h2>
+                                            <form method="post" action="{% url 'events:update_application_notes' %}">
+                                                {% csrf_token %}
+                                                <input type="hidden" name="application-id" value="{{ application.pk }}">
+                                                <input type="hidden" name="event-year" value="{{ application.event.year }}">
+                                                <input type="hidden" name="event-id" value="{{ application.event.pk }}">
+                                                <textarea name="notes" class="textarea form-control">{{application.notes}}</textarea>
+                                                <input type="submit"
+                                                       name="submit-application-notes"
+                                                       value="Modifier les notes"
+                                                       class="my-4 btn btn-primary" />
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="row py-3 px-2">
+                                        <h2>Statut de la candidature:</h2>
+                                        <form method="post" action="{% url 'events:application_status_update' %}">
+                                            {% csrf_token %}
+                                            <input type="hidden" name="application-id" value="{{ application.pk }}">
+                                            <input type="hidden" name="event-year" value="{{ application.event.year }}">
+                                            <input type="hidden" name="event-id" value="{{ application.event.pk }}">
+
+                                            <select class="form-select" name="status">
+                                                <option value="{{ REJECTED }}"
+                                                        {% if application.status == REJECTED %}selected{% endif %}>
+                                                    Candidature
+                                                    rejetée
+                                                </option>
+                                                <option value="{{ WITHDRAWN }}"
+                                                        {% if application.status == WITHDRAWN %}selected{% endif %}>
+                                                    Candidature
+                                                    annulée de la part de la candidate
+                                                </option>
+                                                <option value="{{ CANCELLED }}"
+                                                        {% if application.status == CANCELLED %}selected{% endif %}>
+                                                    Candidature
+                                                    annulée de la part des organisateurs
+                                                </option>
+                                                <option value="{{ PENDING }}"
+                                                        {% if application.status == PENDING %}selected{% endif %}>
+                                                    Candidature
+                                                    en cours de traitement
+                                                </option>
+                                                <option value="{{ ACCEPTED }}"
+                                                        {% if application.status == ACCEPTED %}selected{% endif %}>
+                                                    Candidature
+                                                    acceptée
+                                                </option>
+                                                <option value="{{ CONFIRMED }}"
+                                                        {% if application.status == CONFIRMED %}selected{% endif %}>
+                                                    Candidature
+                                                    confirmée
+                                                </option>
+                                                <option value="{{ ENDED }}"
+                                                        {% if application.status == ENDED %}selected{% endif %}>
+                                                    Stage terminé
+                                                </option>
+                                            </select>
+
+                                            <input type="submit"
+                                                   name="submit-application-status"
+                                                   value="Modifier le statut"
+                                                   class="my-4 btn btn-primary" />
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
+/* If the screen size is 601px wide or more */
+@media screen and (min-width: 601px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* If the screen size is 600px wide or less */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+
+body {
+  font-family: proxima-nova, 'Inter',sans-serif;
+  color: var(--main-dark-color);
+
+  --gcc-pink-color: #FF0079;
+  --gcc-green-color: #A6C613;
+  --gcc-blue-color: #00AED3;
+  --main-dark-color: #222A35;
+  --main-light-color: #eff2f5;
+  --main-grey-background: #efefef;
+  --global-border-radius: 12px;
+  --main-hover-color: #46566d;
+  --light-text-color: #92a2b9;
+  --bs-link-color: #00AED3;
+  --bs-link-hover-color: #00AED3;
+}
+
+/*
+ * The default style of all links
+ * */
+a {
+  text-decoration: none;
+}
+
+/* Remove the underline between icon and text in links */
+a:hover > :not(i) {
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* Crispy form class put on asteriks of required fields */
+.asteriskField {
+  padding-left: .2em;
+  font-weight: bold;
+  color: red;
+}
+
+.accordion-button {
+  font-size: 20px;
+}
+
+/*
+ * To use in each view that use header and footer.
+ * */
+.main-body-style {
+  /*
+   * The fixed navbar overlay other contents, unless you add padding
+   * to the top of the <body>.
+   */
+  padding-top: 70px;
+
+  /*
+   * Needed to fix the footer to the bottom of the screen or to the bottom of
+   * the page if the page is longer than the screen.
+   * */
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+}
+
+/*
+ * To use if you want to fix the footer to the bottom of the screen or the
+ * page. The page content should be inside the content class and the footer
+ * have to be outside of it.
+ * */
+.content {
+  flex: 1;
+}
+
+
+h1, .titleSize {
+  font-weight: 500;
+}
+
+h2, .subtitleSize {
+  font-size: 150%;
+}
+
+h3, .subsubtitleSize {
+  font-size: 100%;
+}
+
+.fs-footnote {
+  font-size: 80%;
+}
+
+.light-text {
+  color: #37474F;
+  font-weight: 400;
+  font-size: 100%;
+}
+
+.gcc-pink {
+  color: var(--gcc-pink-color);
+}
+
+.gcc-green {
+  color: var(--gcc-green-color);
+}
+
+.gcc-blue {
+  color: var(--gcc-blue-color);
+}
+
+.content-background {
+  background-color: white;
+  border-radius: var(--global-border-radius);
+  border-radius: var(--global-border-radius);
+  border: 1px solid var(--light-text-color);
+}
+
+.basic-background {
+  height: 100%;
+  background-attachment: fixed;
+  background-color: white;
+  background-image: url('../img/basic_background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.partners-background {
+  background-color: white;
+  padding: 15px;
+}
+
+
+/*
+ * Main
+ */
+
+ .home-banner {
+  height: 95vh;
+  background-image: url("../img/girl-class-v2.svg"),
+    url("../img/code-background-v2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* title animation */
+.home-title span {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border-radius: var(--global-border-radius);
+}
+
+.home-title span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-dark-color);
+  animation: a-ltr-after 0.5s cubic-bezier(0.5, 0.5, 0.5, 0.5) forwards;
+  transform: translateX(-101%);
+}
+
+.home-title span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  animation: a-ltr-before 0.7s cubic-bezier(0.5, 0.5, 0.5, 0.5) forwards;
+  transform: translateX(0);
+}
+
+.home-title span:nth-of-type(1)::before,
+.home-title span:nth-of-type(1)::after {
+  animation-delay: 0.5s;
+}
+
+.home-title span:nth-of-type(2)::before,
+.home-title span:nth-of-type(2)::after {
+  animation-delay: 0.5s;
+}
+
+.home-title span:nth-of-type(3)::before,
+.home-title span:nth-of-type(3)::after {
+  animation-delay: 0.6s;
+}
+
+@keyframes a-ltr-after {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(101%);
+  }
+}
+
+@keyframes a-ltr-before {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.newsletter-background {
+  background-color: var(--main-grey-background);
+  background-image: url("../img/newsletter_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+ *  Header
+ */
+.menu-logo {
+  width: 6em;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.navbar-brand {
+  opacity: 0;
+}
+.navbar-brand:hover {
+  text-decoration: none;
+}
+
+.dropdown-header:hover {
+  color: var(--bs-dropdown-header-color)
+}
+
+button.dropdown-item {
+  z-index: 10;
+}
+
+.text-home-header {
+  font-weight: bold;
+  align-self: center;
+  font-size: x-large;
+}
+
+/*
+ * Event List
+ */
+
+.event-list-background {
+  background-color: var(--main-grey-background);
+  background-image: url("../img/event_list_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 0 right 0;
+}
+
+.event-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.btn-group-vertical > button {
+  margin-bottom: 5px;
+  border-radius: 12px !important;
+}
+
+/*
+ * Newsletter
+ */
+
+.background-style {
+  background-color: var(--main-grey-background);
+  background-image: url("../img/newsletter_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rounded-input-left {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: var(--global-border-radius) !important;
+  border-bottom-left-radius: var(--global-border-radius) !important;
+}
+
+.rounded-input-right {
+  border-top-right-radius: var(--global-border-radius) !important;
+  border-bottom-right-radius: var(--global-border-radius) !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+/*
+ * Event Card
+ */
+.event-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.btn-group-vertical > button {
+  margin-bottom: 5px;
+  border-radius: 12px !important;
+}
+
+.gcc-color-1 {
+  color: var(--gcc-pink-color);
+}
+
+.gcc-color-2 {
+  color: var(--gcc-green-color);
+}
+
+.gcc-color-3 {
+  color: var(--gcc-blue-color);
+}
+.modal-header {
+  border: none;
+}
+
+.eventInfo-line {
+  margin: 0;
+  height: 3px;
+  width: 100%;
+  margin-bottom: 2%;
+  border-radius: 40%;
+  border: none;
+}
+.gcc-1-back {
+  background-color: var(--gcc-pink-color);
+}
+.gcc-2-back {
+  background-color: var(--gcc-green-color);
+}
+.gcc-3-back {
+  background-color: var(--gcc-blue-color);
+}
+.eventInfo-icon {
+  min-width: 60px;
+  max-width: 60px;
+  padding-right: 25px;
+}
+
+/*
+ * FAQ
+ */
+ .faq-background {
+  background-color: var(--main-grey-background);
+  background-image: url(../img/faq_bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 0;
+}
+
+/*
+ * AccordionCard
+ */
+.card,
+.card-header {
+  background-color: white !important;
+  border-radius: var(--global-border-radius) !important;
+  border: none;
+}
+.collapsed > .when-open,
+.not-collapsed > .when-closed {
+  display: none;
+}
+
+/*
+ * Footer
+ */
+.footer-bg {
+  flex-shrink: 0;
+  background-color: var(--main-grey-background);
+}
+
+.picture-size {
+  max-height: 60px;
+}
+
+.footer-link-style {
+  font-size: 100%;
+  color: var(--main-dark-color);
+}
+
+.footer-link-style:hover {
+  color: var(--main-dark-color);
+}

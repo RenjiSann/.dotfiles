@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "keyboard.dispatch": "keyCode",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.productIconTheme": "fluent-icons",
+    "editor.rulers": [
+        80, 90, 100
+    ],
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 1,
+    "djlint.configuration": ".djlintrc",
+    "git.openRepositoryInParentFolders": "never",
+    "editor.fontFamily": "juliamono"
+}

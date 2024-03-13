@@ -1,0 +1,13 @@
+{% comment %}
+    Show a pill badge
+    Parameters:
+    - event: the event object
+{% endcomment %}
+{% load custom_filters %}
+{% if event|signup_finished %}
+    <span class="badge rounded-pill text-bg-danger">fermé</span>
+{% elif event|signup_not_yet_opened %}
+    <span class="badge rounded-pill text-bg-warning">ouvre le {{event.signup_start_date|date:"d/m/y"}} </span>
+{% else %}
+    <span class="badge rounded-pill text-bg-success">ouvert</span>
+{% endif %}}

@@ -71,7 +71,7 @@ match_arm_leading_pipes = "Never"
 # Control the layout of arguments in a function
 # [Compressed|Tall|Vertical]
 # Default: Tall
-fn_args_layout = "Tall"
+fn_params_layout = "Tall"
 
 # Put a trailing comma after a block based match arm (non-block arms are not affected)
 # Default: false

@@ -1,0 +1,124 @@
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/partners/partial.css' %}">
+{% endblock head %}
+
+<div class="partnerBand">
+    <div class="row mx-auto my-auto justify-content-center">
+        {% if status == "avant" %}
+            <p class="h2 pt-4 pb-4 text-center">Ils nous font confiance</p>
+        {% elif status == "financement" %}
+            <p class="h2 pt-4 pb-4 text-center">Ils nous soutiennent</p>
+        {% else %}
+            <p class="h2 pt-4 pb-4 text-center">Ils nous accueillent</p>
+        {% endif %}
+
+        {# If large screen #}
+        <div class="container text-center d-none d-md-block">
+            <div class="row">
+                {% if status == "avant" %}
+                    {% for partner in partners_avant %}
+                        <div class="col-md-6 col-lg-4 col-xl-2">
+                            <div class="card-img">
+                                <a href="{{ partner.website_url }}">
+                                    <img src="{{ partner.logo.url }}"
+                                         loading="lazy"
+                                         class="img-fluid d-block mx-auto" />
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% elif status == "financement" %}
+                    {% for partner in partners_financement %}
+                        <div class="col-md-6 col-lg-4 col-xl-2">
+                            <div class="card-img">
+                                <a href="{{ partner.website_url }}">
+                                    <img src="{{ partner.logo.url }}" loading="lazy" class="img-fluid partner" />
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    {% for partner in partners_accueil %}
+                        <div class="col-md-6 col-lg-4 col-xl-2">
+                            <div class="card-img">
+                                <a href="{{ partner.website_url }}">
+                                    <img src="{{ partner.logo.url }}" loading="lazy" class="img-fluid partner" />
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        {# If small screen #}
+        <div id="carousel-sponsors-{{ status }}"
+             class="partnerBand carousel carousel-dark slide pb-3 d-block d-md-none"
+             data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                {% if status == "avant" %}
+                    {% for partner in partners_avant %}
+                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                            <div class="card-img partner">
+                                <a href="{{ partner.website_url }}">
+                                    <img src="{{ partner.logo.url }}"
+                                         loading="lazy"
+                                         class="img-fluid partner d-block mx-auto" />
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% elif status == "financement" %}
+                    {% for partner in partners_financement %}
+                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                            <div class="card-img partner">
+                                <a href="{{ partner.website_url }}">
+                                    <img src="{{ partner.logo.url }}"
+                                         loading="lazy"
+                                         class="img-fluid partner d-block mx-auto" />
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    {% for partner in partners_accueil %}
+                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                            <div class="card-img partner">
+                                <a href="{{ partner.website_url }}">
+                                    <img src="{{ partner.logo.url }}"
+                                         loading="lazy"
+                                         class="img-fluid partner d-block mx-auto" />
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+
+            <a class="carousel-control-prev"
+               href="#carousel-sponsors-{{ status }}"
+               role="button"
+               data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next"
+               href="#carousel-sponsors-{{ status }}"
+               role="button"
+               data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center align-self-center m-2">
+                <a type="button"
+                   href="{% url 'partners:partners' %}"
+                   class="btn btn-primary mb-3 ps-4 pe-4">
+                    Tous nos partenaires
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

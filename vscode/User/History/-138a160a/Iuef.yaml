@@ -1,0 +1,8 @@
+repos:
+- repo: local
+  hooks:
+  - id: utf-8
+    name: Check utf-8
+    entry: ./tools/check_utf-8.sh
+    language: system
+    files: \.md$

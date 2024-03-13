@@ -1,0 +1,12 @@
+name = "test_invert"
+description = "Shiny new project"
+version = "0.1.0-dev"
+
+authors = ["Dorian Peron"]
+maintainers = ["Dorian Peron <dorian.peron@epita.fr>"]
+maintainers-logins = ["RenjiSann"]
+
+executables = ["test_invert"]
+
+[build-switches]
+"*".runtime_checks = "all"

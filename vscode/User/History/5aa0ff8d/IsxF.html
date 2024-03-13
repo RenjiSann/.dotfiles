@@ -1,0 +1,49 @@
+{% extends "gccsite/base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="faq-background p-2 p-sm-0 container-fluid" id="faq">
+        <div class="row w-100 pt-4">
+
+            <div class="col-12 col-sm-8 col">
+                <div class="content-background ms-1 ms-sm-5 me-1 p-3 col">
+                    <h1>Foire Aux Questions</h1>
+                    <div class="accordion p-1" role="tablist">
+                        {% for faq_elt in FAQ_ENTRIES %}
+                            {% cycle 1 2 3 as color silent %}
+                            {% include "pages/partial/AccordionCard.html" with title=faq_elt.question content=faq_elt.answer index=forloop.counter color=color %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col d-none d-sm-block">
+                <img src="{% static 'img/photo_2.png' %}"
+                     alt="Photo des stages Girls Can Code!"
+                     class="container-fluid" />
+            </div>
+        </div>
+        <div class="row w-100">
+            <div class="col d-none d-sm-block">
+                <img src="{% static 'img/photo_1.png' %}"
+                     alt="Photo des stages Girls Can Code!"
+                     class="container-fluid" />
+            </div>
+            <div class="col">
+                <div class="col content-background mt-5 p-4 mx-auto back-mode">
+                    <h1>Une question ?</h1>
+                    <p>
+                        Si vous avez une question qui ne figure pas dans la FAQ, vous pouvez
+                        nous envoyer un mail à l'adresse suivante :
+                    </p>
+                    <div class="text-center">
+                        <a class="h4" href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>
+                    </div>
+                </div>
+                <img src="{% static 'img/photo_4.png' %}"
+                     alt="Photo des stages Girls Can Code!"
+                     class="container-fluid" />
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

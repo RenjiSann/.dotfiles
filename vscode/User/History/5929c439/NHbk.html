@@ -1,0 +1,28 @@
+<div class="accordion-item border-0">
+  <h2 class="accordion-header">
+    <button
+      type="button"
+      class="accordion-button bg-transparent text-reset shadow-none collapsed row secondary-button p-2 mb-3 justify-content-between"
+      data-bs-toggle="collapse" data-bs-target="#accordion-{{index}}"
+      aria-expanded="{% if index == 1 %}true{% else %}false{% endif %}"
+      aria-controls="accordion-{{index}}">
+      <div class="row col pl-3">
+        <div class="my-auto d-none d-sm-block col-sm-auto gcc-color-{{color}}">
+          <i class="fas fa-circle" style="font-size: 1em;"></i>
+        </div>
+        <p class="col my-auto">
+          {{ title }}
+        </p>
+      </div>
+    </button>
+  </h2>
+  <div id="accordion-{{index}}" class="accordion-collapse collapse {% if index == 1 %}show{% endif %}">
+    <div class="accordion-body pt-0">
+      <div class="accordion-body pt-0">
+        {% autoescape off %}
+        {{ content }}
+        {% endautoescape %}
+      </div>
+    </div>
+  </div>
+</div>

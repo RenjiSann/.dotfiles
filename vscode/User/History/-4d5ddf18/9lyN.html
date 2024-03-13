@@ -1,0 +1,188 @@
+{% extends "gccsite/base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load application_filters %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/events/events.css' %}">
+    <script src="{% static 'js/applications/review.js' %}"></script>
+{% endblock head %}
+
+{% block content %}
+
+    <div class="container-fluid mt-2">
+        <h2 class="text-center m-2">{{ object.name }}</h2>
+        <div class="custom-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Nombre de participations</th>
+                        <th scope="col">Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for application in applications %}
+                        <tr {% if 'users.can_view_applications_details' in perms %} data-bs-toggle="collapse" data-bs-target="#row-{{ forloop.counter }}" aria-expanded="false" aria-controls="row-{{ forloop.counter }}" {% endif %}>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td>{{ application.first_name }} {{ application.last_name }}</td>
+                            <td>{{ application.profile.participation_count }}</td>
+                            <td>
+                                {% include "applications/partial/application_status_badge.html" with application=application %}
+                            </td>
+                        </tr>
+                        {% if 'users.can_view_applications_details' in perms %}
+                            <tr class="collapse" id="row-{{ forloop.counter }}">
+                                <td colspan="5">
+                                    <div class="row row-cols-1 row-cols-xl-3">
+                                        <div class="col">
+                                            <div class="card my-2">
+                                                <h5 class="card-header">Participante</h5>
+                                                <div class="card-body">
+                                                    {% if "users.can_view_applications_private_details" in perms %}
+                                                        <div class="card-text">
+                                                            <i class="fa-solid fa-user"></i> {{ application.first_name }}
+                                                            {{ application.last_name }}
+                                                            <br />
+                                                            <i class="fa-solid fa-at"></i> {{ application.email }}
+                                                            <br />
+                                                            <i class="fa-solid fa-phone"></i> {{ application.phone }}
+                                                            <br />
+                                                            <i class="fa-solid fa-house-user"></i> {{ application.address }}
+                                                            <br />
+                                                            <i class="fa-solid fa-cake-candles"></i> {{ application.birth_date }}
+                                                        </div>
+                                                    {% else %}
+                                                        <p class="text-muted">Permissions insuffisantes</p>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card my-2">
+                                                <h5 class="card-header">Responsable légal</h5>
+                                                <div class="card-body">
+                                                    {% if "users.can_view_applications_private_details" in perms %}
+                                                        <div class="card-text">
+                                                            <i class="fa-solid fa-user"></i> {{ application.first_name_resp }}
+                                                            {{ application.last_name_resp }}
+                                                            <br />
+                                                            <i class="fa-solid fa-at"></i> {{ application.email_resp }}
+                                                            <br />
+                                                            <i class="fa-solid fa-phone"></i> {{ application.phone_resp }}
+                                                            <br />
+                                                            <i class="fa-solid fa-house-user"></i> {{ application.address_resp }}
+                                                        </div>
+                                                    {% else %}
+                                                        <p class="text-muted">Permissions insuffisantes</p>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card my-2">
+                                                <h5 class="card-header">Établissement scolaire</h5>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <i class="fa-solid fa-school"></i> {{ application.school_name }}
+                                                        <br />
+                                                        <i class="fa-solid fa-user-graduate"></i> {{ application.form_answer.school_level }}
+                                                        <br />
+                                                        <i class="fa-solid fa-location-dot"></i> {{ application.address_school }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row p-2">
+                                        <div class="col-md-6">
+                                            <h2>Questionnaire</h2>
+                                            <dl class="py-2">
+                                                <h3 class="questions">• Quelle est ta taille de t-shirt ?</h3>
+                                                <p class="answer">{{ application.tshirt }}</p>
+
+                                                <h3 class="questions">
+                                                    • Y a-t-il quelque chose en particulier que tu espères apprendre pendant le stage
+                                                    ?
+                                                </h3>
+                                                <p class="answer">{{ application.form_answer.learning }}</p>
+
+                                                <h3 class="questions">
+                                                    • As-tu déjà programmé, si oui, quand as-tu codé pour la première fois et quels
+                                                    outils ou langages de programmation as-tu essayés ?
+                                                </h3>
+                                                <p class="answer">{{ application.form_answer.programing }}</p>
+
+                                                <h3 class="questions">
+                                                    • Y a-t-il des études en informatique qui t'intéresseraient ? Si oui, pourrais-tu
+                                                    préciser lesquelles ?
+                                                </h3>
+                                                <p class="answer">{{ application.form_answer.studies }}</p>
+
+                                                <h3 class="questions">
+                                                    • Comment as-tu connu l'association et les stages ? Essaye d'être précise, cela
+                                                    nous aide beaucoup !
+                                                </h3>
+                                                <p class="answer">{{ application.form_answer.association }}</p>
+
+                                                {% if "users.can_view_applications_private_details" in perms %}
+                                                    <h3 class="questions">• As-tu des allergies ?</h3>
+                                                    <p class="answer">{{ application.form_answer.allergies }}</p>
+
+                                                    <h3 class="questions">• As-tu un régime alimentaire particulier ?</h3>
+                                                    <p class="answer">{{ application.form_answer.diet }}</p>
+                                                {% endif %}
+
+                                            </dl>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="card my-2">
+                                                <div class="card-body gcc-status-card" data-gcc-id="{{ application.id }}">
+                                                    <h5 class="card-title">Statut de la candidature:</h5>
+
+                                                    <div class="card-text">
+                                                        <div class="col">{{ application|status_label }}</div>
+                                                        <div class="row">
+                                                            {% for transition in application|get_available_transitions:request.user %}
+                                                                {% include "applications/partial/application_transition_button.html" with application=application transition=transition text=transition|title form_class="col-auto" %}
+                                                            {% endfor %}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card my-2">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Notes sur la candidature:</h5>
+                                                    <form method="post"
+                                                          action="{% url 'applications:application_notes_update' %}">
+                                                        {% csrf_token %}
+                                                        <input type="hidden" name="application-id" value="{{ application.pk }}">
+                                                        <input type="hidden" name="event-year" value="{{ application.event.year }}">
+                                                        <input type="hidden" name="event-id" value="{{ application.event.pk }}">
+                                                        <textarea name="notes" class="textarea form-control">{{application.notes}}</textarea>
+                                                        <input type="submit"
+                                                               name="submit-application-notes"
+                                                               value="Modifier les notes"
+                                                               class="btn btn-primary mt-2" />
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock content %}

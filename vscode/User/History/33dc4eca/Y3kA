@@ -1,0 +1,53 @@
+CC := gcc
+CPPFLAGS := -I./src
+CFLAGS := -Wall -Wextra -Werror -pedantic -std=c99
+LDFLAGS :=
+LDLIBS :=
+
+# Add coverage flags if COVERAGE=1 env variable is passed
+ifeq (${COVERAGE}, 1)
+	CFLAGS_COV = --coverage -O0
+endif
+
+SRC = \
+	src/my_fnmatch.c \
+	src/my_fnmatch_bracket.c
+
+TESTSRC := tests/tests.c
+TESTBIN := check
+
+.PHONY: check clean
+
+all: library
+
+library: libfnmatch.a
+
+# We only want the coverage flags to be in the source
+libfnmatch.a: CFLAGS += ${CFLAGS_COV}
+libfnmatch.a: ${SRC:.c=.o}
+	ar rcs $@ $^
+
+# Here, we need to add the flags for the linking process, to properly link the
+# instrumented code to the gcov lib.
+# We prefer adding ${CFLAGS_COV} to the command line instead of adding this line
+#
+# ${TESTBIN}: ${CFLAGS} += ${CFLAGS_COV}
+#
+# because doing so would also affect the compilation of the testsuite source
+# files and instrument them with coverage data, which we don't want.
+${TESTBIN}: ${TESTSRC:.c=.o} libfnmatch.a
+	${CC} ${CFLAGS} ${CFLAGS_COV} $^ -lcriterion -o ${TESTBIN}
+
+clean:
+	${RM} **/*.o **/*.gch
+	${RM} ${TESTBIN}
+	${RM} ${BIN}
+	${RM} libfnmatch.a
+
+	# Gcov files
+	${RM} **/*.gcdo **/*.gcda **/*.gcno
+	${RM} *.gcov
+
+	# Gcovr output files
+	${RM} -r coverage/
+	${RM} coverage.xml

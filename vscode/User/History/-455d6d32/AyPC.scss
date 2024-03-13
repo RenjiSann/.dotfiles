@@ -1,0 +1,28 @@
+// source:
+// https://github.com/dsrkafuu/hugo-theme-fuji/#-custom-stylesheet-configuration
+
+$body-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue',
+    'Helvetica', 'Arial', 'PingFang SC', 'Hiragino Sans GB',
+    'Source Han Sans CN', 'Source Han Sans SC', 'Microsoft YaHei',
+    'WenQuanYi Micro Hei', sans-serif;
+$mono-font: 'Cascadia Code', 'SF Mono', 'Fira Code', 'Consolas', $body-font;
+$title-font: 'Product Sans', $body-font;
+$body-font-size: 16px;
+
+$light-color-primary: #a24343;
+$light-color-secondary: #904848;
+$light-color-focus: #9b3b3b;
+$light-color-mute: #6e6e6e;
+$light-color-font: #3e3030;
+$light-color-divider: #e5e2e2;
+$light-color-bg: #ddd;
+$light-color-codebg: #faf6f6;
+
+$dark-color-primary: #d38a8a;
+$dark-color-secondary: #dfb1b1;
+$dark-color-focus: #e6e6e6;
+$dark-color-mute: #a39e9e;
+$dark-color-font: #c0c0c0;
+$dark-color-divider: #584d4d;
+$dark-color-bg: #362f2f;
+$dark-color-codebg: #494141;

@@ -1,0 +1,11 @@
+[package]
+name = "r42sh"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+r42sh-ast ={ version = "*", path = "../r42sh-ast"}
+r42sh-parser ={ version = "*", path = "../r42sh-parser"}
+clap = { version = "4.3.23", features = ["derive"] }

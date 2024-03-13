@@ -1,0 +1,62 @@
+include "elevator.lus"
+
+--------------------------------------------------------------------------------
+------------------------- Temporal logic operators -----------------------------
+--------------------------------------------------------------------------------
+
+-- X has been true once in the past
+node Once(X : bool) returns (Y : bool);
+let
+  Y = X or (false -> pre Y) ;
+tel
+
+-- Since last X, Y has always been true
+node Since( X, Y : bool ) returns ( Z : bool );
+let
+  Z =  X or (Y and (false -> pre Z));
+tel
+
+-- True at each instant if X is true initially
+node Initially(X: bool) returns (Y: bool)
+let
+  Y = X -> pre Y;
+tel
+
+--------------------------------------------------------------------------------
+------------------------------ Verification ------------------------------------
+--------------------------------------------------------------------------------
+
+node Verif(Floor1, Floor2, Call1, Call2, Stop, DoorOpen : bool)
+  returns (MotorUp, MotorDown : bool);
+  var Moving, Halting, CanMove, ShouldMove : bool;
+let
+  /********* instantiate the controller *********/
+  (MotorUp, MotorDown) = Control(Floor1, Floor2, DoorOpen, Call1, Call2, Stop) ;
+
+  /********* some environment hypothesis *********/
+  assert Initially(Floor1) ;
+  assert true -> pre (Floor1 and not Moving) => Floor1 ;
+  assert true -> pre (Floor2 and not Moving) => Floor2 ;
+
+  /********* local helper variables *********/
+  Moving = MotorUp or MotorDown; /* TODO 2.1 */
+  Halting = false -> (pre Moving and not Moving); /* TODO 2.1 */
+  CanMove = not Stop and not DoorOpen; /* TODO 2.1 */
+  ShouldMove =
+    (not (false -> pre Moving))
+    and CanMove
+    and ((Call1 and not Floor1) or (Call2 and not Floor2));
+
+  /********* requirements *********/
+  check "R1" Moving => (not DoorOpen and not Stop); /* TODO 2.2 */
+  check "R2a" Floor1 => not MotorDown; /* TODO 2.2 */
+  check "R2b" Floor2 => not MotorUp; /* TODO 2.2 */
+  check "R3"  Halting => (Stop or DoorOpen or Floor1 or Floor2); /* TODO 2.2 */
+  check "R4a" (false -> pre MotorDown) => not MotorUp; /* TODO 2.2 */
+  check "R4b" (false -> pre MotorUp) => not MotorDown; /* TODO 2.2 */
+  check "R5" not (MotorDown and MotorUp); /* TODO 2.2 */
+  check "R6" ShouldMove => Moving; /* TODO 2.2 */
+  check "R7a" Since(Floor1, not Once(Call2)) => Floor1; /* TODO 2.3 */
+  check "R7b" Since(Floor2, not Once(Call1)) => Floor2; /* TODO 2.3 */
+  --%MAIN;
+tel

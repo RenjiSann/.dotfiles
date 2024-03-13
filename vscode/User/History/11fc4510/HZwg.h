@@ -1,0 +1,25 @@
+#pragma once
+
+#include "log.h"
+#include "types.h"
+
+typedef enum { MOULETTE_ROOTFS, MOULETTE_IMAGE } moulette_src_kind;
+
+typedef struct moulette_opts_t {
+    moulette_src_kind kind;
+    char *path;
+    char *student_directory;
+    char **argv_to_run;
+    u32 argc_to_run;
+    log_level verbose_level; /// 0 -> Error + Warn; 1 -> +Info; 2 -> +Debug
+} moulette_opts;
+
+int parse_opts(int argc, char **argv, moulette_opts *opts);
+
+void dump_cfg(moulette_opts *opts);
+
+/**
+ * Check opts arguments for illegal values
+ * @return 0 on success, 1 if an illegal value is found.
+ */
+int check_opts(const moulette_opts *opts);

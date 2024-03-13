@@ -1,0 +1,18 @@
+<ul class="dropdown-menu dropdown-menu-lg-start" id="dropdown-admin">
+    <li class="dropdown-header">Panel Admin</li>
+    <li>
+        <hr class="dropdown-divider">
+    </li>
+    <li>
+        <a class="dropdown-item"
+            href="{% url 'admin:index' %}"
+            target="_blank"
+            rel="noopener noreferrer">
+            Admin django
+        </a>
+        <a class="dropdown-item"
+            href="{% url 'events:review' %}">
+            Review candidatures
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,69 @@
+{% load custom_filters %}
+{% load static %}
+
+<div class="modal-dialog modal-xl modal-dialog-centered">
+  <div class="modal-content mb-1">
+    <div class="modal-header mb-2 text-center" style="align-self: center;">
+      <img src="{% static 'img/logo_gcc.svg' %}" alt="Logo des stages Girls Can Code" />
+    </div>
+    <div class="modal-body row m-3 d-flex" style="flex-direction: column">
+      <hr class="eventInfo-line gcc-{{color}}-back md-auto" />
+      <tbody class="rowgroup mb-4">
+        <h1>Stage {{ event.name }}:</h1>
+        <div class="row m-3 justify-content-around">
+          <div class="col-xl-auto row justify-content-center">
+            <div class="col-auto text-center">
+              <i class="far fa-calendar-check" style="font-size: 3em"></i>
+            </div>
+            <ul class="col m-0 p-0" style="list-style: none;">
+              <li>
+                <h2>{{ event.start_date }}</h2>
+              </li>
+              <li>
+                <h2>{{ event.end_date }}</h2>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-auto row justify-content-center">
+            <div class="col-auto text-center">
+              <i class="fas fa-location-dot" style="font-size: 3em"></i>
+            </div>
+            <ul class="col m-0 p-0" style="list-style: none;">
+              <li>
+                <h2>{{ event.center.address.street }}</h2>
+              </li>
+              <li>
+                <h2>{{ event.center.address.city }}</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h2>{{ event.description }}</h2>
+      </tbody>
+
+      <div class="btn-group d-none d-sm-block text-center" role="group">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#application-form-modal"
+          data-bs-event-id="{{ event.id }}">
+          S'inscrire à ce stage
+        </button>
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#scheduleModal-{{ event|event_format }}" data-bs-dismiss="modal">
+        Calendrier du stage
+        </button>
+      </div>
+      <div class="btn-group-vertical d-block d-sm-none md-auto" role="group" data-bs-toggle="modal" data-bs-target="#inscriptionEventModal-{{ id }}">
+        <button type="button" class="btn btn-primary">
+          S'inscrire à ce stage
+        </button>
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#scheduleModal-{{ event|event_format }}" data-bs-dismiss="modal">
+        Calendrier du stage
+        </button>
+      </div>
+
+    </div>
+    <div class="modal-footer" style="display:none"></div>
+  </div>
+</div>

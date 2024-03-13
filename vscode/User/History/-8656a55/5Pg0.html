@@ -1,0 +1,17 @@
+{% extends "users/base_auth.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Réinitialiser son mot de passe
+{% endblock title %}
+
+{% block form %}
+    {% if validlink %}
+        {% crispy form %}
+    {% else %}
+        {{ title }}
+    {% endif %}
+{% endblock form %}
+
+{% block bottom %}
+{% endblock bottom %}

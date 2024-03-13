@@ -1,0 +1,77 @@
+{% extends "gccsite/base.html" %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/events/events.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+{% endblock head %}
+
+{% block content %}
+    <div class="basic-background p-md-4">
+        <div class="container">
+
+            {# Title #}
+            <div class="mb-3">
+                {% if passed %}
+                    <h1>Nos stages passés</h1>
+                    <h6>
+                        <a href="{% url 'events:events' %}">Voir nos stages à venir</a>
+                    </h6>
+                {% else %}
+                    <h1>Nos stages à venir</h1>
+                    <h6>
+                        <a href="{% url 'events:passed_events' %}">Voir nos stages passés</a>
+                    </h6>
+                {% endif %}
+            </div>
+
+            <div class="p-2 bg-white rounded-3">
+                {% for event in object_list %}
+                    {% include "events/partial/event_card_new.html" with event=event finished=passed %}
+                {% endfor %}
+            </div>
+
+            <div class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Précédent</a>
+                    </li>
+                {% else %}
+                    <li class="page-item disabled">
+                        <a class="page-link">Précédent</a>
+                    </li>
+                {% endif %}
+                {% for page in paginator.page_range %}
+                    {% if page == page_obj.number %}
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="?page={{ page }}">{{ page }}</a>
+                        </li>
+                    {% else %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ page }}">{{ page }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+                {% if page_obj.has_next %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ page_obj.next_page_number }}">Suivant</a>
+                    </li>
+                {% else %}
+                    <li class="page-item disabled">
+                        <a class="page-link">Suivant</a>
+                    </li>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    {# MODALS #}
+    {% include "events/partial/event_application_form_modal.html" with color=1 %}
+    {% include "events/partial/event_schedule_modal.html" with event_format="week" %}
+    {% include "events/partial/event_schedule_modal.html" with event_format="weekend" %}
+
+{% endblock content %}
+
+{% block scripts %}
+    <script type="module" src="{% static 'js/forms/application_form.js'%}"></script>
+{% endblock scripts %}

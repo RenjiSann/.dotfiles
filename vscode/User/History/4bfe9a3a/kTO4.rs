@@ -1,0 +1,1 @@
+pub(crate) struct Word<'a>(&'a str);

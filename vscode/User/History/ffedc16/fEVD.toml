@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "gccsite-api"
+version = "0.1.0"
+description = "Backend of Girls Can Code! website"
+authors = ["Association Prologin <info@prologin.org>"]
+license = "AGPL-3.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+boto3 = "^1.24"
+celery = { version = "^5.2" }
+coverage = { version = "*", extras = [ "toml" ] }
+django = "^4.2"
+gunicorn = "^21.0.0"
+ipython = "^8.12.0"
+psycopg2-binary = "^2.9.6"
+django-crispy-forms = "^2.0"
+crispy-bootstrap5 = "^0.7"
+django-bootstrap-icons = "^0.8.3"
+django-structlog = { version = "^5.1", extras = [ "celery" ] }
+django-storages = "^1.12"
+django-redis = { version = "^5" }
+django-rest-knox = { version = "^4.2" }
+django-celery-beat = { version = "^2.4"}
+django-debug-toolbar = "*"
+django-mail-panel = "^4.0"
+django-post-office = "^3.6"
+prospector = {extras = ["with_everything"], version = "*"}
+mozilla-django-oidc = "^3.0.0"
+django-prometheus = "^2.3.1"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+isort = "*"
+pre-commit = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+branch = true
+omit = [
+    "../*migrations*",
+]
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = [
+    # Re-enable the standard pragma
+    "pragma: nocover",
+
+    # Don't complain if tests don't hit defensive assertion code:
+    "raise NotImplementedError",
+
+    # Don't complain about missing debug-only code:
+    "def __repr__",
+
+    # Don't complain if non-runnable code isn't run:
+    "if 0:",
+    "if __name__ == .__main__.:",
+]
+
+
+[tool.black]
+line-length = 79
+exclude = '''
+(
+  ^/migrations/.*.py # Do not format Django generated files
+)
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 79

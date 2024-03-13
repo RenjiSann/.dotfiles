@@ -1,0 +1,197 @@
+[
+    {
+        "model": "events.event",
+        "pk": 2,
+        "fields": {
+            "name": "GCC! Paris été 2022",
+            "center": 1,
+            "year": 2022,
+            "signup_start_date": "2022-05-31T22:00:00Z",
+            "signup_end_date": "2022-08-15T21:59:00Z",
+            "start_date": "2022-08-22T07:00:00Z",
+            "end_date": "2022-08-27T10:00:00Z",
+            "notes": "",
+            "description": "Stage Girls Can Code! à l'EPITA Paris"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 3,
+        "fields": {
+            "name": "GCC! Test. (Always open)",
+            "center": 1,
+            "year": 2100,
+            "signup_start_date": "1899-12-31T23:51:00Z",
+            "signup_end_date": "2099-12-31T23:00:00Z",
+            "start_date": "2100-01-08T08:00:00Z",
+            "end_date": "2100-01-09T11:00:00Z",
+            "notes": "",
+            "description": "Cet événement est toujours ouvert aux inscriptions"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 4,
+        "fields": {
+            "name": "GCC! Inscriptions fermées",
+            "center": 1,
+            "year": 2100,
+            "signup_start_date": "1899-12-31T23:51:00Z",
+            "signup_end_date": "2000-12-31T23:00:00Z",
+            "start_date": "2100-01-04T08:00:00Z",
+            "end_date": "2100-01-09T11:00:00Z",
+            "notes": "",
+            "description": "Événement pas passé mais inscriptions Terminées"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 5,
+        "fields": {
+            "name": "GCC! Inscriptions à venir",
+            "center": 1,
+            "year": 2100,
+            "signup_start_date": "2098-12-31T23:51:00Z",
+            "signup_end_date": "2099-12-31T23:00:00Z",
+            "start_date": "2100-01-04T08:00:00Z",
+            "end_date": "2100-01-09T11:00:00Z",
+            "notes": "",
+            "description": "Event avec inscriptions pas ouvertes"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 6,
+        "fields": {
+            "name": "GCC! Test bis. (Always open)",
+            "center": 1,
+            "year": 2100,
+            "signup_start_date": "1899-12-31T23:51:00Z",
+            "signup_end_date": "2099-12-31T23:00:00Z",
+            "start_date": "2110-01-04T08:00:00Z",
+            "end_date": "2110-01-09T11:00:00Z",
+            "notes": "",
+            "description": "Cet evenement est toujours ouvert"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 7,
+        "fields": {
+            "name": "gcc_flood_1",
+            "center": 1,
+            "year": 2100,
+            "signup_start_date": "1899-12-31T23:51:00Z",
+            "signup_end_date": "2099-12-31T23:00:00Z",
+            "start_date": "2110-01-04T08:00:00Z",
+            "end_date": "2110-01-09T11:00:00Z",
+            "notes": "",
+            "description": "Cet evenement est toujours ouvert"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 8,
+        "fields": {
+            "name": "gcc_flood_2",
+            "center": 1,
+            "year": 2100,
+            "signup_start_date": "1899-12-31T23:51:00Z",
+            "signup_end_date": "2099-12-31T23:00:00Z",
+            "start_date": "2110-01-04T08:00:00Z",
+            "end_date": "2110-01-09T11:00:00Z",
+            "notes": "",
+            "description": "Cet evenement est toujours ouvert"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 9,
+        "fields": {
+            "name": "gcc_flood_3",
+            "center": 1,
+            "year": 2100,
+            "signup_start_date": "1899-12-31T23:51:00Z",
+            "signup_end_date": "2099-12-31T23:00:00Z",
+            "start_date": "2110-01-04T08:00:00Z",
+            "end_date": "2110-01-09T11:00:00Z",
+            "notes": "",
+            "description": "Cet evenement est toujours ouvert"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 10,
+        "fields": {
+            "name": "gcc_flood_4",
+            "center": 1,
+            "year": 2100,
+            "signup_start_date": "1899-12-31T23:51:00Z",
+            "signup_end_date": "2099-12-31T23:00:00Z",
+            "start_date": "2110-01-04T08:00:00Z",
+            "end_date": "2110-01-09T11:00:00Z",
+            "notes": "",
+            "description": "Cet evenement est toujours ouvert"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 11,
+        "fields": {
+            "name": "gcc_flood_passed_1",
+            "center": 1,
+            "year": 2022,
+            "signup_start_date": "2022-05-31T22:00:00Z",
+            "signup_end_date": "2022-08-15T21:59:00Z",
+            "start_date": "2022-08-22T07:00:00Z",
+            "end_date": "2022-08-27T10:00:00Z",
+            "notes": "",
+            "description": "Stage Girls Can Code! à l'EPITA Paris"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 12,
+        "fields": {
+            "name": "gcc_flood_passed_2",
+            "center": 1,
+            "year": 2022,
+            "signup_start_date": "2022-05-31T22:00:00Z",
+            "signup_end_date": "2022-08-15T21:59:00Z",
+            "start_date": "2022-08-22T07:00:00Z",
+            "end_date": "2022-08-27T10:00:00Z",
+            "notes": "",
+            "description": "Stage Girls Can Code! à l'EPITA Paris"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 13,
+        "fields": {
+            "name": "gcc_flood_passed_3",
+            "center": 1,
+            "year": 2022,
+            "signup_start_date": "2022-05-31T22:00:00Z",
+            "signup_end_date": "2022-08-15T21:59:00Z",
+            "start_date": "2022-08-22T07:00:00Z",
+            "end_date": "2022-08-27T10:00:00Z",
+            "notes": "",
+            "description": "Stage Girls Can Code! à l'EPITA Paris"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 13,
+        "fields": {
+            "name": "gcc_flood_passed_4",
+            "center": 1,
+            "year": 2022,
+            "signup_start_date": "2022-05-31T22:00:00Z",
+            "signup_end_date": "2022-08-15T21:59:00Z",
+            "start_date": "2022-08-22T07:00:00Z",
+            "end_date": "2022-08-27T10:00:00Z",
+            "notes": "",
+            "description": "Stage Girls Can Code! à l'EPITA Paris"
+        }
+    }
+]

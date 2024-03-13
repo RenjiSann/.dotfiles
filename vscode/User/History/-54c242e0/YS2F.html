@@ -1,0 +1,43 @@
+{% load static %}
+{% load custom_filters %}
+<div id="event-list" class="event-list-background py-4 container-fluid">
+    {% if open_events|length == 0 %}
+        <div fluid="sm"
+             class="row no-gutters align-items-baseline justify-content-center">
+            <div align="center" class="col-md-4">
+                <img src="{% static 'img/no-event.svg' %}" />
+            </div>
+            <div align="center" class="col-md-4">
+                <h1>Malheureusement, il n'y a pas de stages pour le moment...</h1>
+                <h3>
+                    Vous pouvez vous inscrire à notre newsletter afin de recevoir un
+                    mail lorsqu'un nouveau stage est disponible.
+                </h3>
+                {% include "pages/partial/Newsletter.html" %}
+            </div>
+        </div>
+    {% else %}
+        <div class="w-75 mx-auto pt-5">
+            <p class="h2 pt-4 pb-4 text-center">Nos prochains stages</p>
+            <div class="p-2 bg-white rounded-3">
+                {% for event in open_events %}
+                    {% include "events/partial/event_card_new.html" with event=event finished=False %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center align-self-center m-2">
+                <a type="button" href="{% url 'events:events' %}"
+                    class="btn btn-primary mb-3 ps-4 pe-4">
+                    Voir tous nos stages
+                </a>
+            </div>
+        </div>
+    {% endif %}
+
+</div>
+
+{% comment %}
+  Include here the application form modal, to avoid including it several times.
+{% endcomment %}
+{% include "events/partial/event_application_form_modal.html" with color=1 %}

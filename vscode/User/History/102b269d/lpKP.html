@@ -1,0 +1,81 @@
+{% comment %}
+    Template file for a modal application form to an event.
+    Template parameters:
+    - color: A number in {1, 2, 3}, for the accent color
+{% endcomment %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+<div
+    class="modal fade"
+    id="application-form-modal"
+    tabindex="-1"
+    aria-labelledby="application-form-modal"
+    aria-hidden="true"
+    >
+    {% if user.is_authenticated %}
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col text-center">
+                    <img src="{% static 'img/logo_gcc.svg' %}" class="img-fluid" />
+                    <div class="row mt-3">
+                        <hr class="eventInfo-line gcc-{{color}}-back opacity-100">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-11">
+                            <form method="post" action="{% url 'events:event_signup' %}">
+                                {% comment %}
+                                    The event id value attribute should be set
+                                    by JS when opening the modal.
+                                {% endcomment %}
+                                <input id="event-id-input" type="hidden" name="event-id">
+
+                                {% crispy form %}
+                            </form>
+                            <div class="fst-italic fs-footnote">
+                                Les champs avec un astérisque
+                                <span class="asteriskField">*</span>
+                                sont à remplir obligatoirement.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% else %}
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col text-center">
+                    <img src="{% static 'img/logo_gcc.svg' %}" class="img-fluid" />
+                    <div class="row mt-3">
+                        <hr class="eventInfo-line gcc-{{color}}-back opacity-100">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body text-center mb-4">
+                Vous devez être connecté pour vous inscrire à un stage!
+            </div>
+
+            <div class="modal-footer justify-content-center">
+                <a href="{% url 'users:login' %}" class="btn btn-primary py-2 px-4">
+                    Se connecter
+                </a>
+                <a href="{% url 'users:register' %}" class="btn btn-primary py-2 px-4">
+                    S'inscrire
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>

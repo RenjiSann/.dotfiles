@@ -1,0 +1,5 @@
+CC=gcc
+LDFLAGS=-fprofile-arcs -ftest-coverage
+
+ref:
+	gcc

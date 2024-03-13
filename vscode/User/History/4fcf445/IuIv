@@ -1,0 +1,12 @@
+{% extends "users/base_auth.html" %}
+
+{% block title %}
+    Mot de passe oublié ?
+{% endblock title %}
+
+{% block form %}
+    {% crispy form %}
+{% endblock form %}
+
+{% block bottom %}
+{% endblock bottom %}

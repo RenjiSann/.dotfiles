@@ -1,0 +1,9 @@
+{
+    "grammarly.selectors": [
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "gistre-blog/content/posts/dorian.peron-2023-09-07-introduction_to_embedded_rust.md"
+        }
+    ]
+}

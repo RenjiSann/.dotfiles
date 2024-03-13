@@ -1,0 +1,30 @@
+CC=g++
+DEBUG= -g -fsanitize=address
+CFLAGS= -Wall -Wextra -Werror -std=gnu++17 # $(DEBUG)
+CPPFLAGS=
+LDFLAGS=
+
+SRC= \
+	src/main.cc 	\
+	src/cgroups.cc 	\
+
+OBJ=$(patsubst %.cc,%.o, $(SRC))
+
+BIN=mymoulette
+
+$(BIN): $(OBJ)
+	$(CC) $(LDFLAGS) $(CFLAGS) $^ -o $@
+
+setcap: $(BIN)
+	sudo setcap "cap_sys_admin+e" $(BIN)
+
+%.o: %.cc
+	$(CC) -c $(CPPFLAGS) $(CFLAGS) $^ -o $@
+
+
+
+
+.PHONY: clean
+clean:
+	$(RM) $(BIN)
+	$(RM) $(OBJ)

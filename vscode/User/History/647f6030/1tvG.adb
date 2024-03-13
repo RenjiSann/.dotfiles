@@ -1,0 +1,2 @@
+with IntStack;
+use IntStack;

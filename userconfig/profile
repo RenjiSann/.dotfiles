@@ -1,3 +1,4 @@
 . "$HOME/.cargo/env"
 
-eval `ssh-agent -s`
+# Use ssh-agent started by systemd
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"

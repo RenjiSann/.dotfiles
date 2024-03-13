@@ -50,3 +50,8 @@ ask_then_create_symlink \
     "$(pwd)/fehbg" \
     "${HOME}/.fehbg"
 
+ask_then_create_symlink \
+    "Install .config/rofi ?" \
+    "$(pwd)/rofi" \
+    "${HOME}/.config/rofi"
+

@@ -396,7 +396,7 @@ enable_audio_bell no
 #: suffix of "c" on the width/height values to have them interpreted
 #: as number of cells instead of pixels.
 
-enabled_layouts grid
+# enabled_layouts *
 
 #: The enabled window layouts. A comma separated list of layout names.
 #: The special value all means all layouts. The first listed layout
@@ -1111,7 +1111,7 @@ background_opacity 0.8
 # map kitty_mod+left  previous_tab
 map kitty_mod+t     new_tab
 map ctrl+t     new_tab_with_cwd
-map kitty_mod+n     new_window_with_cwd
+map kitty_mod+n     new_window
 # map kitty_mod+q     close_tab
 # map kitty_mod+.     move_tab_forward
 # map kitty_mod+,     move_tab_backward
@@ -1284,6 +1284,6 @@ map ctrl+alt+2 goto_tab 2
 
 
 # BEGIN_KITTY_THEME
-# GitHub Dark
+# Flexoki (Dark)
 include current-theme.conf
 # END_KITTY_THEME

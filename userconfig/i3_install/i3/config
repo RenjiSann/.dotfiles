@@ -10,12 +10,13 @@ set $mod Mod4
 ################################################################################
 
 # Autostart applications
-exec --no-startup-id picom -b -i 1.0
+exec --no-startup-id picom -b
 
 # Applets
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id flameshot
+exec --no-startup-id pa-applet
 
 # Lock the screen after idling
 exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 'betterlockscreen -l --off 30' ''
@@ -29,6 +30,8 @@ exec --no-startup-id betterlockscreen -w
 
 # Launch the macOS like swipping
 exec --no-startup-id libinput-gestures
+# Launch the Logitech peripherals system
+exec --no-startup-id solaar --window hide
 
 # Setup multiple screen on Startup
 exec --no-startup-id autorandr --change
@@ -38,6 +41,9 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 ################################################################################
 # Key bindings
 ################################################################################
+
+
+bindsym $mod+Ctrl+m exec pavucontrol
 
 # Open a terminal
 bindsym $mod+Return exec i3-sensible-terminal
@@ -107,20 +113,13 @@ bindsym $mod+F3 exec discord
 
 # Enable / disable opacity
 bindsym $mod+Shift+o exec --no-startup-id pkill picom
-bindsym $mod+Ctrl+o exec --no-startup-id picom -b -i 1.0
+bindsym $mod+Ctrl+o exec --no-startup-id picom -b
 
 # Restart notification daemon
 bindsym $mod+Shift+d --release exec "killall dunst"; exec notify-send 'restart dunst'
 
 # Disable focus following mouse
 focus_follows_mouse no
-
-################################################################################################
-## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
-################################################################################################
-
-exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################
 # i3 Workspace management
@@ -145,6 +144,11 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
+
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -315,7 +319,7 @@ client.background       #2B2C2B
 
 # i3status-rs bar
 bar {
-    font pango: JetbrainsMono Nerd Font
+    font pango: JetBrainsMono NF
     position bottom
     status_command /usr/bin/i3status-rs /home/renji/.config/i3status-rs/config.toml
     colors {

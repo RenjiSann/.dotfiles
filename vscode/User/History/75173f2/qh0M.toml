@@ -1,4 +1,0 @@
-[workspace]
-members = [
-    "crates/r42sh-parser"
-]

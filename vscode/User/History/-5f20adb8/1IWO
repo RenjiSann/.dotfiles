@@ -1,8 +1,0 @@
-CC=gcc
-CFLAGS=-O0 -g -fprofile-arcs -ftest-coverage
-LDFLAGS=-fprofile-arcs -ftest-coverage
-
-ref:
-	${CC} -o ref src/main.c ${CFLAGS} ${LDFLAGS}
-
-ours:

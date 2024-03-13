@@ -1,6 +1,0 @@
-[workspace]
-members = [
-    "crates/r42sh-ast",
-    "crates/r42sh-parser",
-    "crates/r42sh",
-]

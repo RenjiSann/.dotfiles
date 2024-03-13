@@ -1,5 +1,0 @@
-{
-    "rust-analyzer.linkedProjects": [
-        "./crates/r42sh-parser/Cargo.toml"
-    ]
-}

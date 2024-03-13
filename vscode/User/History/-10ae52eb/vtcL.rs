@@ -1,3 +1,0 @@
-
-mod word;
-mod command;

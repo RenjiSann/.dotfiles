@@ -13,7 +13,7 @@
 set -e
 
 # cd to your config dir
-pushd ~/.dotfiles/nixos/
+pushd ~/.dotfiles/nix/
 
 # Edit your config
 $EDITOR $HOSTNAME.nix

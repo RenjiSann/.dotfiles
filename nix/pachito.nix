@@ -54,7 +54,7 @@
     createHome = true;
     home = "/home/renji";
     shell = pkgs.zsh;
-    extraGroups = ["wheel" "docker"];
+    extraGroups = ["wheel" "docker" "libvirtd"];
     group = "users";
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGwd3vcKQYugab+rDEMnRpkHsqk//LQBsTpgNglAiNe1 renji@opale"
@@ -99,6 +99,8 @@
 
   # Virtualization
   virtualisation.docker.enable = true;
+  virtualisation.libvirtd.enable = true;
+
 
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you

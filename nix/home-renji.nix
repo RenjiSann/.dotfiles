@@ -48,7 +48,7 @@
       plugins = [
         "git"
       ];
-      theme = "robbyrussell";
+      theme = "steeef";
     };
   };
 

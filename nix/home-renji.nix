@@ -8,6 +8,7 @@
     bat
     eza
     lazygit
+    lazydocker
     rustup
     alejandra
   ];
@@ -40,6 +41,7 @@
     '';
     shellAliases = {
       lzg = "lazygit";
+      lzd = "lazydocker";
       cat = "bat";
       ls = "eza";
     };
@@ -50,6 +52,14 @@
       ];
       theme = "steeef";
     };
+  };
+  programs.z-lua = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
   };
 
   programs.vim = {

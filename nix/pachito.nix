@@ -24,15 +24,6 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
-  # Pick only one of the below networking options.
-  networking.interfaces.enp6s0.wakeOnLan.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
-
   # Set your time zone.
   time.timeZone = "Europe/Paris";
 
@@ -104,6 +95,17 @@
   # Virtualization
   virtualisation.docker.enable = true;
   virtualisation.libvirtd.enable = true;
+
+  # Pick only one of the below networking options.
+  networking.interfaces.enp6s0.wakeOnLan.enable = true;
+
+  # Open ports in the firewall.
+  networking.firewall.allowedTCPPorts = [
+    19999 # netdata
+  ];
+  # networking.firewall.allowedUDPPorts = [ ... ];
+  # Or disable the firewall altogether.
+  # networking.firewall.enable = false;
 
 
   # Copy the NixOS configuration file and link it from the resulting system

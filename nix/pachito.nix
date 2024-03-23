@@ -97,6 +97,10 @@
     settings.PasswordAuthentication = true; # Allow, as the server should in theory be kept by the bastion
   };
 
+  services.netdata = {
+    enable = true;
+  };
+
   # Virtualization
   virtualisation.docker.enable = true;
   virtualisation.libvirtd.enable = true;

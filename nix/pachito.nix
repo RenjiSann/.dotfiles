@@ -8,7 +8,7 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # Import my home manager config
-  imports = [./renji.nix];
+  imports = [./renji.nix ./tools/vscode-server.nix];
 
   boot.loader.systemd-boot.enable = true;
   # Do not wait for screen with nvidia GPU.
@@ -106,7 +106,6 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
-
 
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you

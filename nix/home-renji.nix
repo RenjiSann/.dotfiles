@@ -9,7 +9,6 @@
     eza
     lazygit
     lazydocker
-    rustup
     alejandra
   ];
 

@@ -1,3 +1,6 @@
 
 For notifications
 https://github.com/emersion/mako
+
+For advanced workspace stuff
+cargo install swaysome

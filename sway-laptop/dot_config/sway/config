@@ -10,6 +10,8 @@ exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
+exec_always "env"
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -26,6 +28,7 @@ set $term alacritty
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
+set $external_monitor DP-3
 
 # Application launcher with fzf
 # set $menu exec $term --class=launcher -e bash -c 'compgen -c | grep -v fzf | sort -u | fzf --layout=reverse | xargs -r swaymsg -t command exec'
@@ -40,7 +43,7 @@ output * bg ~/.config/sway/background fill
 #
 # Example configuration:
 #
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+#   output $external_monitor resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
@@ -78,7 +81,7 @@ exec swayidle -w \
 # Read `man 5 sway-input` for more information about this section.
 input "type:keyboard" {
     xkb_layout us
-    xkb_options caps:escape
+    xkb_options caps:escape,compose:ralt
 }
 
 input "type:touchpad" {
@@ -140,27 +143,27 @@ input "type:touchpad" {
 # Workspaces:
 #
     # Switch to workspace
-    bindsym $mod+1 workspace 1
-    bindsym $mod+2 workspace 2
-    bindsym $mod+3 workspace 3
-    bindsym $mod+4 workspace 4
-    bindsym $mod+5 workspace 5
-    bindsym $mod+6 workspace 6
-    bindsym $mod+7 workspace 7
-    bindsym $mod+8 workspace 8
-    bindsym $mod+9 workspace 9
-    bindsym $mod+0 workspace 10
-    # Move focused container to workspace
-    bindsym $mod+Shift+1 move container to workspace 1
-    bindsym $mod+Shift+2 move container to workspace 2
-    bindsym $mod+Shift+3 move container to workspace 3
-    bindsym $mod+Shift+4 move container to workspace 4
-    bindsym $mod+Shift+5 move container to workspace 5
-    bindsym $mod+Shift+6 move container to workspace 6
-    bindsym $mod+Shift+7 move container to workspace 7
-    bindsym $mod+Shift+8 move container to workspace 8
-    bindsym $mod+Shift+9 move container to workspace 9
-    bindsym $mod+Shift+0 move container to workspace 10
+    # bindsym $mod+1 workspace 1
+    # bindsym $mod+2 workspace 2
+    # bindsym $mod+3 workspace 3
+    # bindsym $mod+4 workspace 4
+    # bindsym $mod+5 workspace 5
+    # bindsym $mod+6 workspace 6
+    # bindsym $mod+7 workspace 7
+    # bindsym $mod+8 workspace 8
+    # bindsym $mod+9 workspace 9
+    # bindsym $mod+0 workspace 10
+    # # Move focused container to workspace
+    # bindsym $mod+Shift+1 move container to workspace 1
+    # bindsym $mod+Shift+2 move container to workspace 2
+    # bindsym $mod+Shift+3 move container to workspace 3
+    # bindsym $mod+Shift+4 move container to workspace 4
+    # bindsym $mod+Shift+5 move container to workspace 5
+    # bindsym $mod+Shift+6 move container to workspace 6
+    # bindsym $mod+Shift+7 move container to workspace 7
+    # bindsym $mod+Shift+8 move container to workspace 8
+    # bindsym $mod+Shift+9 move container to workspace 9
+    # bindsym $mod+Shift+0 move container to workspace 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 #
@@ -245,6 +248,8 @@ bar {
 }
 
 include /etc/sway/config.d/*
+include ~/.config/sway/config.d/*.conf
+
 
 # Screenshots
 # currently having a custom grimshot under .local/bin
@@ -296,13 +301,13 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # swap monitor focus
 bindsym $mod+Tab focus output eDP-1
-bindsym $mod+Shift+Tab focus output HDMI-A-1
+bindsym $mod+Shift+Tab focus output $external_monitor
 
 # bind workspaces to specific outputs
-workspace 1 output HDMI-A-1
-workspace 2 output HDMI-A-1
-workspace 3 output HDMI-A-1
-workspace 4 output HDMI-A-1
-workspace 8 output HDMI-A-1
-workspace 9 output HDMI-A-1
-workspace 10 output HDMI-A-1
+workspace 1 output $external_monitor
+workspace 2 output $external_monitor
+workspace 3 output $external_monitor
+workspace 4 output $external_monitor
+workspace 8 output $external_monitor
+workspace 9 output $external_monitor
+workspace 10 output $external_monitor

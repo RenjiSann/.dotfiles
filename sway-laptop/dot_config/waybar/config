@@ -43,7 +43,7 @@
             "10": "10",
             "urgent": "",
             // "focused": "",
-            "default": ""
+            // "default": ""
         }
     },
     "sway/mode": {

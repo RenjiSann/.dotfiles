@@ -1,0 +1,4 @@
+image=~/.config/sway/background
+scaling=fill
+show-keyboard-layout
+indicator-idle-visible

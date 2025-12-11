@@ -10,6 +10,7 @@ if waybar_is_running; then
     # Waybar is running, so kill and restart it
     echo "Waybar is running. Restarting..."
     killall waybar
+    sleep 3
     waybar &
 else
     # Waybar is not running, start it

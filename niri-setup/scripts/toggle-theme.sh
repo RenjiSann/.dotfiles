@@ -45,10 +45,10 @@ switch_theme() {
     local kitty_theme="$5"
 
     apply_gtk_theme "$gtk_theme" "$color_scheme"
-    switch_waybar_theme "$waybar_theme"
     switch_niri_theme "$niri_theme"
     # apply_wallpaper "$wallpaper"
     kitten themes --reload-in=all "$kitty_theme"
+    switch_waybar_theme "$waybar_theme"
 }
 
 # Main logic

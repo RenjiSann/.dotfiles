@@ -236,10 +236,8 @@ overview {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 spawn-at-startup "slack"
-spawn-at-startup "hyprpaper"
 spawn-at-startup "/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1"
 // spawn-at-startup "flatpak run com.bitwarden.desktop"
-spawn-at-startup "swaync"
 
 environment {
     ELECTRON_OZONE_PLATFORM_HINT "auto"

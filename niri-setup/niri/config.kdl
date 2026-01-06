@@ -72,7 +72,8 @@ overview {
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
-spawn-at-startup "/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1"
+//spawn-at-startup "/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1"
+spawn-at-startup "mate-polkit"
 // Clipboard history
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 

@@ -7,7 +7,9 @@
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 include "dms/alttab.kdl"
+include "dms/binds.kdl"
 include "dms/colors.kdl"
+include "dms/cursor.kdl"
 include "dms/layout.kdl"
 include "dms/wpblur.kdl"
 include "input.kdl"
@@ -85,12 +87,6 @@ environment {
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     QT_QPA_PLATFORMTHEME "gtk3"
     QT_QPA_PLATFORMTHEME_QT6 "gtk3"
-}
-
-
-cursor {
-    xcursor-theme "macOS"
-    xcursor-size 24
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.

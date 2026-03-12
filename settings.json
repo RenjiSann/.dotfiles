@@ -1,0 +1,49 @@
+{
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        80
+    ],
+    "editor.stickyScroll.enabled": true,
+    "editor.wordWrap": "on",
+    "editor.wrappingStrategy": "advanced",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "git.blame.editorDecoration.enabled": true,
+    "git.openRepositoryInParentFolders": "never",
+    "keyboard.dispatch": "keyCode",
+    "search.useParentIgnoreFiles": true,
+    "window.autoDetectColorScheme": true,
+    "window.confirmSaveUntitledWorkspace": false,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.editorAssociations": {
+        "git-rebase-todo": "default"
+    },
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
+    "workbench.preferredLightColorTheme": "Catppuccin Latte",
+    "workbench.startupEditor": "none",
+    "workbench.tree.stickyScrollMaxItemCount": 5,
+    // Plugins
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.fallbackFlags": [
+        "-I/home/peron/wave/x86_64-linux/libclang_stable/install/include/"
+    ],
+    "clangd.path": "/home/peron/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/18.1.3/clangd_18.1.3/bin/clangd",
+    "gitlens.graph.minimap.additionalTypes": [
+        "localBranches",
+        "stashes",
+        "remoteBranches",
+        "tags"
+    ],
+    "python.defaultInterpreterPath": "/bin/python3",
+    "rewrap.wrappingColumn": 79,
+    // Vim
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-p>": false,
+        "<C-s>": false,
+        "<C-z>": false
+    },
+    "ruff.configuration": "",
+}
